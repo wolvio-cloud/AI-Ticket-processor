@@ -1,0 +1,71 @@
+{
+  "timestamp": "2025-11-05T22:29:57.857404",
+  "total": 5,
+  "processed": 5,
+  "failed": 0,
+  "avg_time_per_ticket": 3.86,
+  "total_time": 8.06,
+  "cost_estimate": 0.005,
+  "results": [
+    {
+      "ticket_id": 1,
+      "success": true,
+      "analysis": {
+        "summary": "Request for assistance on responding to and solving tickets.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 3.26,
+      "updated": false
+    },
+    {
+      "ticket_id": 17,
+      "success": true,
+      "analysis": {
+        "summary": "Customer's notification emails are being directed to their spam folder despite marking them as not spam.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 4.38,
+      "updated": false
+    },
+    {
+      "ticket_id": 21,
+      "success": true,
+      "analysis": {
+        "summary": "User reported a bug where the search icon overlaps with text on mobile.",
+        "root_cause": "bug",
+        "urgency": "medium",
+        "sentiment": "positive"
+      },
+      "processing_time": 3.78,
+      "updated": false
+    },
+    {
+      "ticket_id": 18,
+      "success": true,
+      "analysis": {
+        "summary": "User upgraded to Premium but still has access to free plan features despite successful payment.",
+        "root_cause": "bug",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 3.78,
+      "updated": false
+    },
+    {
+      "ticket_id": 19,
+      "success": true,
+      "analysis": {
+        "summary": "Request for bulk editing functionality to improve efficiency for power users.",
+        "root_cause": "feature",
+        "urgency": "medium",
+        "sentiment": "positive"
+      },
+      "processing_time": 4.08,
+      "updated": false
+    }
+  ]
+}

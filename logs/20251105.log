@@ -1,0 +1,244 @@
+2025-11-05 22:29:49,790 | INFO | Starting batch processing (limit: 5)
+2025-11-05 22:29:51,602 | INFO | Processing ticket 21
+2025-11-05 22:29:51,602 | INFO | Processing ticket 1
+2025-11-05 22:29:51,608 | INFO | Processing ticket 19
+2025-11-05 22:29:51,610 | INFO | Processing ticket 18
+2025-11-05 22:29:51,612 | INFO | Processing ticket 17
+2025-11-05 22:29:55,801 | ERROR | Zendesk update failed (ID 1): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/1.json
+2025-11-05 22:29:57,178 | ERROR | Zendesk update failed (ID 17): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/17.json
+2025-11-05 22:29:57,532 | ERROR | Zendesk update failed (ID 21): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/21.json
+2025-11-05 22:29:57,532 | ERROR | Zendesk update failed (ID 18): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/18.json
+2025-11-05 22:29:57,852 | ERROR | Zendesk update failed (ID 19): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/19.json
+2025-11-05 22:29:57,865 | INFO | Batch complete: 5/5 | Avg: 3.86s | Total: 8.06s
+2025-11-05 22:32:29,084 | INFO | Starting batch processing (limit: 5)
+2025-11-05 22:32:30,334 | INFO | Processing ticket 21
+2025-11-05 22:32:30,334 | INFO | Processing ticket 1
+2025-11-05 22:32:30,336 | INFO | Processing ticket 19
+2025-11-05 22:32:30,338 | INFO | Processing ticket 18
+2025-11-05 22:32:30,338 | INFO | Processing ticket 17
+2025-11-05 22:32:34,553 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-05 22:32:35,843 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-05 22:32:36,003 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-05 22:32:36,304 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-05 22:32:36,632 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-05 22:32:36,638 | INFO | Batch complete: 5/5 | Avg: 3.53s | Total: 7.55s
+2025-11-05 22:32:46,584 | INFO | Starting batch processing (limit: 21)
+2025-11-05 22:32:47,734 | INFO | Processing ticket 21
+2025-11-05 22:32:47,735 | INFO | Processing ticket 1
+2025-11-05 22:32:47,735 | INFO | Processing ticket 19
+2025-11-05 22:32:47,735 | INFO | Processing ticket 18
+2025-11-05 22:32:47,737 | INFO | Processing ticket 17
+2025-11-05 22:32:47,738 | INFO | Processing ticket 16
+2025-11-05 22:32:47,739 | INFO | Processing ticket 13
+2025-11-05 22:32:47,739 | INFO | Processing ticket 12
+2025-11-05 22:32:47,740 | INFO | Processing ticket 14
+2025-11-05 22:32:47,740 | INFO | Processing ticket 15
+2025-11-05 22:32:53,786 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-05 22:32:53,990 | INFO | Processing ticket 10
+2025-11-05 22:32:56,111 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-05 22:32:56,113 | INFO | Processing ticket 11
+2025-11-05 22:32:56,168 | INFO | Ticket 13 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_negative']
+2025-11-05 22:32:56,169 | INFO | Processing ticket 9
+2025-11-05 22:32:56,270 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-05 22:32:56,270 | INFO | Processing ticket 8
+2025-11-05 22:32:56,310 | INFO | Ticket 14 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 22:32:56,312 | INFO | Processing ticket 5
+2025-11-05 22:32:56,403 | INFO | Ticket 12 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 22:32:56,403 | INFO | Processing ticket 7
+2025-11-05 22:32:56,543 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 22:32:56,543 | INFO | Processing ticket 6
+2025-11-05 22:32:56,601 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-05 22:32:56,602 | INFO | Processing ticket 4
+2025-11-05 22:32:56,685 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-05 22:32:56,685 | INFO | Processing ticket 3
+2025-11-05 22:32:56,698 | INFO | Ticket 16 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 22:32:56,698 | INFO | Processing ticket 2
+2025-11-05 22:32:57,142 | INFO | Ticket 10 updated with tags: ['ai_processed', 'ai_other', 'ai_low', 'ai_positive']
+2025-11-05 22:32:57,142 | INFO | Processing ticket 20
+2025-11-05 22:32:58,621 | INFO | Ticket 11 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-05 22:32:58,782 | INFO | Ticket 4 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-05 22:32:58,786 | INFO | Ticket 9 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_neutral']
+2025-11-05 22:32:58,866 | INFO | Ticket 8 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-05 22:33:01,142 | INFO | Ticket 20 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 22:33:01,170 | INFO | Ticket 6 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 22:33:01,207 | INFO | Ticket 7 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 22:33:01,257 | INFO | Ticket 3 updated with tags: ['ai_processed', 'ai_refund', 'ai_high', 'ai_negative']
+2025-11-05 22:33:01,495 | INFO | Ticket 5 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-05 22:33:01,653 | INFO | Ticket 2 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 22:33:01,668 | INFO | Batch complete: 21/21 | Avg: 3.5s | Total: 15.07s
+2025-11-05 22:52:18,340 | INFO | Starting batch processing (limit: 50)
+2025-11-05 22:52:19,836 | INFO | Processing ticket 2
+2025-11-05 22:52:19,837 | INFO | Processing ticket 20
+2025-11-05 22:52:19,838 | INFO | Processing ticket 5
+2025-11-05 22:52:19,841 | INFO | Processing ticket 7
+2025-11-05 22:52:19,843 | INFO | Processing ticket 3
+2025-11-05 22:52:19,843 | INFO | Processing ticket 6
+2025-11-05 22:52:19,844 | INFO | Processing ticket 11
+2025-11-05 22:52:19,846 | INFO | Processing ticket 9
+2025-11-05 22:52:19,848 | INFO | Processing ticket 8
+2025-11-05 22:52:19,853 | INFO | Processing ticket 4
+2025-11-05 22:52:26,355 | INFO | Ticket 11 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-05 22:52:26,388 | INFO | Processing ticket 19
+2025-11-05 22:52:27,938 | INFO | Ticket 3 updated with tags: ['ai_processed', 'ai_refund', 'ai_high', 'ai_negative']
+2025-11-05 22:52:27,938 | INFO | Processing ticket 10
+2025-11-05 22:52:28,098 | INFO | Ticket 9 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-05 22:52:28,098 | INFO | Processing ticket 17
+2025-11-05 22:52:28,155 | INFO | Ticket 5 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-05 22:52:28,158 | INFO | Processing ticket 16
+2025-11-05 22:52:28,286 | INFO | Ticket 2 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 22:52:28,286 | INFO | Processing ticket 13
+2025-11-05 22:52:28,470 | INFO | Ticket 6 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 22:52:28,478 | INFO | Processing ticket 12
+2025-11-05 22:52:28,503 | INFO | Ticket 20 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 22:52:28,503 | INFO | Processing ticket 21
+2025-11-05 22:52:28,712 | INFO | Ticket 4 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-05 22:52:28,712 | INFO | Processing ticket 14
+2025-11-05 22:52:28,744 | INFO | Ticket 8 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-05 22:52:28,745 | INFO | Processing ticket 18
+2025-11-05 22:52:28,911 | INFO | Ticket 7 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 22:52:28,912 | INFO | Processing ticket 1
+2025-11-05 22:52:29,698 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-05 22:52:29,699 | INFO | Processing ticket 15
+2025-11-05 22:52:30,702 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-05 22:52:30,712 | INFO | Ticket 13 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_negative']
+2025-11-05 22:52:30,737 | INFO | Ticket 16 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 22:52:30,768 | INFO | Ticket 12 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 22:52:31,188 | INFO | Ticket 14 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 22:52:31,195 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-05 22:52:31,202 | INFO | Ticket 10 updated with tags: ['ai_processed', 'ai_other', 'ai_low', 'ai_positive']
+2025-11-05 22:52:31,202 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-05 22:52:31,512 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-05 22:53:01,193 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-05 22:53:01,210 | INFO | Batch complete: 21/21 | Avg: 3.43s | Total: 42.86s
+2025-11-05 23:01:38,202 | INFO | Starting batch processing (limit: 50)
+2025-11-05 23:01:40,924 | INFO | Processing ticket 15
+2025-11-05 23:01:40,924 | INFO | Processing ticket 13
+2025-11-05 23:01:40,927 | INFO | Processing ticket 12
+2025-11-05 23:01:40,930 | INFO | Processing ticket 10
+2025-11-05 23:01:40,934 | INFO | Processing ticket 21
+2025-11-05 23:01:40,934 | INFO | Processing ticket 17
+2025-11-05 23:01:40,938 | INFO | Processing ticket 16
+2025-11-05 23:01:40,940 | INFO | Processing ticket 14
+2025-11-05 23:01:40,940 | INFO | Processing ticket 18
+2025-11-05 23:01:40,950 | INFO | Processing ticket 1
+2025-11-05 23:01:53,031 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-05 23:01:53,038 | INFO | Processing ticket 19
+2025-11-05 23:01:54,367 | INFO | Ticket 13 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_negative']
+2025-11-05 23:01:54,368 | INFO | Processing ticket 7
+2025-11-05 23:01:56,050 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-05 23:01:56,050 | INFO | Processing ticket 8
+2025-11-05 23:01:57,267 | INFO | Ticket 7 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 23:01:57,269 | INFO | Processing ticket 4
+2025-11-05 23:01:58,289 | INFO | Ticket 8 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-05 23:01:58,289 | INFO | Processing ticket 20
+2025-11-05 23:02:00,094 | INFO | Ticket 4 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-05 23:02:00,096 | INFO | Processing ticket 5
+2025-11-05 23:02:00,589 | INFO | Ticket 16 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 23:02:00,589 | INFO | Processing ticket 9
+2025-11-05 23:02:00,668 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-05 23:02:00,668 | INFO | Processing ticket 3
+2025-11-05 23:02:00,682 | INFO | Ticket 12 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 23:02:00,682 | INFO | Processing ticket 6
+2025-11-05 23:02:00,706 | INFO | Ticket 14 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 23:02:00,707 | INFO | Processing ticket 2
+2025-11-05 23:02:00,755 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-05 23:02:00,756 | INFO | Processing ticket 11
+2025-11-05 23:02:00,758 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-05 23:02:00,869 | INFO | Ticket 10 updated with tags: ['ai_processed', 'ai_other', 'ai_low', 'ai_positive']
+2025-11-05 23:02:01,053 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-05 23:02:01,918 | INFO | Ticket 20 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 23:02:02,404 | INFO | Ticket 5 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-05 23:02:02,979 | INFO | Ticket 6 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 23:02:02,995 | INFO | Ticket 9 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-05 23:02:03,209 | INFO | Ticket 2 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 23:02:03,225 | INFO | Ticket 11 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-05 23:02:03,620 | INFO | Ticket 3 updated with tags: ['ai_processed', 'ai_refund', 'ai_high', 'ai_negative']
+2025-11-05 23:02:03,728 | INFO | Batch complete: 21/21 | Avg: 6.5s | Total: 25.45s
+2025-11-05 23:20:22,401 | INFO | Starting batch processing (limit: 50)
+2025-11-05 23:20:30,136 | INFO | Processing ticket 11
+2025-11-05 23:20:30,138 | INFO | Processing ticket 9
+2025-11-05 23:20:30,138 | INFO | Processing ticket 3
+2025-11-05 23:20:30,138 | INFO | Processing ticket 6
+2025-11-05 23:20:30,138 | INFO | Processing ticket 2
+2025-11-05 23:20:30,138 | INFO | Processing ticket 20
+2025-11-05 23:20:30,150 | INFO | Processing ticket 5
+2025-11-05 23:20:30,152 | INFO | Processing ticket 12
+2025-11-05 23:20:30,155 | INFO | Processing ticket 10
+2025-11-05 23:20:30,155 | INFO | Processing ticket 21
+2025-11-05 23:20:44,469 | INFO | Ticket 3 updated with tags: ['ai_processed', 'ai_refund', 'ai_high', 'ai_negative']
+2025-11-05 23:20:44,470 | INFO | Processing ticket 16
+2025-11-05 23:20:47,680 | INFO | Ticket 16 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 23:20:47,682 | INFO | Processing ticket 14
+2025-11-05 23:20:49,987 | INFO | Ticket 14 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-05 23:20:49,987 | INFO | Processing ticket 18
+2025-11-05 23:20:51,689 | INFO | Ticket 12 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 23:20:51,689 | INFO | Processing ticket 15
+2025-11-05 23:20:51,822 | INFO | Ticket 10 updated with tags: ['ai_processed', 'ai_other', 'ai_low', 'ai_positive']
+2025-11-05 23:20:51,822 | INFO | Processing ticket 1
+2025-11-05 23:20:52,078 | INFO | Ticket 9 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_neutral']
+2025-11-05 23:20:52,078 | INFO | Processing ticket 4
+2025-11-05 23:20:52,078 | INFO | Ticket 6 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 23:20:52,078 | INFO | Processing ticket 8
+2025-11-05 23:20:52,160 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-05 23:20:52,160 | INFO | Processing ticket 7
+2025-11-05 23:20:52,245 | INFO | Ticket 20 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 23:20:52,245 | INFO | Processing ticket 19
+2025-11-05 23:20:52,329 | INFO | Ticket 11 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-05 23:20:52,329 | INFO | Processing ticket 13
+2025-11-05 23:20:52,390 | INFO | Ticket 2 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 23:20:52,392 | INFO | Processing ticket 17
+2025-11-05 23:20:52,441 | INFO | Ticket 5 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-05 23:20:52,771 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-05 23:20:53,936 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-05 23:20:54,126 | INFO | Ticket 4 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-05 23:20:54,192 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-05 23:20:54,289 | INFO | Ticket 7 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 23:20:54,374 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 23:20:54,499 | INFO | Ticket 8 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-05 23:20:54,590 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-05 23:21:01,978 | INFO | Ticket 13 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_negative']
+2025-11-05 23:21:02,085 | INFO | Batch complete: 21/21 | Avg: 6.94s | Total: 39.62s
+2025-11-05 23:45:46,243 | INFO | Starting batch processing (limit: 50)
+2025-11-05 23:45:49,176 | INFO | Processing ticket 13
+2025-11-05 23:45:49,178 | INFO | Processing ticket 19
+2025-11-05 23:45:49,214 | INFO | Processing ticket 17
+2025-11-05 23:45:49,223 | INFO | Processing ticket 7
+2025-11-05 23:45:49,226 | INFO | Processing ticket 15
+2025-11-05 23:45:49,306 | INFO | Processing ticket 8
+2025-11-05 23:45:49,310 | INFO | Processing ticket 4
+2025-11-05 23:45:49,313 | INFO | Processing ticket 1
+2025-11-05 23:45:49,326 | INFO | Processing ticket 18
+2025-11-05 23:45:49,348 | INFO | Processing ticket 20
+2025-11-05 23:46:03,283 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-05 23:46:03,374 | INFO | Processing ticket 12
+2025-11-05 23:46:06,341 | INFO | Ticket 12 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 23:46:06,341 | INFO | Processing ticket 10
+2025-11-05 23:46:11,755 | INFO | Ticket 10 updated with tags: ['ai_processed', 'ai_other', 'ai_low', 'ai_positive']
+2025-11-05 23:46:11,755 | INFO | Processing ticket 21
+2025-11-05 23:46:15,499 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-05 23:46:15,499 | INFO | Processing ticket 5
+2025-11-05 23:46:16,888 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-05 23:46:16,891 | INFO | Processing ticket 11
+2025-11-05 23:46:17,211 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-05 23:46:17,213 | INFO | Processing ticket 9
+2025-11-05 23:46:17,224 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-05 23:46:17,224 | INFO | Processing ticket 6
+2025-11-05 23:46:17,234 | INFO | Ticket 4 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-05 23:46:17,234 | INFO | Processing ticket 2
+2025-11-05 23:46:17,271 | INFO | Ticket 7 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 23:46:17,274 | INFO | Processing ticket 14
+2025-11-05 23:46:17,384 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-05 23:46:17,386 | INFO | Processing ticket 16
+2025-11-05 23:46:17,473 | INFO | Ticket 8 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-05 23:46:17,473 | INFO | Processing ticket 3
+2025-11-05 23:46:17,490 | INFO | Ticket 13 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_negative']
+2025-11-05 23:46:17,532 | INFO | Ticket 20 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 23:46:17,884 | INFO | Ticket 5 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-05 23:46:19,328 | INFO | Ticket 11 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-05 23:46:19,725 | INFO | Ticket 2 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 23:46:19,755 | INFO | Ticket 6 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-05 23:46:19,796 | INFO | Ticket 9 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_neutral']
+2025-11-05 23:46:20,124 | INFO | Ticket 16 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-05 23:46:20,168 | INFO | Ticket 3 updated with tags: ['ai_processed', 'ai_refund', 'ai_high', 'ai_negative']
+2025-11-05 23:47:02,185 | INFO | Ticket 14 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-05 23:47:02,292 | INFO | Batch complete: 21/21 | Avg: 6.86s | Total: 75.97s

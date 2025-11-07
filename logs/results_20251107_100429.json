@@ -1,0 +1,104 @@
+{
+  "timestamp": "2025-11-07T10:04:29.286667",
+  "total": 5,
+  "processed": 5,
+  "failed": 0,
+  "avg_time_per_ticket": 2.98,
+  "total_time": 6.73,
+  "cost_estimate": 0.005,
+  "pii_protection": {
+    "tickets_with_pii": 5,
+    "total_redactions": 8,
+    "by_type": {
+      "ssn": 2,
+      "aadhaar": 3,
+      "phone_india": 1,
+      "credit_card": 2
+    }
+  },
+  "results": [
+    {
+      "ticket_id": 474,
+      "success": true,
+      "analysis": {
+        "summary": "User requests deletion of personal data related to transaction id TRX5195013.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 2.55,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "ssn": 1,
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 472,
+      "success": true,
+      "analysis": {
+        "summary": "User requests deletion of data associated with transaction ID TRX7604270.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 3.03,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "ssn": 1,
+        "phone_india": 1,
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 475,
+      "success": true,
+      "analysis": {
+        "summary": "Amit Sharma from Canada is unable to login.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 2.89,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 478,
+      "success": true,
+      "analysis": {
+        "summary": "Customer reported an error regarding their account.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 3.12,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 477,
+      "success": true,
+      "analysis": {
+        "summary": "Urgent request regarding a fraudulent charge on a credit card.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 3.32,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    }
+  ]
+}

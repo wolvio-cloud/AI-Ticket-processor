@@ -1,0 +1,263 @@
+{
+  "timestamp": "2025-11-05T22:33:01.655587",
+  "total": 21,
+  "processed": 21,
+  "failed": 0,
+  "avg_time_per_ticket": 3.5,
+  "total_time": 15.07,
+  "cost_estimate": 0.021,
+  "results": [
+    {
+      "ticket_id": 15,
+      "success": true,
+      "analysis": {
+        "summary": "Developer requests detailed API documentation with code examples.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 4.89,
+      "updated": true
+    },
+    {
+      "ticket_id": 1,
+      "success": true,
+      "analysis": {
+        "summary": "Request for assistance in resolving tickets and improving response efficiency.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 5.0,
+      "updated": true
+    },
+    {
+      "ticket_id": 13,
+      "success": true,
+      "analysis": {
+        "summary": "Customer was charged twice for their subscription and requests a refund for the duplicate charge.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 5.17,
+      "updated": true
+    },
+    {
+      "ticket_id": 21,
+      "success": true,
+      "analysis": {
+        "summary": "User reports a bug where the search icon overlaps with text on mobile.",
+        "root_cause": "bug",
+        "urgency": "medium",
+        "sentiment": "positive"
+      },
+      "processing_time": 5.41,
+      "updated": true
+    },
+    {
+      "ticket_id": 14,
+      "success": true,
+      "analysis": {
+        "summary": "Changes made on the mobile app are not syncing with the web version.",
+        "root_cause": "bug",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 5.16,
+      "updated": true
+    },
+    {
+      "ticket_id": 12,
+      "success": true,
+      "analysis": {
+        "summary": "User cannot find the export option to CSV for their data.",
+        "root_cause": "feature",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 5.32,
+      "updated": true
+    },
+    {
+      "ticket_id": 18,
+      "success": true,
+      "analysis": {
+        "summary": "User upgraded to Premium but still has access to free features despite successful payment.",
+        "root_cause": "bug",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 5.89,
+      "updated": true
+    },
+    {
+      "ticket_id": 19,
+      "success": true,
+      "analysis": {
+        "summary": "Request for bulk editing feature to improve efficiency for power users.",
+        "root_cause": "feature",
+        "urgency": "medium",
+        "sentiment": "positive"
+      },
+      "processing_time": 5.38,
+      "updated": true
+    },
+    {
+      "ticket_id": 17,
+      "success": true,
+      "analysis": {
+        "summary": "User's notification emails are consistently landing in the spam folder despite marking them as not spam.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 5.58,
+      "updated": true
+    },
+    {
+      "ticket_id": 16,
+      "success": true,
+      "analysis": {
+        "summary": "User wants to delete their account but cannot find the option on the settings page.",
+        "root_cause": "feature",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 5.44,
+      "updated": true
+    },
+    {
+      "ticket_id": 10,
+      "success": true,
+      "analysis": {
+        "summary": "Customer expressed gratitude for Sarah's quick support in resolving their issue.",
+        "root_cause": "other",
+        "urgency": "low",
+        "sentiment": "positive"
+      },
+      "processing_time": 1.85,
+      "updated": true
+    },
+    {
+      "ticket_id": 11,
+      "success": true,
+      "analysis": {
+        "summary": "The dashboard loading time has increased to over 30 seconds.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.74,
+      "updated": true
+    },
+    {
+      "ticket_id": 4,
+      "success": true,
+      "analysis": {
+        "summary": "User forgot password and did not receive reset email.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.44,
+      "updated": true
+    },
+    {
+      "ticket_id": 9,
+      "success": true,
+      "analysis": {
+        "summary": "User is experiencing issues with Slack notifications not being received after connecting the app.",
+        "root_cause": "bug",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.92,
+      "updated": true
+    },
+    {
+      "ticket_id": 8,
+      "success": true,
+      "analysis": {
+        "summary": "User's account is locked due to password mistypes and needs urgent access.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.76,
+      "updated": true
+    },
+    {
+      "ticket_id": 20,
+      "success": true,
+      "analysis": {
+        "summary": "User experiences a 404 error when accessing Reports after yesterday's system update.",
+        "root_cause": "bug",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.83,
+      "updated": true
+    },
+    {
+      "ticket_id": 6,
+      "success": true,
+      "analysis": {
+        "summary": "Payment failed message received while money was deducted from the bank account.",
+        "root_cause": "bug",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.6,
+      "updated": true
+    },
+    {
+      "ticket_id": 7,
+      "success": true,
+      "analysis": {
+        "summary": "User encounters an error when uploading files larger than 5MB.",
+        "root_cause": "feature",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.84,
+      "updated": true
+    },
+    {
+      "ticket_id": 3,
+      "success": true,
+      "analysis": {
+        "summary": "Customer requests a full refund and cancellation of subscription due to product not meeting needs.",
+        "root_cause": "refund",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.56,
+      "updated": true
+    },
+    {
+      "ticket_id": 5,
+      "success": true,
+      "analysis": {
+        "summary": "User requests a dark mode option for the app to reduce eye strain at night.",
+        "root_cause": "feature",
+        "urgency": "medium",
+        "sentiment": "positive"
+      },
+      "processing_time": 1.79,
+      "updated": true
+    },
+    {
+      "ticket_id": 2,
+      "success": true,
+      "analysis": {
+        "summary": "Mobile app crashes when submitting payment form, preventing purchase.",
+        "root_cause": "bug",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 2.9,
+      "updated": true
+    }
+  ]
+}

@@ -1,0 +1,1775 @@
+2025-11-07 09:36:40,397 | INFO | Starting batch processing (limit: 50)
+2025-11-07 09:36:47,012 | INFO | Processing ticket 522
+2025-11-07 09:36:47,047 | INFO | Processing ticket 521
+2025-11-07 09:36:47,062 | INFO | Processing ticket 520
+2025-11-07 09:36:47,062 | INFO | Processing ticket 519
+2025-11-07 09:36:47,064 | INFO | Processing ticket 518
+2025-11-07 09:36:47,064 | INFO | Processing ticket 517
+2025-11-07 09:36:47,065 | INFO | Processing ticket 516
+2025-11-07 09:36:47,076 | INFO | Processing ticket 515
+2025-11-07 09:36:47,079 | INFO | Processing ticket 514
+2025-11-07 09:36:47,090 | INFO | Processing ticket 513
+2025-11-07 09:36:55,948 | INFO | Ticket 518 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 09:36:55,953 | INFO | Processing ticket 512
+2025-11-07 09:36:58,270 | INFO | Ticket 520 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 09:36:58,270 | INFO | Processing ticket 510
+2025-11-07 09:36:58,867 | INFO | Ticket 515 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:36:58,867 | INFO | Processing ticket 511
+2025-11-07 09:36:59,121 | INFO | Ticket 519 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:36:59,121 | INFO | Processing ticket 509
+2025-11-07 09:36:59,185 | INFO | Ticket 522 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:36:59,185 | INFO | Processing ticket 508
+2025-11-07 09:36:59,190 | INFO | Ticket 513 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 09:36:59,191 | INFO | Processing ticket 507
+2025-11-07 09:36:59,198 | INFO | Ticket 514 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:36:59,200 | INFO | Processing ticket 506
+2025-11-07 09:36:59,229 | INFO | Ticket 516 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 09:36:59,229 | INFO | Processing ticket 505
+2025-11-07 09:36:59,843 | INFO | Ticket 517 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:36:59,877 | INFO | Processing ticket 503
+2025-11-07 09:37:00,429 | INFO | Ticket 512 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-07 09:37:00,429 | INFO | Processing ticket 504
+2025-11-07 09:37:00,443 | INFO | Ticket 521 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 09:37:00,443 | INFO | Processing ticket 502
+2025-11-07 09:37:01,326 | INFO | Ticket 511 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 09:37:01,326 | INFO | Processing ticket 500
+2025-11-07 09:37:01,386 | INFO | Ticket 509 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:37:01,386 | INFO | Processing ticket 499
+2025-11-07 09:37:01,396 | INFO | Ticket 507 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 09:37:01,396 | INFO | Processing ticket 501
+2025-11-07 09:37:01,461 | INFO | Ticket 506 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-07 09:37:01,461 | INFO | Processing ticket 498
+2025-11-07 09:37:01,849 | INFO | Ticket 505 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-07 09:37:01,849 | INFO | Processing ticket 496
+2025-11-07 09:37:02,346 | INFO | Ticket 508 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:37:02,351 | INFO | Processing ticket 497
+2025-11-07 09:37:02,622 | INFO | Ticket 510 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 09:37:02,622 | INFO | Processing ticket 495
+2025-11-07 09:37:02,759 | INFO | Ticket 503 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 09:37:02,760 | INFO | Processing ticket 494
+2025-11-07 09:37:02,797 | INFO | Ticket 502 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 09:37:02,798 | INFO | Processing ticket 492
+2025-11-07 09:37:03,097 | INFO | Ticket 504 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 09:37:03,098 | INFO | Processing ticket 493
+2025-11-07 09:37:03,840 | INFO | Ticket 501 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 09:37:03,840 | INFO | Processing ticket 491
+2025-11-07 09:37:04,196 | INFO | Ticket 496 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:37:04,196 | INFO | Processing ticket 490
+2025-11-07 09:37:04,295 | INFO | Ticket 499 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-07 09:37:04,295 | INFO | Processing ticket 489
+2025-11-07 09:37:04,461 | INFO | Ticket 500 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-07 09:37:04,462 | INFO | Processing ticket 488
+2025-11-07 09:37:04,544 | INFO | Ticket 494 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:37:04,545 | INFO | Processing ticket 487
+2025-11-07 09:37:04,586 | INFO | Ticket 497 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 09:37:04,587 | INFO | Processing ticket 486
+2025-11-07 09:37:04,629 | INFO | Ticket 498 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 09:37:04,629 | INFO | Processing ticket 485
+2025-11-07 09:37:04,805 | INFO | Ticket 495 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:37:04,805 | INFO | Processing ticket 484
+2025-11-07 09:37:05,486 | INFO | Ticket 493 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:37:05,486 | INFO | Processing ticket 483
+2025-11-07 09:37:06,035 | INFO | Ticket 492 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:37:06,035 | INFO | Processing ticket 481
+2025-11-07 09:38:01,347 | INFO | Ticket 490 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:38:01,349 | INFO | Ticket 489 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 09:38:01,350 | INFO | Processing ticket 482
+2025-11-07 09:38:01,351 | INFO | Processing ticket 480
+2025-11-07 09:38:01,366 | INFO | Ticket 491 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 09:38:01,366 | INFO | Processing ticket 479
+2025-11-07 09:38:01,437 | INFO | Ticket 485 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-07 09:38:01,437 | INFO | Processing ticket 477
+2025-11-07 09:38:01,542 | INFO | Ticket 484 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:38:01,543 | INFO | Processing ticket 478
+2025-11-07 09:38:01,741 | INFO | Ticket 483 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 09:38:01,742 | INFO | Processing ticket 476
+2025-11-07 09:38:01,768 | INFO | Ticket 481 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:38:01,769 | INFO | Processing ticket 475
+2025-11-07 09:38:01,782 | INFO | Ticket 486 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:38:01,783 | INFO | Processing ticket 472
+2025-11-07 09:38:01,839 | INFO | Ticket 487 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:38:01,840 | INFO | Processing ticket 474
+2025-11-07 09:38:01,953 | INFO | Ticket 488 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 09:38:03,467 | INFO | Ticket 482 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 09:38:03,497 | INFO | Ticket 480 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 09:38:03,699 | INFO | Ticket 476 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:38:03,786 | INFO | Ticket 479 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 09:38:03,939 | INFO | Ticket 477 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 09:38:03,939 | INFO | Ticket 472 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:38:04,023 | INFO | Ticket 475 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 09:38:04,033 | INFO | Ticket 478 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:38:04,048 | INFO | Ticket 474 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:38:04,137 | INFO | Batch complete: 50/50 | Avg: 3.02s | Total: 83.66s
+2025-11-07 09:57:35,593 | INFO | Starting batch processing (limit: 5)
+2025-11-07 09:57:36,870 | INFO | Processing ticket 477
+2025-11-07 09:57:36,870 | INFO | Processing ticket 472
+2025-11-07 09:57:36,870 | INFO | Redacted 1 credit_card(s)
+2025-11-07 09:57:36,870 | INFO | Redacted 1 ssn(s)
+2025-11-07 09:57:36,870 | INFO | Processing ticket 478
+2025-11-07 09:57:36,870 | INFO | Processing ticket 475
+2025-11-07 09:57:36,870 | INFO | Redacted 1 phone_india(s)
+2025-11-07 09:57:36,870 | INFO | Processing ticket 474
+2025-11-07 09:57:36,870 | INFO | Redacted 1 credit_card(s)
+2025-11-07 09:57:36,870 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 09:57:36,870 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 09:57:36,870 | INFO | Redacted 1 ssn(s)
+2025-11-07 09:57:36,881 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 09:57:40,427 | INFO | Ticket 475 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 09:57:41,427 | INFO | Ticket 474 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:57:41,650 | INFO | Ticket 472 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:57:41,858 | INFO | Ticket 478 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 09:57:41,986 | INFO | Ticket 477 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 09:57:42,003 | INFO | Batch complete: 5/5 | Avg: 2.98s | Total: 6.4s
+2025-11-07 10:04:22,553 | INFO | Starting batch processing (limit: 5)
+2025-11-07 10:04:24,412 | INFO | Processing ticket 477
+2025-11-07 10:04:24,414 | INFO | Processing ticket 478
+2025-11-07 10:04:24,414 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:04:24,414 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:04:24,414 | INFO | Processing ticket 472
+2025-11-07 10:04:24,414 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:04:24,414 | INFO | Processing ticket 474
+2025-11-07 10:04:24,414 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:04:24,414 | INFO | Processing ticket 475
+2025-11-07 10:04:24,414 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:04:24,414 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:04:24,420 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:04:24,420 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:04:24,420 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:04:24,420 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:04:24,420 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:04:24,420 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 10:04:24,420 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'phone_india': 1, 'aadhaar': 1}
+2025-11-07 10:04:27,840 | INFO | Ticket 474 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:04:28,921 | INFO | Ticket 472 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:04:28,933 | INFO | Ticket 475 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:04:29,113 | INFO | Ticket 478 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:04:29,279 | INFO | Ticket 477 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:04:29,289 | INFO | Batch complete: 5/5 | Avg: 2.98s | Total: 6.73s
+2025-11-07 10:06:37,007 | INFO | Starting batch processing (limit: 50)
+2025-11-07 10:06:38,520 | INFO | Processing ticket 477
+2025-11-07 10:06:38,520 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:38,520 | INFO | Processing ticket 472
+2025-11-07 10:06:38,520 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:06:38,520 | INFO | Processing ticket 478
+2025-11-07 10:06:38,520 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:06:38,520 | INFO | Processing ticket 475
+2025-11-07 10:06:38,520 | INFO | Processing ticket 474
+2025-11-07 10:06:38,520 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:38,520 | INFO | Processing ticket 482
+2025-11-07 10:06:38,520 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:06:38,520 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:06:38,520 | INFO | Processing ticket 480
+2025-11-07 10:06:38,520 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:06:38,520 | INFO | Processing ticket 479
+2025-11-07 10:06:38,520 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:06:38,520 | INFO | Processing ticket 476
+2025-11-07 10:06:38,520 | INFO | Processing ticket 488
+2025-11-07 10:06:38,520 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:06:38,520 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:06:38,520 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:06:38,520 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:06:38,520 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:38,531 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:06:38,531 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:38,531 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'phone_india': 1, 'aadhaar': 1}
+2025-11-07 10:06:38,531 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:06:38,531 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 10:06:38,531 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:06:38,531 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:06:38,531 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:06:38,531 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:06:38,531 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:06:42,867 | INFO | Ticket 480 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:06:42,897 | INFO | Processing ticket 487
+2025-11-07 10:06:42,899 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:42,900 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:06:43,720 | INFO | Ticket 482 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:06:43,725 | INFO | Processing ticket 486
+2025-11-07 10:06:43,727 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:43,727 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:06:44,275 | INFO | Ticket 475 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:06:44,275 | INFO | Processing ticket 491
+2025-11-07 10:06:44,275 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:06:44,275 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:06:44,336 | INFO | Ticket 478 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:06:44,336 | INFO | Processing ticket 490
+2025-11-07 10:06:44,339 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:06:44,339 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:06:44,340 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 10:06:44,408 | INFO | Ticket 477 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:06:44,408 | INFO | Processing ticket 489
+2025-11-07 10:06:44,466 | INFO | Ticket 472 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:06:44,466 | INFO | Processing ticket 481
+2025-11-07 10:06:44,466 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:44,466 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:06:44,562 | INFO | Ticket 476 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:06:44,562 | INFO | Processing ticket 485
+2025-11-07 10:06:44,562 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:44,562 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:06:44,626 | INFO | Ticket 479 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:06:44,626 | INFO | Processing ticket 484
+2025-11-07 10:06:44,626 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:06:44,626 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:06:44,626 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 10:06:44,801 | INFO | Ticket 488 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:06:44,801 | INFO | Processing ticket 483
+2025-11-07 10:06:44,801 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:44,801 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:06:44,801 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:06:45,088 | INFO | Ticket 474 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:06:45,088 | INFO | Processing ticket 492
+2025-11-07 10:06:45,088 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:45,088 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:06:45,486 | INFO | Ticket 487 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:06:45,486 | INFO | Processing ticket 493
+2025-11-07 10:06:45,486 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:06:45,488 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:06:45,914 | INFO | Ticket 486 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:06:45,914 | INFO | Processing ticket 500
+2025-11-07 10:06:45,914 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:45,914 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:06:46,417 | INFO | Ticket 481 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:06:46,417 | INFO | Processing ticket 499
+2025-11-07 10:06:46,417 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:46,417 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:06:46,525 | INFO | Ticket 490 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:06:46,525 | INFO | Processing ticket 498
+2025-11-07 10:06:46,525 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:46,525 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:06:46,691 | INFO | Ticket 491 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:06:46,691 | INFO | Processing ticket 496
+2025-11-07 10:06:46,691 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:46,691 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:06:47,000 | INFO | Ticket 492 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:06:47,000 | INFO | Processing ticket 494
+2025-11-07 10:06:47,000 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:06:47,000 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:06:47,047 | INFO | Ticket 484 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:06:47,047 | INFO | Processing ticket 501
+2025-11-07 10:06:47,047 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:47,047 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:06:47,224 | INFO | Ticket 485 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:06:47,224 | INFO | Processing ticket 497
+2025-11-07 10:06:47,224 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:47,224 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:06:47,318 | INFO | Ticket 489 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:06:47,318 | INFO | Processing ticket 495
+2025-11-07 10:06:47,661 | INFO | Ticket 493 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:06:47,661 | INFO | Processing ticket 503
+2025-11-07 10:06:47,661 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:06:47,661 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:06:47,661 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:07:01,194 | INFO | Ticket 494 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:07:01,194 | INFO | Processing ticket 504
+2025-11-07 10:07:01,212 | INFO | Ticket 499 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-07 10:07:01,213 | INFO | Processing ticket 502
+2025-11-07 10:07:01,213 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:07:01,213 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:07:01,215 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:07:01,289 | INFO | Ticket 500 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:07:01,290 | INFO | Processing ticket 510
+2025-11-07 10:07:01,290 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:07:01,291 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:07:01,291 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:07:01,327 | INFO | Ticket 496 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:07:01,328 | INFO | Processing ticket 508
+2025-11-07 10:07:01,329 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:07:01,330 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:07:01,335 | INFO | Ticket 501 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:07:01,335 | INFO | Processing ticket 505
+2025-11-07 10:07:01,336 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:07:01,337 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:07:01,404 | INFO | Ticket 503 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:07:01,404 | INFO | Processing ticket 509
+2025-11-07 10:07:01,405 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:07:01,406 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:07:01,523 | INFO | Ticket 497 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:07:01,524 | INFO | Processing ticket 511
+2025-11-07 10:07:01,526 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:07:01,526 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:07:01,757 | INFO | Ticket 498 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:07:01,758 | INFO | Processing ticket 507
+2025-11-07 10:07:01,759 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:07:01,761 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:07:01,761 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:07:01,874 | INFO | Ticket 495 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:07:01,874 | INFO | Processing ticket 506
+2025-11-07 10:07:01,875 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:07:01,876 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:07:01,877 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:07:01,983 | INFO | Ticket 483 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:07:01,985 | INFO | Processing ticket 512
+2025-11-07 10:07:01,986 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:07:01,988 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:07:03,149 | INFO | Ticket 504 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:07:03,149 | INFO | Processing ticket 521
+2025-11-07 10:07:03,150 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:07:03,151 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:07:03,237 | INFO | Ticket 502 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:07:03,238 | INFO | Processing ticket 517
+2025-11-07 10:07:03,239 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:07:03,240 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:07:03,240 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:07:03,272 | INFO | Ticket 510 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:07:03,272 | INFO | Processing ticket 516
+2025-11-07 10:07:03,274 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:07:03,276 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:07:03,277 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:07:03,333 | INFO | Ticket 509 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:07:03,334 | INFO | Processing ticket 515
+2025-11-07 10:07:03,335 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:07:03,336 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:07:03,415 | INFO | Ticket 508 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:07:03,416 | INFO | Processing ticket 514
+2025-11-07 10:07:03,810 | INFO | Ticket 511 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:07:03,811 | INFO | Processing ticket 513
+2025-11-07 10:07:03,812 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:07:03,813 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:07:04,139 | INFO | Ticket 507 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:07:04,140 | INFO | Processing ticket 522
+2025-11-07 10:07:04,143 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:07:04,144 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:07:04,246 | INFO | Ticket 512 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:07:04,247 | INFO | Processing ticket 519
+2025-11-07 10:07:04,248 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:07:04,248 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:07:04,378 | INFO | Ticket 505 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:07:04,379 | INFO | Processing ticket 520
+2025-11-07 10:07:04,380 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:07:04,381 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:07:04,381 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:07:04,770 | INFO | Ticket 506 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:07:04,771 | INFO | Processing ticket 518
+2025-11-07 10:08:01,305 | INFO | Ticket 518 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:08:01,343 | INFO | Ticket 514 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:08:01,444 | INFO | Ticket 519 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:08:01,604 | INFO | Ticket 522 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:08:01,659 | INFO | Ticket 515 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:08:01,687 | INFO | Ticket 513 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:08:01,699 | INFO | Ticket 520 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:08:01,864 | INFO | Ticket 517 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:08:01,889 | INFO | Ticket 516 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:08:02,147 | INFO | Ticket 521 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:08:02,167 | INFO | Batch complete: 50/50 | Avg: 2.04s | Total: 85.14s
+2025-11-07 10:08:15,389 | INFO | Starting batch processing (limit: 200)
+2025-11-07 10:08:16,615 | INFO | Processing ticket 477
+2025-11-07 10:08:16,615 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:08:16,615 | INFO | Processing ticket 472
+2025-11-07 10:08:16,615 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:08:16,615 | INFO | Processing ticket 478
+2025-11-07 10:08:16,615 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:08:16,615 | INFO | Processing ticket 475
+2025-11-07 10:08:16,615 | INFO | Processing ticket 474
+2025-11-07 10:08:16,615 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:08:16,615 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:08:16,615 | INFO | Processing ticket 482
+2025-11-07 10:08:16,615 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:08:16,615 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:08:16,615 | INFO | Processing ticket 480
+2025-11-07 10:08:16,615 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:08:16,615 | INFO | Processing ticket 479
+2025-11-07 10:08:16,615 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:08:16,615 | INFO | Processing ticket 476
+2025-11-07 10:08:16,615 | INFO | Processing ticket 488
+2025-11-07 10:08:16,631 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:08:16,633 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:08:16,633 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:08:16,633 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:08:16,633 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'phone_india': 1, 'aadhaar': 1}
+2025-11-07 10:08:16,633 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:08:16,633 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:08:16,633 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 10:08:16,633 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:08:16,633 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:08:16,633 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:08:16,633 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:08:16,633 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:08:16,633 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:08:21,065 | INFO | Ticket 478 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:08:21,094 | INFO | Processing ticket 487
+2025-11-07 10:08:21,118 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:08:21,213 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:08:21,810 | INFO | Ticket 474 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:08:21,815 | INFO | Processing ticket 486
+2025-11-07 10:08:21,820 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:08:21,820 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:08:22,007 | INFO | Ticket 476 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:08:22,007 | INFO | Processing ticket 491
+2025-11-07 10:08:22,007 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:08:22,008 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:08:22,072 | INFO | Ticket 480 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:08:22,072 | INFO | Processing ticket 490
+2025-11-07 10:08:22,072 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:08:22,072 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:08:22,072 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 10:08:22,435 | INFO | Ticket 477 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:08:22,443 | INFO | Processing ticket 489
+2025-11-07 10:08:22,478 | INFO | Ticket 479 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:08:22,483 | INFO | Processing ticket 481
+2025-11-07 10:08:22,483 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:08:22,483 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:08:22,509 | INFO | Ticket 475 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:08:22,509 | INFO | Processing ticket 485
+2025-11-07 10:08:22,509 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:08:22,509 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:08:22,626 | INFO | Ticket 472 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:08:22,626 | INFO | Processing ticket 484
+2025-11-07 10:08:22,626 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:08:22,626 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:08:22,626 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 10:08:22,641 | INFO | Ticket 488 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:08:22,641 | INFO | Processing ticket 483
+2025-11-07 10:08:22,641 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:08:22,641 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:08:22,641 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:08:22,740 | INFO | Ticket 482 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:08:22,740 | INFO | Processing ticket 492
+2025-11-07 10:08:22,745 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:08:22,745 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:09:01,162 | INFO | Ticket 492 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:09:01,162 | INFO | Processing ticket 493
+2025-11-07 10:09:01,162 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:09:01,162 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:09:01,195 | INFO | Ticket 491 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-07 10:09:01,195 | INFO | Processing ticket 500
+2025-11-07 10:09:01,195 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:09:01,195 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:09:01,359 | INFO | Ticket 484 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:09:01,359 | INFO | Processing ticket 499
+2025-11-07 10:09:01,359 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:09:01,369 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:09:01,505 | INFO | Ticket 486 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:09:01,507 | INFO | Processing ticket 498
+2025-11-07 10:09:01,507 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:09:01,510 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:09:01,614 | INFO | Ticket 490 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:09:01,614 | INFO | Processing ticket 496
+2025-11-07 10:09:01,614 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:09:01,620 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:09:01,660 | INFO | Ticket 487 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:09:01,660 | INFO | Processing ticket 494
+2025-11-07 10:09:01,660 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:09:01,660 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:09:01,713 | INFO | Ticket 481 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:09:01,719 | INFO | Processing ticket 501
+2025-11-07 10:09:01,719 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:09:01,719 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:09:01,836 | INFO | Ticket 483 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:09:01,836 | INFO | Processing ticket 497
+2025-11-07 10:09:01,836 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:09:01,836 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:09:02,019 | INFO | Ticket 485 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:09:02,028 | INFO | Processing ticket 495
+2025-11-07 10:09:02,044 | INFO | Ticket 489 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:09:02,044 | INFO | Processing ticket 503
+2025-11-07 10:09:02,051 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:09:02,052 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:09:02,052 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:09:03,567 | INFO | Ticket 493 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:09:03,567 | INFO | Processing ticket 504
+2025-11-07 10:09:03,607 | INFO | Ticket 496 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:09:03,607 | INFO | Processing ticket 502
+2025-11-07 10:09:03,607 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:09:03,614 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:09:03,614 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:09:03,632 | INFO | Ticket 499 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:09:03,632 | INFO | Processing ticket 510
+2025-11-07 10:09:03,632 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:09:03,632 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:09:03,632 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:09:03,728 | INFO | Ticket 494 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:09:03,728 | INFO | Processing ticket 508
+2025-11-07 10:09:03,728 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:09:03,728 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:09:03,854 | INFO | Ticket 500 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-07 10:09:03,854 | INFO | Processing ticket 505
+2025-11-07 10:09:03,854 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:09:03,854 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:09:03,933 | INFO | Ticket 498 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:09:03,933 | INFO | Processing ticket 509
+2025-11-07 10:09:03,933 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:09:03,933 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:09:04,273 | INFO | Ticket 497 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:09:04,273 | INFO | Processing ticket 511
+2025-11-07 10:09:04,273 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:09:04,273 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:09:04,429 | INFO | Ticket 495 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:09:04,429 | INFO | Processing ticket 507
+2025-11-07 10:09:04,429 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:09:04,429 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:09:04,442 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:09:04,557 | INFO | Ticket 501 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:09:04,557 | INFO | Processing ticket 506
+2025-11-07 10:09:04,557 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:09:04,573 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:09:04,573 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:09:04,941 | INFO | Ticket 503 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:09:04,941 | INFO | Processing ticket 512
+2025-11-07 10:09:04,941 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:09:04,941 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:10:01,186 | INFO | Ticket 508 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:10:01,186 | INFO | Processing ticket 521
+2025-11-07 10:10:01,186 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:10:01,186 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:10:01,473 | INFO | Ticket 505 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:10:01,473 | INFO | Processing ticket 517
+2025-11-07 10:10:01,473 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:10:01,473 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:10:01,473 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:10:01,633 | INFO | Ticket 509 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:10:01,633 | INFO | Processing ticket 516
+2025-11-07 10:10:01,633 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:10:01,633 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:10:01,633 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:10:01,779 | INFO | Ticket 511 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:10:01,779 | INFO | Processing ticket 515
+2025-11-07 10:10:01,779 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:10:01,779 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:10:01,873 | INFO | Ticket 507 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:10:01,873 | INFO | Ticket 502 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:10:01,873 | INFO | Ticket 512 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-07 10:10:01,873 | INFO | Processing ticket 514
+2025-11-07 10:10:01,873 | INFO | Processing ticket 513
+2025-11-07 10:10:01,873 | INFO | Processing ticket 522
+2025-11-07 10:10:01,873 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:10:01,873 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:10:01,873 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:10:01,873 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:10:01,916 | INFO | Ticket 510 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:10:01,916 | INFO | Processing ticket 519
+2025-11-07 10:10:01,916 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:10:01,916 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:10:02,005 | INFO | Ticket 504 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:10:02,005 | INFO | Processing ticket 520
+2025-11-07 10:10:02,005 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:10:02,005 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:10:02,005 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:10:02,055 | INFO | Ticket 506 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:10:02,055 | INFO | Processing ticket 518
+2025-11-07 10:10:03,318 | INFO | Ticket 521 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:10:03,318 | INFO | Processing ticket 473
+2025-11-07 10:10:03,318 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:10:03,318 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:10:03,776 | INFO | Ticket 515 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:10:03,776 | INFO | Processing ticket 471
+2025-11-07 10:10:03,776 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:10:03,776 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:10:03,776 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:10:04,096 | INFO | Ticket 520 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:10:04,096 | INFO | Processing ticket 468
+2025-11-07 10:10:04,096 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:10:04,096 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:10:04,096 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 10:10:04,111 | INFO | Ticket 517 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:10:04,111 | INFO | Processing ticket 466
+2025-11-07 10:10:04,111 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:10:04,111 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:10:04,176 | INFO | Ticket 516 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:10:04,176 | INFO | Processing ticket 470
+2025-11-07 10:10:04,176 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:10:04,176 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:10:04,223 | INFO | Ticket 522 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:10:04,223 | INFO | Processing ticket 469
+2025-11-07 10:10:04,223 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:10:04,223 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:10:04,256 | INFO | Ticket 519 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:10:04,256 | INFO | Processing ticket 467
+2025-11-07 10:10:04,256 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:10:04,256 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:10:04,288 | INFO | Ticket 513 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:10:04,288 | INFO | Processing ticket 464
+2025-11-07 10:10:04,288 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:10:04,288 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:10:04,400 | INFO | Ticket 514 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:10:04,415 | INFO | Processing ticket 462
+2025-11-07 10:10:04,415 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:10:04,417 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:10:04,481 | INFO | Ticket 518 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:10:04,481 | INFO | Processing ticket 465
+2025-11-07 10:10:04,481 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:10:04,481 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:10:04,483 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:11:01,158 | INFO | Ticket 465 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:11:01,158 | INFO | Processing ticket 463
+2025-11-07 10:11:01,158 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:11:01,171 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:11:01,197 | INFO | Ticket 471 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:11:01,197 | INFO | Processing ticket 459
+2025-11-07 10:11:01,197 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:11:01,197 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:11:01,197 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:11:01,286 | INFO | Ticket 470 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:11:01,286 | INFO | Processing ticket 456
+2025-11-07 10:11:01,302 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:11:01,302 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:11:01,382 | INFO | Ticket 462 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:11:01,382 | INFO | Processing ticket 461
+2025-11-07 10:11:01,382 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:11:01,398 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:11:01,558 | INFO | Ticket 469 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:11:01,558 | INFO | Processing ticket 460
+2025-11-07 10:11:01,558 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:11:01,558 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:11:01,749 | INFO | Ticket 466 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:11:01,749 | INFO | Processing ticket 458
+2025-11-07 10:11:01,749 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:11:01,749 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:11:01,749 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 10:11:01,877 | INFO | Ticket 464 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:11:01,891 | INFO | Processing ticket 457
+2025-11-07 10:11:01,892 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:11:01,892 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:11:01,892 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:11:01,939 | INFO | Ticket 468 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:11:01,939 | INFO | Processing ticket 455
+2025-11-07 10:11:01,939 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:11:01,939 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:11:02,052 | INFO | Ticket 467 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:11:02,052 | INFO | Processing ticket 452
+2025-11-07 10:11:02,070 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:11:02,070 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:11:02,070 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:11:02,116 | INFO | Ticket 473 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:11:02,116 | INFO | Processing ticket 453
+2025-11-07 10:11:02,116 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:11:02,116 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:11:02,116 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:11:02,116 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1, 'phone_india': 1}
+2025-11-07 10:11:03,270 | INFO | Ticket 461 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:11:03,272 | INFO | Processing ticket 451
+2025-11-07 10:11:03,273 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:11:03,274 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:11:03,274 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:11:03,368 | INFO | Ticket 456 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:11:03,368 | INFO | Processing ticket 454
+2025-11-07 10:11:03,368 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:11:03,368 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:11:03,523 | INFO | Ticket 463 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:11:03,523 | INFO | Processing ticket 450
+2025-11-07 10:11:03,523 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:11:03,523 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:11:03,539 | INFO | Ticket 459 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:11:03,539 | INFO | Processing ticket 445
+2025-11-07 10:11:03,539 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:11:03,539 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:11:03,684 | INFO | Ticket 458 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:11:03,684 | INFO | Processing ticket 448
+2025-11-07 10:11:03,861 | INFO | Ticket 460 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:11:03,861 | INFO | Processing ticket 441
+2025-11-07 10:11:03,861 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:11:03,861 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:11:04,021 | INFO | Ticket 452 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:11:04,021 | INFO | Processing ticket 449
+2025-11-07 10:11:04,021 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:11:04,021 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:11:04,021 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:11:04,035 | INFO | Ticket 453 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:11:04,035 | INFO | Processing ticket 447
+2025-11-07 10:11:04,035 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:11:04,035 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:11:04,035 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:11:04,115 | INFO | Ticket 455 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:11:04,115 | INFO | Processing ticket 446
+2025-11-07 10:11:04,291 | INFO | Ticket 457 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:11:04,291 | INFO | Processing ticket 443
+2025-11-07 10:11:04,291 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:11:04,291 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:11:04,291 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:12:01,219 | INFO | Ticket 449 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:12:01,219 | INFO | Processing ticket 442
+2025-11-07 10:12:01,219 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:12:01,221 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:12:01,221 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:12:01,221 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1, 'phone_india': 1}
+2025-11-07 10:12:01,345 | INFO | Ticket 445 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:12:01,345 | INFO | Processing ticket 444
+2025-11-07 10:12:01,345 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:12:01,345 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:12:01,345 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 10:12:01,401 | INFO | Ticket 441 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:12:01,401 | INFO | Processing ticket 277
+2025-11-07 10:12:01,401 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:12:01,401 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:12:01,431 | INFO | Ticket 447 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:12:01,431 | INFO | Processing ticket 439
+2025-11-07 10:12:01,431 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:12:01,431 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:12:01,541 | INFO | Ticket 446 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:12:01,543 | INFO | Processing ticket 435
+2025-11-07 10:12:01,544 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:12:01,544 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:12:01,731 | INFO | Ticket 443 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:12:01,731 | INFO | Processing ticket 289
+2025-11-07 10:12:01,759 | INFO | Ticket 448 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:12:01,759 | INFO | Processing ticket 440
+2025-11-07 10:12:01,759 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:12:01,761 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:12:01,761 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:12:01,761 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1, 'phone_india': 1}
+2025-11-07 10:12:01,911 | INFO | Ticket 451 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:12:01,911 | INFO | Processing ticket 285
+2025-11-07 10:12:01,911 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:12:01,911 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:12:01,914 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:12:02,051 | INFO | Ticket 454 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:12:02,052 | INFO | Processing ticket 281
+2025-11-07 10:12:02,052 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:12:02,053 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:12:02,053 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:12:02,211 | INFO | Ticket 450 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:12:02,211 | INFO | Processing ticket 267
+2025-11-07 10:12:02,211 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:12:02,211 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:12:03,515 | INFO | Ticket 435 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:12:03,524 | INFO | Processing ticket 438
+2025-11-07 10:12:03,524 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:12:03,524 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:12:03,610 | INFO | Ticket 444 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:12:03,610 | INFO | Processing ticket 437
+2025-11-07 10:12:03,659 | INFO | Ticket 440 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:12:03,659 | INFO | Processing ticket 434
+2025-11-07 10:12:03,659 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:12:03,659 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:12:03,690 | INFO | Ticket 442 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:12:03,691 | INFO | Processing ticket 433
+2025-11-07 10:12:03,691 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:12:03,692 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:12:03,770 | INFO | Ticket 439 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:12:03,780 | INFO | Processing ticket 380
+2025-11-07 10:12:03,780 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:12:03,780 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:12:04,002 | INFO | Ticket 281 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:12:04,002 | INFO | Processing ticket 409
+2025-11-07 10:12:04,002 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:12:04,002 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:12:04,090 | INFO | Ticket 289 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:12:04,090 | INFO | Ticket 277 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:12:04,090 | INFO | Processing ticket 251
+2025-11-07 10:12:04,090 | INFO | Processing ticket 436
+2025-11-07 10:12:04,101 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:12:04,101 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:12:04,101 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:12:04,101 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:12:04,101 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:12:04,106 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1, 'phone_india': 1}
+2025-11-07 10:12:04,343 | INFO | Ticket 285 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:12:04,343 | INFO | Processing ticket 432
+2025-11-07 10:12:04,343 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:12:04,343 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:12:04,347 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 10:12:04,634 | INFO | Ticket 267 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:12:04,634 | INFO | Processing ticket 403
+2025-11-07 10:12:04,634 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:12:04,641 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:12:04,641 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:13:01,235 | INFO | Ticket 403 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:13:01,545 | INFO | Ticket 432 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:13:01,570 | INFO | Ticket 409 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:13:01,758 | INFO | Ticket 251 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:13:01,794 | INFO | Ticket 436 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:13:01,794 | INFO | Ticket 438 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:13:02,034 | INFO | Ticket 380 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:13:02,065 | INFO | Ticket 437 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:13:02,100 | INFO | Ticket 433 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:13:02,151 | INFO | Ticket 434 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-07 10:13:02,161 | INFO | Batch complete: 100/100 | Avg: 1.8s | Total: 286.76s
+2025-11-07 10:15:26,392 | INFO | Starting batch processing (limit: 50)
+2025-11-07 10:15:27,835 | INFO | Processing ticket 438
+2025-11-07 10:15:27,835 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:27,835 | INFO | Processing ticket 437
+2025-11-07 10:15:27,837 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:15:27,837 | INFO | Processing ticket 434
+2025-11-07 10:15:27,838 | INFO | Processing ticket 433
+2025-11-07 10:15:27,838 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:27,838 | INFO | Processing ticket 380
+2025-11-07 10:15:27,839 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:15:27,839 | INFO | Processing ticket 436
+2025-11-07 10:15:27,840 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:15:27,840 | INFO | Processing ticket 409
+2025-11-07 10:15:27,841 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:27,841 | INFO | Processing ticket 251
+2025-11-07 10:15:27,842 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:15:27,842 | INFO | Processing ticket 432
+2025-11-07 10:15:27,842 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:27,843 | INFO | Processing ticket 403
+2025-11-07 10:15:27,844 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:27,844 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:15:27,845 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:27,845 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:15:27,846 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:15:27,846 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:27,847 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:15:27,850 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:15:27,852 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:15:27,854 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:15:27,855 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:15:27,859 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 10:15:27,860 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:15:27,860 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1, 'phone_india': 1}
+2025-11-07 10:15:33,266 | INFO | Ticket 403 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:15:33,266 | INFO | Processing ticket 277
+2025-11-07 10:15:33,266 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:15:33,266 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:15:34,977 | INFO | Ticket 437 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:15:34,977 | INFO | Processing ticket 289
+2025-11-07 10:15:35,151 | INFO | Ticket 380 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:15:35,152 | INFO | Processing ticket 285
+2025-11-07 10:15:35,152 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:35,152 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:15:35,152 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:15:35,167 | INFO | Ticket 434 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-07 10:15:35,168 | INFO | Processing ticket 281
+2025-11-07 10:15:35,168 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:35,168 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:15:35,168 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:15:35,172 | INFO | Ticket 438 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:15:35,172 | INFO | Processing ticket 267
+2025-11-07 10:15:35,172 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:15:35,172 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:15:35,242 | INFO | Ticket 432 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:15:35,242 | INFO | Processing ticket 439
+2025-11-07 10:15:35,242 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:15:35,242 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:15:35,327 | INFO | Ticket 251 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:15:35,328 | INFO | Processing ticket 435
+2025-11-07 10:15:35,328 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:15:35,328 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:15:35,396 | INFO | Ticket 409 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:15:35,396 | INFO | Processing ticket 440
+2025-11-07 10:15:35,399 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:35,402 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:15:35,403 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:15:35,403 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1, 'phone_india': 1}
+2025-11-07 10:15:35,512 | INFO | Ticket 436 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:15:35,513 | INFO | Processing ticket 442
+2025-11-07 10:15:35,513 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:35,513 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:15:35,515 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:15:35,516 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1, 'phone_india': 1}
+2025-11-07 10:15:35,783 | INFO | Ticket 433 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:15:35,785 | INFO | Processing ticket 444
+2025-11-07 10:15:35,785 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:15:35,785 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:15:35,785 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 10:15:36,371 | INFO | Ticket 277 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:15:36,372 | INFO | Processing ticket 451
+2025-11-07 10:15:36,372 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:36,372 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:15:36,372 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:15:37,155 | INFO | Ticket 439 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:15:37,155 | INFO | Processing ticket 454
+2025-11-07 10:15:37,156 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:37,156 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:15:37,223 | INFO | Ticket 281 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:15:37,224 | INFO | Processing ticket 450
+2025-11-07 10:15:37,224 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:15:37,224 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:15:37,316 | INFO | Ticket 289 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:15:37,317 | INFO | Processing ticket 445
+2025-11-07 10:15:37,317 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:37,317 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:15:37,922 | INFO | Ticket 442 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:15:37,923 | INFO | Processing ticket 448
+2025-11-07 10:15:38,133 | INFO | Ticket 267 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:15:38,134 | INFO | Processing ticket 441
+2025-11-07 10:15:38,134 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:38,134 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:15:39,169 | INFO | Ticket 285 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:15:39,169 | INFO | Processing ticket 449
+2025-11-07 10:15:39,169 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:39,169 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:15:39,169 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:15:39,299 | INFO | Ticket 454 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:15:39,299 | INFO | Processing ticket 447
+2025-11-07 10:15:39,301 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:39,301 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:15:39,301 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:15:39,372 | INFO | Ticket 445 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:15:39,373 | INFO | Processing ticket 446
+2025-11-07 10:15:39,520 | INFO | Ticket 450 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-07 10:15:39,520 | INFO | Processing ticket 443
+2025-11-07 10:15:39,520 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:15:39,520 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:15:39,520 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:16:01,290 | INFO | Ticket 435 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:16:01,290 | INFO | Processing ticket 452
+2025-11-07 10:16:01,290 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:16:01,290 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:16:01,290 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:16:01,382 | INFO | Ticket 443 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:16:01,383 | INFO | Processing ticket 460
+2025-11-07 10:16:01,383 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:16:01,383 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:16:01,423 | INFO | Ticket 444 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:16:01,423 | INFO | Processing ticket 453
+2025-11-07 10:16:01,424 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:16:01,424 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:16:01,424 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:16:01,424 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1, 'phone_india': 1}
+2025-11-07 10:16:01,635 | INFO | Ticket 449 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:16:01,635 | INFO | Processing ticket 457
+2025-11-07 10:16:01,635 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:16:01,635 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:16:01,635 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:16:01,669 | INFO | Ticket 441 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:16:01,669 | INFO | Processing ticket 455
+2025-11-07 10:16:01,669 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:16:01,669 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:16:01,690 | INFO | Ticket 448 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:16:01,690 | INFO | Processing ticket 459
+2025-11-07 10:16:01,690 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:16:01,690 | INFO | Redacted 1 phone_india(s)
+2025-11-07 10:16:01,690 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 10:16:01,900 | INFO | Ticket 451 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:16:01,901 | INFO | Processing ticket 456
+2025-11-07 10:16:01,901 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:16:01,901 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:16:01,907 | INFO | Ticket 440 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:16:01,907 | INFO | Processing ticket 461
+2025-11-07 10:16:01,908 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:16:01,908 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:16:01,927 | INFO | Ticket 446 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:16:01,927 | INFO | Processing ticket 458
+2025-11-07 10:16:01,928 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:16:01,928 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:16:01,928 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 10:16:01,995 | INFO | Ticket 447 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:16:01,995 | INFO | Processing ticket 463
+2025-11-07 10:16:01,997 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:16:01,997 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:16:03,408 | INFO | Ticket 452 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:16:03,409 | INFO | Processing ticket 468
+2025-11-07 10:16:03,409 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:16:03,409 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:16:03,409 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 10:16:03,854 | INFO | Ticket 456 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:16:03,854 | INFO | Processing ticket 464
+2025-11-07 10:16:03,854 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:16:03,855 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:16:04,118 | INFO | Ticket 463 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-07 10:16:04,118 | INFO | Processing ticket 473
+2025-11-07 10:16:04,118 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 10:16:04,118 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 10:16:04,433 | INFO | Ticket 457 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:16:04,433 | INFO | Processing ticket 467
+2025-11-07 10:16:04,433 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:16:04,433 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:16:04,528 | INFO | Ticket 460 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:16:04,529 | INFO | Processing ticket 466
+2025-11-07 10:16:04,529 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:16:04,529 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:16:04,712 | INFO | Ticket 461 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:16:04,712 | INFO | Processing ticket 462
+2025-11-07 10:16:04,712 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:16:04,712 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:16:04,856 | INFO | Ticket 453 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:16:04,856 | INFO | Processing ticket 471
+2025-11-07 10:16:04,856 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:16:04,856 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:16:04,856 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:16:05,183 | INFO | Ticket 458 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:16:05,183 | INFO | Processing ticket 470
+2025-11-07 10:16:05,183 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:16:05,183 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:16:05,592 | INFO | Ticket 468 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:16:05,592 | INFO | Processing ticket 469
+2025-11-07 10:16:05,593 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:16:05,593 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 10:16:05,960 | INFO | Ticket 464 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:16:05,960 | INFO | Processing ticket 465
+2025-11-07 10:16:05,960 | INFO | Redacted 1 credit_card(s)
+2025-11-07 10:16:05,960 | INFO | Redacted 1 ssn(s)
+2025-11-07 10:16:05,961 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 10:17:01,272 | INFO | Ticket 473 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:17:01,333 | INFO | Ticket 465 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:17:01,339 | INFO | Ticket 466 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:17:01,544 | INFO | Ticket 471 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_neutral']
+2025-11-07 10:17:01,565 | INFO | Ticket 462 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:17:01,658 | INFO | Ticket 455 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:17:01,733 | INFO | Ticket 470 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:17:01,933 | INFO | Ticket 469 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:17:01,970 | INFO | Ticket 467 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-07 10:17:02,103 | INFO | Ticket 459 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-07 10:17:02,115 | INFO | Batch complete: 50/50 | Avg: 2.61s | Total: 95.71s
+2025-11-07 14:52:06,545 | INFO | Starting batch processing (limit: 50)
+2025-11-07 14:52:06,581 | WARNING | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000249F4B360C0>: Failed to resolve 'cognizant-72363.zendesk.com' ([Errno 11001] getaddrinfo failed)")': /api/v2/search.json?query=type%3Aticket&sort_by=updated_at&sort_order=desc
+2025-11-07 14:52:08,584 | WARNING | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000249F4D14800>: Failed to resolve 'cognizant-72363.zendesk.com' ([Errno 11001] getaddrinfo failed)")': /api/v2/search.json?query=type%3Aticket&sort_by=updated_at&sort_order=desc
+2025-11-07 14:52:12,588 | WARNING | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000249F4D147A0>: Failed to resolve 'cognizant-72363.zendesk.com' ([Errno 11001] getaddrinfo failed)")': /api/v2/search.json?query=type%3Aticket&sort_by=updated_at&sort_order=desc
+2025-11-07 14:52:12,591 | CRITICAL | Failed to fetch tickets: HTTPSConnectionPool(host='cognizant-72363.zendesk.com', port=443): Max retries exceeded with url: /api/v2/search.json?query=type%3Aticket&sort_by=updated_at&sort_order=desc (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000249F4D14D10>: Failed to resolve 'cognizant-72363.zendesk.com' ([Errno 11001] getaddrinfo failed)"))
+2025-11-07 16:01:27,443 | INFO | Starting batch processing (limit: 100, industry: auto-detect)
+2025-11-07 16:01:28,772 | INFO | Processing ticket 506
+2025-11-07 16:01:28,772 | INFO | Processing ticket 510
+2025-11-07 16:01:28,772 | INFO | Detected industry: general
+2025-11-07 16:01:28,772 | INFO | Processing ticket 507
+2025-11-07 16:01:28,772 | INFO | Detected industry: ecommerce
+2025-11-07 16:01:28,772 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:28,772 | INFO | Processing ticket 459
+2025-11-07 16:01:28,772 | INFO | Processing ticket 469
+2025-11-07 16:01:28,772 | INFO | Detected industry: ecommerce
+2025-11-07 16:01:28,772 | INFO | Processing ticket 467
+2025-11-07 16:01:28,772 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:28,772 | INFO | Processing ticket 466
+2025-11-07 16:01:28,772 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:01:28,772 | INFO | Processing ticket 462
+2025-11-07 16:01:28,772 | INFO | Detected industry: saas
+2025-11-07 16:01:28,772 | INFO | Processing ticket 473
+2025-11-07 16:01:28,772 | INFO | Detected industry: general
+2025-11-07 16:01:28,772 | INFO | Processing ticket 471
+2025-11-07 16:01:28,785 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:28,785 | INFO | Detected industry: general
+2025-11-07 16:01:28,785 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:01:28,785 | INFO | Detected industry: general
+2025-11-07 16:01:28,785 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:01:28,785 | INFO | Detected industry: saas
+2025-11-07 16:01:28,785 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:28,785 | INFO | Detected industry: saas
+2025-11-07 16:01:28,785 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:28,785 | INFO | Detected industry: ecommerce
+2025-11-07 16:01:28,785 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:01:28,785 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:28,785 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:01:28,785 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:28,785 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:28,785 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:01:28,785 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:01:28,785 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:01:28,785 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:28,785 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:01:28,792 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:01:28,792 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:01:28,792 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:01:28,792 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:01:28,792 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:01:28,792 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:01:28,801 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:01:34,476 | INFO | Ticket 473 updated with tags: ['ai_processed', 'ai_user_management', 'ai_medium', 'ai_neutral']
+2025-11-07 16:01:34,497 | INFO | Processing ticket 470
+2025-11-07 16:01:34,499 | INFO | Detected industry: saas
+2025-11-07 16:01:34,501 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:34,501 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:01:35,507 | INFO | Ticket 462 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_medium', 'ai_neutral']
+2025-11-07 16:01:35,507 | INFO | Processing ticket 465
+2025-11-07 16:01:35,507 | INFO | Detected industry: ecommerce
+2025-11-07 16:01:35,507 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:35,507 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:01:35,507 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:01:35,796 | INFO | Ticket 471 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:01:35,796 | INFO | Processing ticket 455
+2025-11-07 16:01:35,796 | INFO | Detected industry: general
+2025-11-07 16:01:35,796 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:35,799 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:01:35,926 | INFO | Ticket 467 updated with tags: ['ai_processed', 'ai_billing', 'ai_high', 'ai_negative']
+2025-11-07 16:01:35,932 | INFO | Processing ticket 464
+2025-11-07 16:01:35,932 | INFO | Detected industry: saas
+2025-11-07 16:01:35,932 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:01:35,932 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:01:36,002 | INFO | Ticket 466 updated with tags: ['ai_processed', 'ai_billing', 'ai_high', 'ai_negative']
+2025-11-07 16:01:36,002 | INFO | Processing ticket 468
+2025-11-07 16:01:36,002 | INFO | Detected industry: general
+2025-11-07 16:01:36,019 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:01:36,019 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:01:36,019 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 16:01:36,019 | INFO | Ticket 506 updated with tags: ['ai_processed', 'ai_billing', 'ai_medium', 'ai_neutral']
+2025-11-07 16:01:36,019 | INFO | Ticket 507 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:01:36,019 | INFO | Processing ticket 458
+2025-11-07 16:01:36,019 | INFO | Processing ticket 453
+2025-11-07 16:01:36,019 | INFO | Detected industry: general
+2025-11-07 16:01:36,019 | INFO | Detected industry: ecommerce
+2025-11-07 16:01:36,019 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:01:36,019 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:36,019 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:01:36,019 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:01:36,019 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 16:01:36,019 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:01:36,019 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1, 'phone_india': 1}
+2025-11-07 16:01:36,036 | INFO | Ticket 459 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_medium', 'ai_negative']
+2025-11-07 16:01:36,036 | INFO | Processing ticket 461
+2025-11-07 16:01:36,036 | INFO | Detected industry: saas
+2025-11-07 16:01:36,036 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:01:36,036 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:01:36,050 | INFO | Ticket 510 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:01:36,050 | INFO | Processing ticket 460
+2025-11-07 16:01:36,050 | INFO | Detected industry: general
+2025-11-07 16:01:36,050 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:36,050 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:01:36,246 | INFO | Ticket 469 updated with tags: ['ai_processed', 'ai_billing', 'ai_high', 'ai_negative']
+2025-11-07 16:01:36,246 | INFO | Processing ticket 463
+2025-11-07 16:01:36,246 | INFO | Detected industry: ecommerce
+2025-11-07 16:01:36,246 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:36,246 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:01:37,857 | INFO | Ticket 470 updated with tags: ['ai_processed', 'ai_bug_report', 'ai_medium', 'ai_neutral']
+2025-11-07 16:01:37,857 | INFO | Processing ticket 457
+2025-11-07 16:01:37,857 | INFO | Detected industry: ecommerce
+2025-11-07 16:01:37,857 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:37,857 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:01:37,857 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:01:38,049 | INFO | Ticket 455 updated with tags: ['ai_processed', 'ai_billing', 'ai_medium', 'ai_neutral']
+2025-11-07 16:01:38,049 | INFO | Processing ticket 456
+2025-11-07 16:01:38,049 | INFO | Detected industry: saas
+2025-11-07 16:01:38,049 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:01:38,049 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:01:38,162 | INFO | Ticket 461 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:01:38,162 | INFO | Processing ticket 452
+2025-11-07 16:01:38,177 | INFO | Detected industry: ecommerce
+2025-11-07 16:01:38,178 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:38,178 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:01:38,178 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:01:38,275 | INFO | Ticket 460 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:01:38,275 | INFO | Processing ticket 440
+2025-11-07 16:01:38,276 | INFO | Detected industry: ecommerce
+2025-11-07 16:01:38,278 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:38,279 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:01:38,279 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:01:38,279 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1, 'phone_india': 1}
+2025-11-07 16:01:38,589 | INFO | Ticket 453 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:01:38,589 | INFO | Processing ticket 451
+2025-11-07 16:01:38,589 | INFO | Detected industry: ecommerce
+2025-11-07 16:01:38,589 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:38,595 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:01:38,596 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:01:38,597 | INFO | Ticket 464 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:01:38,597 | INFO | Processing ticket 447
+2025-11-07 16:01:38,597 | INFO | Detected industry: ecommerce
+2025-11-07 16:01:38,597 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:38,597 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:01:38,597 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:01:38,914 | INFO | Ticket 465 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:01:38,929 | INFO | Processing ticket 446
+2025-11-07 16:01:38,929 | INFO | Detected industry: general
+2025-11-07 16:01:38,963 | INFO | Ticket 458 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:01:38,978 | INFO | Processing ticket 448
+2025-11-07 16:01:38,978 | INFO | Detected industry: general
+2025-11-07 16:01:39,025 | INFO | Ticket 463 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_medium', 'ai_negative']
+2025-11-07 16:01:39,025 | INFO | Processing ticket 441
+2025-11-07 16:01:39,025 | INFO | Detected industry: general
+2025-11-07 16:01:39,025 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:01:39,025 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:01:40,241 | INFO | Ticket 452 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:01:40,241 | INFO | Processing ticket 435
+2025-11-07 16:01:40,241 | INFO | Detected industry: saas
+2025-11-07 16:01:40,241 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:01:40,241 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:02:01,408 | INFO | Ticket 435 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_medium', 'ai_negative']
+2025-11-07 16:02:01,408 | INFO | Processing ticket 449
+2025-11-07 16:02:01,408 | INFO | Detected industry: ecommerce
+2025-11-07 16:02:01,408 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:02:01,408 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:02:01,408 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:02:01,490 | INFO | Ticket 451 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_medium', 'ai_negative']
+2025-11-07 16:02:01,490 | INFO | Processing ticket 443
+2025-11-07 16:02:01,490 | INFO | Detected industry: ecommerce
+2025-11-07 16:02:01,490 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:02:01,490 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:02:01,490 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:02:01,503 | INFO | Ticket 456 updated with tags: ['ai_processed', 'ai_user_management', 'ai_medium', 'ai_neutral']
+2025-11-07 16:02:01,503 | INFO | Processing ticket 444
+2025-11-07 16:02:01,503 | INFO | Detected industry: general
+2025-11-07 16:02:01,503 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:02:01,503 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:02:01,503 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 16:02:01,615 | INFO | Ticket 468 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:02:01,615 | INFO | Processing ticket 445
+2025-11-07 16:02:01,615 | INFO | Detected industry: ecommerce
+2025-11-07 16:02:01,615 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:02:01,615 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:02:01,790 | INFO | Ticket 457 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:02:01,790 | INFO | Processing ticket 285
+2025-11-07 16:02:01,790 | INFO | Detected industry: ecommerce
+2025-11-07 16:02:01,790 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:02:01,790 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:02:01,790 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:02:01,876 | INFO | Ticket 448 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:02:01,876 | INFO | Processing ticket 454
+2025-11-07 16:02:01,876 | INFO | Detected industry: saas
+2025-11-07 16:02:01,876 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:02:01,876 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:02:02,171 | INFO | Ticket 441 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:02:02,171 | INFO | Processing ticket 450
+2025-11-07 16:02:02,171 | INFO | Detected industry: saas
+2025-11-07 16:02:02,171 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:02:02,171 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:02:02,177 | INFO | Ticket 440 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:02:02,177 | INFO | Processing ticket 267
+2025-11-07 16:02:02,177 | INFO | Detected industry: saas
+2025-11-07 16:02:02,177 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:02:02,177 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:02:02,239 | INFO | Ticket 446 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_negative']
+2025-11-07 16:02:02,239 | INFO | Processing ticket 442
+2025-11-07 16:02:02,239 | INFO | Detected industry: ecommerce
+2025-11-07 16:02:02,239 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:02:02,239 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:02:02,239 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:02:02,239 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1, 'phone_india': 1}
+2025-11-07 16:02:02,250 | INFO | Ticket 447 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:02:02,250 | INFO | Processing ticket 439
+2025-11-07 16:02:02,250 | INFO | Detected industry: saas
+2025-11-07 16:02:02,250 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:02:02,250 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:02:03,767 | INFO | Ticket 443 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:02:03,767 | INFO | Processing ticket 289
+2025-11-07 16:02:03,767 | INFO | Detected industry: general
+2025-11-07 16:02:04,199 | INFO | Ticket 267 updated with tags: ['ai_processed', 'ai_user_management', 'ai_medium', 'ai_neutral']
+2025-11-07 16:02:04,214 | INFO | Processing ticket 281
+2025-11-07 16:02:04,215 | INFO | Detected industry: general
+2025-11-07 16:02:04,216 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:02:04,216 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:02:04,216 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:02:04,279 | INFO | Ticket 454 updated with tags: ['ai_processed', 'ai_bug_report', 'ai_medium', 'ai_neutral']
+2025-11-07 16:02:04,279 | INFO | Processing ticket 277
+2025-11-07 16:02:04,279 | INFO | Detected industry: saas
+2025-11-07 16:02:04,279 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:02:04,279 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:02:04,327 | INFO | Ticket 445 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_medium', 'ai_negative']
+2025-11-07 16:02:04,327 | INFO | Processing ticket 438
+2025-11-07 16:02:04,327 | INFO | Detected industry: general
+2025-11-07 16:02:04,327 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:02:04,327 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:02:04,343 | INFO | Ticket 449 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_medium', 'ai_negative']
+2025-11-07 16:02:04,343 | INFO | Processing ticket 437
+2025-11-07 16:02:04,343 | INFO | Detected industry: general
+2025-11-07 16:02:04,390 | INFO | Ticket 450 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:02:04,405 | INFO | Processing ticket 434
+2025-11-07 16:02:04,405 | INFO | Detected industry: general
+2025-11-07 16:02:04,408 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:02:04,408 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:02:04,424 | INFO | Ticket 285 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_high', 'ai_negative']
+2025-11-07 16:02:04,424 | INFO | Processing ticket 433
+2025-11-07 16:02:04,424 | INFO | Detected industry: saas
+2025-11-07 16:02:04,424 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:02:04,424 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:02:04,461 | INFO | Ticket 442 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:02:04,461 | INFO | Processing ticket 380
+2025-11-07 16:02:04,461 | INFO | Detected industry: saas
+2025-11-07 16:02:04,461 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:02:04,461 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:02:04,573 | INFO | Ticket 439 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:02:04,573 | INFO | Processing ticket 409
+2025-11-07 16:02:04,573 | INFO | Detected industry: saas
+2025-11-07 16:02:04,573 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:02:04,573 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:02:04,834 | INFO | Ticket 444 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:02:04,834 | INFO | Processing ticket 251
+2025-11-07 16:02:04,834 | INFO | Detected industry: ecommerce
+2025-11-07 16:02:04,834 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:02:04,838 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:02:04,839 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:02:04,839 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1, 'phone_india': 1}
+2025-11-07 16:03:01,561 | INFO | Ticket 434 updated with tags: ['ai_processed', 'ai_billing', 'ai_medium', 'ai_neutral']
+2025-11-07 16:03:01,562 | INFO | Processing ticket 436
+2025-11-07 16:03:01,563 | INFO | Detected industry: general
+2025-11-07 16:03:01,563 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:03:01,563 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:03:01,749 | INFO | Ticket 277 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:03:01,749 | INFO | Processing ticket 432
+2025-11-07 16:03:01,750 | INFO | Detected industry: general
+2025-11-07 16:03:01,750 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:03:01,750 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:03:01,750 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 16:03:01,771 | INFO | Ticket 438 updated with tags: ['ai_processed', 'ai_billing', 'ai_high', 'ai_negative']
+2025-11-07 16:03:01,771 | INFO | Processing ticket 403
+2025-11-07 16:03:01,771 | INFO | Detected industry: ecommerce
+2025-11-07 16:03:01,772 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:03:01,772 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:03:01,772 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:03:01,865 | INFO | Ticket 251 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:03:01,875 | INFO | Processing ticket 518
+2025-11-07 16:03:01,880 | INFO | Detected industry: general
+2025-11-07 16:03:01,906 | INFO | Ticket 380 updated with tags: ['ai_processed', 'ai_bug_report', 'ai_medium', 'ai_negative']
+2025-11-07 16:03:01,906 | INFO | Processing ticket 517
+2025-11-07 16:03:01,908 | INFO | Detected industry: saas
+2025-11-07 16:03:01,911 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:03:01,913 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:03:01,913 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:03:01,939 | INFO | Ticket 281 updated with tags: ['ai_processed', 'ai_billing', 'ai_medium', 'ai_neutral']
+2025-11-07 16:03:01,939 | INFO | Ticket 433 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_medium', 'ai_negative']
+2025-11-07 16:03:01,975 | INFO | Processing ticket 516
+2025-11-07 16:03:01,976 | INFO | Processing ticket 515
+2025-11-07 16:03:01,977 | INFO | Detected industry: ecommerce
+2025-11-07 16:03:01,977 | INFO | Detected industry: saas
+2025-11-07 16:03:01,978 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:03:01,978 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:03:01,978 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:03:01,979 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:03:01,979 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:03:02,095 | INFO | Ticket 437 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:03:02,097 | INFO | Processing ticket 514
+2025-11-07 16:03:02,097 | INFO | Detected industry: general
+2025-11-07 16:03:02,211 | INFO | Ticket 289 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:03:02,211 | INFO | Processing ticket 513
+2025-11-07 16:03:02,212 | INFO | Detected industry: saas
+2025-11-07 16:03:02,212 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:03:02,212 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:03:02,278 | INFO | Ticket 409 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_medium', 'ai_negative']
+2025-11-07 16:03:02,278 | INFO | Processing ticket 522
+2025-11-07 16:03:02,278 | INFO | Detected industry: saas
+2025-11-07 16:03:02,278 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:03:02,278 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:03:03,741 | INFO | Ticket 518 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:03:03,741 | INFO | Processing ticket 520
+2025-11-07 16:03:03,741 | INFO | Detected industry: ecommerce
+2025-11-07 16:03:03,741 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:03:03,741 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:03:03,741 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:03:03,805 | INFO | Ticket 436 updated with tags: ['ai_processed', 'ai_billing', 'ai_medium', 'ai_positive']
+2025-11-07 16:03:03,805 | INFO | Processing ticket 519
+2025-11-07 16:03:03,805 | INFO | Detected industry: general
+2025-11-07 16:03:03,806 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:03:03,806 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:03:03,827 | INFO | Ticket 432 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:03:03,827 | INFO | Processing ticket 521
+2025-11-07 16:03:03,827 | INFO | Detected industry: ecommerce
+2025-11-07 16:03:03,827 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:03:03,827 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:03:04,091 | INFO | Ticket 517 updated with tags: ['ai_processed', 'ai_bug_report', 'ai_medium', 'ai_neutral']
+2025-11-07 16:03:04,091 | INFO | Processing ticket 512
+2025-11-07 16:03:04,091 | INFO | Ticket 403 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:03:04,091 | INFO | Detected industry: general
+2025-11-07 16:03:04,091 | INFO | Processing ticket 511
+2025-11-07 16:03:04,091 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:03:04,091 | INFO | Detected industry: general
+2025-11-07 16:03:04,091 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:03:04,091 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:03:04,091 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:03:04,538 | INFO | Ticket 515 updated with tags: ['ai_processed', 'ai_user_management', 'ai_medium', 'ai_neutral']
+2025-11-07 16:03:04,538 | INFO | Processing ticket 504
+2025-11-07 16:03:04,548 | INFO | Detected industry: general
+2025-11-07 16:03:04,714 | INFO | Ticket 513 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:03:04,714 | INFO | Processing ticket 502
+2025-11-07 16:03:04,714 | INFO | Detected industry: ecommerce
+2025-11-07 16:03:04,721 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:03:04,721 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:03:04,721 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:03:04,971 | INFO | Ticket 516 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:03:04,971 | INFO | Processing ticket 509
+2025-11-07 16:03:04,971 | INFO | Detected industry: saas
+2025-11-07 16:03:04,971 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:03:04,981 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:03:05,085 | INFO | Ticket 514 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_negative']
+2025-11-07 16:03:05,099 | INFO | Processing ticket 508
+2025-11-07 16:03:05,099 | INFO | Detected industry: saas
+2025-11-07 16:03:05,099 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:03:05,099 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:03:05,419 | INFO | Ticket 522 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_medium', 'ai_negative']
+2025-11-07 16:03:05,419 | INFO | Processing ticket 505
+2025-11-07 16:03:05,419 | INFO | Detected industry: general
+2025-11-07 16:03:05,419 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:03:05,419 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:04:01,506 | INFO | Ticket 512 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:04:01,508 | INFO | Processing ticket 503
+2025-11-07 16:04:01,509 | INFO | Detected industry: ecommerce
+2025-11-07 16:04:01,509 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:04:01,511 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:04:01,511 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:04:01,567 | INFO | Ticket 508 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:04:01,568 | INFO | Processing ticket 500
+2025-11-07 16:04:01,569 | INFO | Detected industry: saas
+2025-11-07 16:04:01,569 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:04:01,570 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:04:01,587 | INFO | Ticket 509 updated with tags: ['ai_processed', 'ai_user_management', 'ai_medium', 'ai_neutral']
+2025-11-07 16:04:01,587 | INFO | Processing ticket 498
+2025-11-07 16:04:01,587 | INFO | Detected industry: ecommerce
+2025-11-07 16:04:01,588 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:04:01,588 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:04:01,632 | INFO | Ticket 521 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_medium', 'ai_neutral']
+2025-11-07 16:04:01,633 | INFO | Processing ticket 501
+2025-11-07 16:04:01,633 | INFO | Detected industry: ecommerce
+2025-11-07 16:04:01,633 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:04:01,633 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:04:01,635 | INFO | Ticket 511 updated with tags: ['ai_processed', 'ai_billing', 'ai_high', 'ai_negative']
+2025-11-07 16:04:01,636 | INFO | Processing ticket 497
+2025-11-07 16:04:01,637 | INFO | Detected industry: general
+2025-11-07 16:04:01,637 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:04:01,637 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:04:01,723 | INFO | Ticket 505 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:04:01,723 | INFO | Processing ticket 495
+2025-11-07 16:04:01,723 | INFO | Detected industry: general
+2025-11-07 16:04:01,842 | INFO | Ticket 519 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:04:01,843 | INFO | Processing ticket 499
+2025-11-07 16:04:01,844 | INFO | Detected industry: general
+2025-11-07 16:04:01,844 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:04:01,846 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:04:02,034 | INFO | Ticket 520 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:04:02,034 | INFO | Processing ticket 496
+2025-11-07 16:04:02,035 | INFO | Detected industry: general
+2025-11-07 16:04:02,035 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:04:02,035 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:04:02,037 | INFO | Ticket 502 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_medium', 'ai_negative']
+2025-11-07 16:04:02,038 | INFO | Processing ticket 494
+2025-11-07 16:04:02,038 | INFO | Detected industry: saas
+2025-11-07 16:04:02,039 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:04:02,039 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:04:02,256 | INFO | Ticket 504 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_negative']
+2025-11-07 16:04:02,256 | INFO | Processing ticket 493
+2025-11-07 16:04:02,256 | INFO | Detected industry: saas
+2025-11-07 16:04:02,256 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:04:02,258 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:04:03,394 | INFO | Ticket 498 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_medium', 'ai_negative']
+2025-11-07 16:04:03,395 | INFO | Processing ticket 489
+2025-11-07 16:04:03,395 | INFO | Detected industry: general
+2025-11-07 16:04:03,651 | INFO | Ticket 503 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_medium', 'ai_negative']
+2025-11-07 16:04:03,652 | INFO | Processing ticket 485
+2025-11-07 16:04:03,653 | INFO | Detected industry: general
+2025-11-07 16:04:03,653 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:04:03,655 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:04:03,681 | INFO | Ticket 500 updated with tags: ['ai_processed', 'ai_bug_report', 'ai_medium', 'ai_negative']
+2025-11-07 16:04:03,683 | INFO | Processing ticket 483
+2025-11-07 16:04:03,685 | INFO | Detected industry: ecommerce
+2025-11-07 16:04:03,685 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:04:03,686 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:04:03,687 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:04:03,758 | INFO | Ticket 497 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:04:03,758 | INFO | Processing ticket 492
+2025-11-07 16:04:03,759 | INFO | Detected industry: general
+2025-11-07 16:04:03,761 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:04:03,763 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:04:03,802 | INFO | Ticket 501 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_high', 'ai_negative']
+2025-11-07 16:04:03,802 | INFO | Processing ticket 491
+2025-11-07 16:04:03,803 | INFO | Detected industry: saas
+2025-11-07 16:04:03,804 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:04:03,804 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:04:03,826 | INFO | Ticket 495 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_negative']
+2025-11-07 16:04:03,827 | INFO | Processing ticket 490
+2025-11-07 16:04:03,829 | INFO | Detected industry: general
+2025-11-07 16:04:03,829 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:04:03,829 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:04:03,831 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 16:04:03,832 | INFO | Ticket 499 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:04:03,835 | INFO | Processing ticket 487
+2025-11-07 16:04:03,836 | INFO | Detected industry: general
+2025-11-07 16:04:03,837 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:04:03,838 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:04:04,033 | INFO | Ticket 494 updated with tags: ['ai_processed', 'ai_user_management', 'ai_medium', 'ai_neutral']
+2025-11-07 16:04:04,033 | INFO | Processing ticket 481
+2025-11-07 16:04:04,035 | INFO | Detected industry: saas
+2025-11-07 16:04:04,035 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:04:04,035 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:04:04,224 | INFO | Ticket 496 updated with tags: ['ai_processed', 'ai_billing', 'ai_medium', 'ai_neutral']
+2025-11-07 16:04:04,225 | INFO | Processing ticket 486
+2025-11-07 16:04:04,225 | INFO | Detected industry: saas
+2025-11-07 16:04:04,225 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:04:04,226 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:04:04,652 | INFO | Ticket 493 updated with tags: ['ai_processed', 'ai_user_management', 'ai_low', 'ai_neutral']
+2025-11-07 16:04:04,652 | INFO | Processing ticket 484
+2025-11-07 16:04:04,653 | INFO | Detected industry: general
+2025-11-07 16:04:04,654 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:04:04,654 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:04:04,654 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 16:05:01,776 | INFO | Ticket 486 updated with tags: ['ai_processed', 'ai_bug_report', 'ai_medium', 'ai_neutral']
+2025-11-07 16:05:01,776 | INFO | Processing ticket 488
+2025-11-07 16:05:01,776 | INFO | Detected industry: saas
+2025-11-07 16:05:01,787 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:05:01,787 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:05:01,787 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:05:01,792 | INFO | Ticket 489 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_negative']
+2025-11-07 16:05:01,792 | INFO | Processing ticket 477
+2025-11-07 16:05:01,792 | INFO | Detected industry: general
+2025-11-07 16:05:01,792 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:05:01,792 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:05:01,922 | INFO | Ticket 481 updated with tags: ['ai_processed', 'ai_bug_report', 'ai_medium', 'ai_negative']
+2025-11-07 16:05:01,922 | INFO | Processing ticket 472
+2025-11-07 16:05:01,924 | INFO | Detected industry: general
+2025-11-07 16:05:01,924 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:05:01,926 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:05:01,926 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:05:01,928 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'phone_india': 1, 'aadhaar': 1}
+2025-11-07 16:05:01,954 | INFO | Ticket 492 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:05:01,956 | INFO | Processing ticket 482
+2025-11-07 16:05:01,956 | INFO | Detected industry: general
+2025-11-07 16:05:01,974 | INFO | Ticket 483 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:05:01,974 | INFO | Processing ticket 480
+2025-11-07 16:05:01,974 | INFO | Detected industry: saas
+2025-11-07 16:05:01,974 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:05:01,979 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:05:01,984 | INFO | Ticket 485 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:05:01,984 | INFO | Processing ticket 479
+2025-11-07 16:05:01,984 | INFO | Detected industry: ecommerce
+2025-11-07 16:05:01,984 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:05:01,984 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:05:01,984 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:05:02,105 | INFO | Ticket 490 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:05:02,105 | INFO | Processing ticket 476
+2025-11-07 16:05:02,105 | INFO | Detected industry: saas
+2025-11-07 16:05:02,105 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:05:02,105 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:05:02,223 | INFO | Ticket 491 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:05:02,223 | INFO | Processing ticket 475
+2025-11-07 16:05:02,240 | INFO | Detected industry: saas
+2025-11-07 16:05:02,240 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:05:02,241 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:05:02,334 | INFO | Ticket 484 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:05:02,334 | INFO | Processing ticket 474
+2025-11-07 16:05:02,334 | INFO | Detected industry: general
+2025-11-07 16:05:02,334 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:05:02,334 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:05:02,334 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 16:05:02,351 | INFO | Ticket 487 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:05:02,351 | INFO | Processing ticket 478
+2025-11-07 16:05:02,351 | INFO | Detected industry: saas
+2025-11-07 16:05:02,351 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:05:02,351 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:05:03,995 | INFO | Ticket 472 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:05:04,037 | INFO | Ticket 477 updated with tags: ['ai_processed', 'ai_billing', 'ai_high', 'ai_negative']
+2025-11-07 16:05:04,051 | INFO | Ticket 482 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:05:04,066 | INFO | Ticket 488 updated with tags: ['ai_processed', 'ai_bug_report', 'ai_medium', 'ai_neutral']
+2025-11-07 16:05:04,376 | INFO | Ticket 475 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:05:04,480 | INFO | Ticket 480 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:05:04,571 | INFO | Ticket 476 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_medium', 'ai_negative']
+2025-11-07 16:05:04,587 | INFO | Ticket 479 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_high', 'ai_negative']
+2025-11-07 16:05:05,206 | INFO | Ticket 478 updated with tags: ['ai_processed', 'ai_bug_report', 'ai_medium', 'ai_negative']
+2025-11-07 16:05:05,432 | INFO | Ticket 474 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:05:05,446 | INFO | Batch complete: 100/100 | Avg: 1.96s | Other%: 0.0%
+2025-11-07 16:14:53,452 | INFO | Starting batch processing (limit: 50, industry: auto-detect)
+2025-11-07 16:14:54,363 | INFO | Processing ticket 478
+2025-11-07 16:14:54,363 | INFO | Detected industry: saas
+2025-11-07 16:14:54,363 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:14:54,363 | INFO | Processing ticket 474
+2025-11-07 16:14:54,365 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:14:54,365 | INFO | Processing ticket 488
+2025-11-07 16:14:54,365 | INFO | Detected industry: general
+2025-11-07 16:14:54,365 | INFO | Processing ticket 477
+2025-11-07 16:14:54,367 | INFO | Processing ticket 472
+2025-11-07 16:14:54,367 | INFO | Detected industry: saas
+2025-11-07 16:14:54,367 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:14:54,367 | INFO | Detected industry: general
+2025-11-07 16:14:54,367 | INFO | Processing ticket 482
+2025-11-07 16:14:54,367 | INFO | Detected industry: general
+2025-11-07 16:14:54,367 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:14:54,367 | INFO | Processing ticket 480
+2025-11-07 16:14:54,371 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:14:54,371 | INFO | Processing ticket 479
+2025-11-07 16:14:54,371 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:14:54,371 | INFO | Processing ticket 476
+2025-11-07 16:14:54,371 | INFO | Detected industry: general
+2025-11-07 16:14:54,371 | INFO | Processing ticket 475
+2025-11-07 16:14:54,371 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:14:54,371 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:14:54,371 | INFO | Detected industry: saas
+2025-11-07 16:14:54,371 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 16:14:54,371 | INFO | Detected industry: ecommerce
+2025-11-07 16:14:54,371 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:14:54,371 | INFO | Detected industry: saas
+2025-11-07 16:14:54,375 | INFO | Detected industry: saas
+2025-11-07 16:14:54,375 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:14:54,375 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:14:54,375 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:14:54,375 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:14:54,377 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:14:54,377 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:14:54,377 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:14:54,380 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:14:54,380 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:14:54,381 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:14:54,381 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:14:54,381 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'phone_india': 1, 'aadhaar': 1}
+2025-11-07 16:14:54,381 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:14:58,793 | INFO | Ticket 476 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:14:58,832 | INFO | Processing ticket 492
+2025-11-07 16:14:58,836 | INFO | Detected industry: general
+2025-11-07 16:14:58,836 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:14:58,837 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:15:00,213 | INFO | Ticket 482 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_negative']
+2025-11-07 16:15:00,213 | INFO | Processing ticket 491
+2025-11-07 16:15:00,213 | INFO | Detected industry: saas
+2025-11-07 16:15:00,213 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:15:00,213 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:15:00,517 | INFO | Ticket 479 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_medium', 'ai_negative']
+2025-11-07 16:15:00,517 | INFO | Processing ticket 490
+2025-11-07 16:15:00,517 | INFO | Detected industry: general
+2025-11-07 16:15:00,517 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:15:00,534 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:15:00,535 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 16:15:00,645 | INFO | Ticket 478 updated with tags: ['ai_processed', 'ai_bug_report', 'ai_medium', 'ai_negative']
+2025-11-07 16:15:00,645 | INFO | Processing ticket 487
+2025-11-07 16:15:00,661 | INFO | Detected industry: general
+2025-11-07 16:15:00,661 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:00,661 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:15:00,825 | INFO | Ticket 472 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:00,825 | INFO | Processing ticket 485
+2025-11-07 16:15:00,825 | INFO | Detected industry: general
+2025-11-07 16:15:00,825 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:00,825 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:15:00,836 | INFO | Ticket 477 updated with tags: ['ai_processed', 'ai_billing', 'ai_high', 'ai_negative']
+2025-11-07 16:15:00,836 | INFO | Processing ticket 484
+2025-11-07 16:15:00,836 | INFO | Detected industry: general
+2025-11-07 16:15:00,836 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:15:00,836 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:15:00,836 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 16:15:00,884 | INFO | Ticket 474 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:00,884 | INFO | Processing ticket 483
+2025-11-07 16:15:00,884 | INFO | Detected industry: ecommerce
+2025-11-07 16:15:00,884 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:00,884 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:15:00,884 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:15:00,900 | INFO | Ticket 480 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:15:00,900 | INFO | Processing ticket 489
+2025-11-07 16:15:00,917 | INFO | Detected industry: general
+2025-11-07 16:15:01,127 | INFO | Ticket 488 updated with tags: ['ai_processed', 'ai_bug_report', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:01,129 | INFO | Processing ticket 481
+2025-11-07 16:15:01,129 | INFO | Detected industry: saas
+2025-11-07 16:15:01,129 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:01,129 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:15:01,221 | INFO | Ticket 475 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:15:01,221 | INFO | Processing ticket 486
+2025-11-07 16:15:01,221 | INFO | Detected industry: saas
+2025-11-07 16:15:01,221 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:01,221 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:15:01,541 | INFO | Ticket 492 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:01,551 | INFO | Processing ticket 496
+2025-11-07 16:15:01,551 | INFO | Detected industry: general
+2025-11-07 16:15:01,551 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:01,551 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:15:02,472 | INFO | Ticket 491 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:15:02,472 | INFO | Processing ticket 494
+2025-11-07 16:15:02,472 | INFO | Detected industry: saas
+2025-11-07 16:15:02,472 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:15:02,472 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:15:02,744 | INFO | Ticket 490 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:02,744 | INFO | Processing ticket 493
+2025-11-07 16:15:02,744 | INFO | Detected industry: saas
+2025-11-07 16:15:02,744 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:15:02,744 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:15:02,889 | INFO | Ticket 487 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:02,889 | INFO | Processing ticket 503
+2025-11-07 16:15:02,889 | INFO | Detected industry: ecommerce
+2025-11-07 16:15:02,889 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:02,894 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:15:02,894 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:15:02,968 | INFO | Ticket 484 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:02,968 | INFO | Processing ticket 500
+2025-11-07 16:15:02,969 | INFO | Detected industry: saas
+2025-11-07 16:15:02,969 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:02,969 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:15:03,081 | INFO | Ticket 483 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:03,081 | INFO | Processing ticket 499
+2025-11-07 16:15:03,081 | INFO | Detected industry: general
+2025-11-07 16:15:03,081 | INFO | Ticket 486 updated with tags: ['ai_processed', 'ai_billing_question', 'ai_medium', 'ai_negative']
+2025-11-07 16:15:03,081 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:03,081 | INFO | Processing ticket 498
+2025-11-07 16:15:03,081 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:15:03,081 | INFO | Detected industry: ecommerce
+2025-11-07 16:15:03,095 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:03,095 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:15:03,105 | INFO | Ticket 485 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:03,105 | INFO | Processing ticket 501
+2025-11-07 16:15:03,105 | INFO | Detected industry: ecommerce
+2025-11-07 16:15:03,105 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:03,105 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:15:03,433 | INFO | Ticket 481 updated with tags: ['ai_processed', 'ai_bug_report', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:03,433 | INFO | Processing ticket 497
+2025-11-07 16:15:03,435 | INFO | Detected industry: general
+2025-11-07 16:15:03,435 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:03,435 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:15:04,319 | INFO | Ticket 494 updated with tags: ['ai_processed', 'ai_user_management', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:04,319 | INFO | Processing ticket 495
+2025-11-07 16:15:04,319 | INFO | Detected industry: general
+2025-11-07 16:15:04,495 | INFO | Ticket 496 updated with tags: ['ai_processed', 'ai_billing', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:04,495 | INFO | Processing ticket 520
+2025-11-07 16:15:04,495 | INFO | Detected industry: ecommerce
+2025-11-07 16:15:04,495 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:04,495 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:15:04,495 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:15:04,589 | INFO | Ticket 489 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:04,589 | INFO | Processing ticket 504
+2025-11-07 16:15:04,589 | INFO | Detected industry: general
+2025-11-07 16:15:04,874 | INFO | Ticket 500 updated with tags: ['ai_processed', 'ai_bug_report', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:04,874 | INFO | Processing ticket 502
+2025-11-07 16:15:04,874 | INFO | Detected industry: ecommerce
+2025-11-07 16:15:04,879 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:04,879 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:15:04,880 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:15:04,970 | INFO | Ticket 503 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_medium', 'ai_negative']
+2025-11-07 16:15:04,970 | INFO | Processing ticket 512
+2025-11-07 16:15:04,970 | INFO | Detected industry: general
+2025-11-07 16:15:04,970 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:04,972 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:15:05,159 | INFO | Ticket 501 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_high', 'ai_negative']
+2025-11-07 16:15:05,159 | INFO | Processing ticket 509
+2025-11-07 16:15:05,159 | INFO | Detected industry: saas
+2025-11-07 16:15:05,159 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:15:05,159 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:15:05,306 | INFO | Ticket 493 updated with tags: ['ai_processed', 'ai_user_management', 'ai_low', 'ai_neutral']
+2025-11-07 16:15:05,306 | INFO | Processing ticket 508
+2025-11-07 16:15:05,306 | INFO | Detected industry: saas
+2025-11-07 16:15:05,306 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:15:05,306 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:15:05,335 | INFO | Ticket 499 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:05,335 | INFO | Processing ticket 521
+2025-11-07 16:15:05,335 | INFO | Detected industry: ecommerce
+2025-11-07 16:15:05,335 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:05,335 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:15:05,719 | INFO | Ticket 498 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_medium', 'ai_neutral']
+2025-11-07 16:15:05,719 | INFO | Processing ticket 519
+2025-11-07 16:15:05,719 | INFO | Detected industry: general
+2025-11-07 16:15:05,719 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:15:05,719 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:16:01,401 | INFO | Ticket 509 updated with tags: ['ai_processed', 'ai_user_management', 'ai_medium', 'ai_neutral']
+2025-11-07 16:16:01,401 | INFO | Processing ticket 511
+2025-11-07 16:16:01,401 | INFO | Detected industry: general
+2025-11-07 16:16:01,401 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:16:01,402 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:16:01,416 | INFO | Ticket 504 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_negative']
+2025-11-07 16:16:01,417 | INFO | Processing ticket 505
+2025-11-07 16:16:01,417 | INFO | Detected industry: general
+2025-11-07 16:16:01,417 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:16:01,418 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:16:01,450 | INFO | Ticket 512 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:16:01,451 | INFO | Processing ticket 516
+2025-11-07 16:16:01,451 | INFO | Detected industry: ecommerce
+2025-11-07 16:16:01,451 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:16:01,451 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:16:01,452 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:16:01,458 | INFO | Ticket 520 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:16:01,458 | INFO | Processing ticket 514
+2025-11-07 16:16:01,458 | INFO | Detected industry: general
+2025-11-07 16:16:01,469 | INFO | Ticket 502 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_high', 'ai_negative']
+2025-11-07 16:16:01,469 | INFO | Processing ticket 522
+2025-11-07 16:16:01,469 | INFO | Detected industry: saas
+2025-11-07 16:16:01,469 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:16:01,470 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:16:01,728 | INFO | Ticket 521 updated with tags: ['ai_processed', 'ai_payment_failed', 'ai_medium', 'ai_negative']
+2025-11-07 16:16:01,728 | INFO | Processing ticket 517
+2025-11-07 16:16:01,728 | INFO | Detected industry: saas
+2025-11-07 16:16:01,728 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:16:01,728 | INFO | Redacted 1 phone_india(s)
+2025-11-07 16:16:01,729 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'phone_india': 1}
+2025-11-07 16:16:01,853 | INFO | Ticket 495 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_negative']
+2025-11-07 16:16:01,853 | INFO | Processing ticket 515
+2025-11-07 16:16:01,853 | INFO | Detected industry: saas
+2025-11-07 16:16:01,853 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:16:01,853 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:16:01,918 | INFO | Ticket 508 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:16:01,918 | INFO | Processing ticket 513
+2025-11-07 16:16:01,920 | INFO | Detected industry: saas
+2025-11-07 16:16:01,920 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:16:01,920 | WARNING | [PII] Detected and redacted: {'aadhaar': 1}
+2025-11-07 16:16:02,019 | INFO | Ticket 519 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:16:02,021 | INFO | Processing ticket 403
+2025-11-07 16:16:02,021 | INFO | Detected industry: ecommerce
+2025-11-07 16:16:02,021 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:16:02,022 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:16:02,022 | WARNING | [PII] Detected and redacted: {'credit_card': 1, 'ssn': 1}
+2025-11-07 16:16:02,296 | INFO | Ticket 497 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:16:02,296 | INFO | Processing ticket 518
+2025-11-07 16:16:02,298 | INFO | Detected industry: general
+2025-11-07 16:16:03,279 | INFO | Ticket 511 updated with tags: ['ai_processed', 'ai_billing', 'ai_high', 'ai_negative']
+2025-11-07 16:16:03,282 | INFO | Processing ticket 436
+2025-11-07 16:16:03,283 | INFO | Detected industry: general
+2025-11-07 16:16:03,283 | INFO | Redacted 1 credit_card(s)
+2025-11-07 16:16:03,283 | WARNING | [PII] Detected and redacted: {'credit_card': 1}
+2025-11-07 16:16:03,565 | INFO | Ticket 505 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:16:03,565 | INFO | Processing ticket 432
+2025-11-07 16:16:03,565 | INFO | Detected industry: general
+2025-11-07 16:16:03,565 | INFO | Redacted 1 ssn(s)
+2025-11-07 16:16:03,565 | INFO | Redacted 1 aadhaar(s)
+2025-11-07 16:16:03,565 | WARNING | [PII] Detected and redacted: {'ssn': 1, 'aadhaar': 1}
+2025-11-07 16:16:03,708 | INFO | Ticket 522 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_medium', 'ai_negative']
+2025-11-07 16:16:03,734 | INFO | Ticket 517 updated with tags: ['ai_processed', 'ai_bug_report', 'ai_medium', 'ai_neutral']
+2025-11-07 16:16:03,938 | INFO | Ticket 514 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:16:04,040 | INFO | Ticket 516 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:16:04,091 | INFO | Ticket 515 updated with tags: ['ai_processed', 'ai_user_management', 'ai_medium', 'ai_neutral']
+2025-11-07 16:16:04,224 | INFO | Ticket 403 updated with tags: ['ai_processed', 'ai_refund_request', 'ai_medium', 'ai_neutral']
+2025-11-07 16:16:04,266 | INFO | Ticket 513 updated with tags: ['ai_processed', 'ai_login_issue', 'ai_high', 'ai_negative']
+2025-11-07 16:16:04,508 | INFO | Ticket 518 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_negative']
+2025-11-07 16:17:01,872 | INFO | Ticket 436 updated with tags: ['ai_processed', 'ai_billing', 'ai_medium', 'ai_positive']
+2025-11-07 16:17:01,940 | INFO | Ticket 432 updated with tags: ['ai_processed', 'ai_account', 'ai_medium', 'ai_neutral']
+2025-11-07 16:17:01,951 | INFO | Batch complete: 50/50 | Avg: 1.97s | Other%: 0.0%

@@ -1,0 +1,162 @@
+# AUTOMATION SETUP GUIDE
+# Windows Task Scheduler - Step by Step
+
+## FILES INCLUDED:
+1. run_ticket_processor.bat - Shows window with output (for testing)
+2. run_ticket_processor_silent.bat - Runs in background (for production)
+3. run_ticket_processor_invisible.vbs - Completely invisible (best for production)
+
+## STEP-BY-STEP SETUP:
+
+### STEP 1: SAVE THE FILES
+1. Download all 3 files to your project folder:
+   C:\Users\MadhanKarthickMailsa\Documents\Wolvio\DTAI\2025 Strategy\Product Roadmap - 2025\Ai ticket processor\
+
+2. Test the batch file first:
+   - Double-click: run_ticket_processor.bat
+   - You should see it process tickets
+   - If it works, proceed to Step 2
+
+### STEP 2: OPEN TASK SCHEDULER
+1. Press Windows Key + R
+2. Type: taskschd.msc
+3. Press Enter
+4. Task Scheduler opens
+
+### STEP 3: CREATE NEW TASK
+1. Click "Create Task" (not "Create Basic Task") on the right panel
+2. A window with 5 tabs opens: General, Triggers, Actions, Conditions, Settings
+
+### STEP 4: GENERAL TAB
+Fill in these settings:
+- Name: AI Ticket Processor
+- Description: Automatically processes Zendesk tickets using AI every 10 minutes
+- Security options:
+  ☑ Run whether user is logged on or not
+  ☑ Run with highest privileges
+- Configure for: Windows 10
+
+### STEP 5: TRIGGERS TAB
+1. Click "New..." button
+2. Settings:
+   - Begin the task: On a schedule
+   - Settings: Daily
+   - Start: Today's date at current time
+   - Recur every: 1 days
+   - ☑ Repeat task every: 10 minutes
+   - For a duration of: Indefinitely
+   - ☑ Enabled
+3. Click OK
+
+### STEP 6: ACTIONS TAB
+1. Click "New..." button
+2. Settings:
+   - Action: Start a program
+   - Program/script: wscript.exe
+   - Add arguments: "C:\Users\MadhanKarthickMailsa\Documents\Wolvio\DTAI\2025 Strategy\Product Roadmap - 2025\Ai ticket processor\run_ticket_processor_invisible.vbs"
+   - Start in: C:\Users\MadhanKarthickMailsa\Documents\Wolvio\DTAI\2025 Strategy\Product Roadmap - 2025\Ai ticket processor
+3. Click OK
+
+### STEP 7: CONDITIONS TAB
+Uncheck these (so it runs even on battery/not idle):
+- ☐ Start the task only if the computer is on AC power
+- ☐ Start the task only if the computer is idle
+
+### STEP 8: SETTINGS TAB
+Configure these:
+- ☑ Allow task to be run on demand
+- ☑ Run task as soon as possible after a scheduled start is missed
+- ☑ If the task fails, restart every: 1 minute
+- Attempt to restart up to: 3 times
+- Stop the task if it runs longer than: 1 hour
+- If the running task does not end when requested: Stop the existing instance
+
+### STEP 9: SAVE AND TEST
+1. Click OK at the bottom
+2. Enter your Windows password if prompted
+3. Find "AI Ticket Processor" in the task list
+4. Right-click → Run
+5. Check logs folder for new results
+
+### STEP 10: VERIFY IT'S WORKING
+After 10 minutes, check:
+1. logs/automated_runs.log (should have new entries)
+2. logs/YYYYMMDD.log (should have processing logs)
+3. logs/results_*.json (new result files every 10 min)
+
+## MONITORING:
+Check these files to monitor automation:
+- logs/automated_runs.log - All automated run outputs
+- logs/YYYYMMDD.log - Detailed processing logs
+- logs/results_*.json - Results from each run
+
+## TROUBLESHOOTING:
+
+**Task doesn't run:**
+- Check if Task Scheduler service is running
+- Verify file paths are correct (no typos)
+- Make sure Python is in system PATH
+
+**Python not found:**
+- In batch file, change 'python' to full path:
+  C:\Users\MadhanKarthickMailsa\AppData\Local\Programs\Python\Python312\python.exe
+
+**Task runs but tickets not processed:**
+- Check logs/YYYYMMDD.log for errors
+- Verify .env file is in the correct folder
+- Test manually: run_ticket_processor.bat
+
+## MODIFYING THE SCHEDULE:
+
+To change from every 10 minutes to something else:
+1. Open Task Scheduler
+2. Find "AI Ticket Processor"
+3. Right-click → Properties
+4. Go to Triggers tab
+5. Edit the trigger
+6. Change "Repeat task every" to your preference:
+   - 5 minutes (very frequent)
+   - 15 minutes (recommended)
+   - 30 minutes (moderate)
+   - 1 hour (less frequent)
+
+## TEMPORARILY DISABLE:
+1. Open Task Scheduler
+2. Find "AI Ticket Processor"
+3. Right-click → Disable
+
+## PERMANENTLY DELETE:
+1. Open Task Scheduler
+2. Find "AI Ticket Processor"
+3. Right-click → Delete
+
+## ESTIMATED PERFORMANCE:
+
+Running every 10 minutes:
+- Checks: 144 times per day
+- New tickets processed: ~10-50 per run
+- Cost per day: ~$0.30 - $1.50
+- Cost per month: ~$10 - $45
+- Time saved: ~40-80 hours per month
+
+Running every 5 minutes:
+- Checks: 288 times per day
+- Cost per month: ~$20 - $90
+- Nearly real-time processing!
+
+## COST OPTIMIZATION:
+
+To reduce costs:
+1. Change limit from 50 to 10 (only process 10 newest)
+2. Run every 15-30 minutes instead of 10
+3. Add filter to only process untagged tickets
+
+## RECOMMENDED SETTINGS FOR PRODUCTION:
+- Schedule: Every 10 minutes
+- Limit: 50 tickets
+- Expected cost: ~$15-30/month
+- Expected tickets: 500-1500/month
+- Time saved: 40-120 hours/month
+- Cost saved: $2,000-6,000/month
+
+Your net savings: $1,970-5,970/month!

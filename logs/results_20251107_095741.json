@@ -1,0 +1,71 @@
+{
+  "timestamp": "2025-11-07T09:57:41.996470",
+  "total": 5,
+  "processed": 5,
+  "failed": 0,
+  "avg_time_per_ticket": 2.98,
+  "total_time": 6.4,
+  "cost_estimate": 0.005,
+  "results": [
+    {
+      "ticket_id": 475,
+      "success": true,
+      "analysis": {
+        "summary": "User Amit Sharma from Canada is experiencing login issues.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 2.54,
+      "updated": true
+    },
+    {
+      "ticket_id": 474,
+      "success": true,
+      "analysis": {
+        "summary": "User requests deletion of their data associated with transaction id TRX5195013.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 2.89,
+      "updated": true
+    },
+    {
+      "ticket_id": 472,
+      "success": true,
+      "analysis": {
+        "summary": "User requests deletion of data associated with transaction ID TRX7604270.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 3.03,
+      "updated": true
+    },
+    {
+      "ticket_id": 478,
+      "success": true,
+      "analysis": {
+        "summary": "Customer reported an error regarding their account.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 3.18,
+      "updated": true
+    },
+    {
+      "ticket_id": 477,
+      "success": true,
+      "analysis": {
+        "summary": "Customer reports a fraudulent charge on their credit card and requests immediate assistance.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 3.25,
+      "updated": true
+    }
+  ]
+}

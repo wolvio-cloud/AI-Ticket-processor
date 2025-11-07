@@ -1,0 +1,1641 @@
+{
+  "timestamp": "2025-11-07T10:13:02.151311",
+  "total": 100,
+  "processed": 100,
+  "failed": 0,
+  "avg_time_per_ticket": 1.8,
+  "total_time": 286.76,
+  "cost_estimate": 0.1,
+  "pii_protection": {
+    "tickets_with_pii": 90,
+    "total_redactions": 130,
+    "by_type": {
+      "credit_card": 62,
+      "ssn": 24,
+      "aadhaar": 28,
+      "phone_india": 16
+    }
+  },
+  "results": [
+    {
+      "ticket_id": 478,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Leena Thomas reported an error with their account.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 3.53,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 474,
+      "success": true,
+      "analysis": {
+        "summary": "Customer requests deletion of their data associated with transaction id TRX5195013.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 3.52,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "ssn": 1,
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 476,
+      "success": true,
+      "analysis": {
+        "summary": "User Sandeep Gupta from Australia cannot login to their account.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 3.58,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 480,
+      "success": true,
+      "analysis": {
+        "summary": "User Sneha Rao from India is unable to login with registered email sneha.rao21@example.com.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 4.65,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 477,
+      "success": true,
+      "analysis": {
+        "summary": "Customer reports a fraudulent charge on their credit card.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 3.81,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 479,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Karan Verma experienced a failure when trying to place an order.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 3.79,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "phone_india": 1
+      }
+    },
+    {
+      "ticket_id": 475,
+      "success": true,
+      "analysis": {
+        "summary": "User Amit Sharma from Canada is unable to login.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 3.75,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 472,
+      "success": true,
+      "analysis": {
+        "summary": "User requested deletion of personal data associated with transaction ID TRX7604270.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 3.96,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "ssn": 1,
+        "phone_india": 1,
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 488,
+      "success": true,
+      "analysis": {
+        "summary": "Customer reported an error regarding their account and provided contact information.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 4.06,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "phone_india": 1
+      }
+    },
+    {
+      "ticket_id": 482,
+      "success": true,
+      "analysis": {
+        "summary": "User is unable to reset their password for the account registered with vikram.joshi22@outlook.in.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 4.16,
+      "updated": true,
+      "pii_protected": false,
+      "redactions": {}
+    },
+    {
+      "ticket_id": 492,
+      "success": true,
+      "analysis": {
+        "summary": "User accidentally shared their credit card details and requested removal, along with an email change.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.49,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 491,
+      "success": true,
+      "analysis": {
+        "summary": "User Rahul Desai from Canada is unable to login to their account.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.16,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 484,
+      "success": true,
+      "analysis": {
+        "summary": "User requested the deletion of their data associated with transaction ID TRX7191591.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.6,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "ssn": 1,
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 486,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Sneha Rao reported an error regarding their account.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.74,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 490,
+      "success": true,
+      "analysis": {
+        "summary": "User requests deletion of data associated with transaction ID TRX3512811.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.51,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "ssn": 1,
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 487,
+      "success": true,
+      "analysis": {
+        "summary": "Customer requested to remove shared credit card information and change their email address.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.63,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 481,
+      "success": true,
+      "analysis": {
+        "summary": "Customer reported an error related to their account.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.28,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 483,
+      "success": true,
+      "analysis": {
+        "summary": "Sandeep Gupta is requesting a refund for order OD703587.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.22,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1
+      }
+    },
+    {
+      "ticket_id": 485,
+      "success": true,
+      "analysis": {
+        "summary": "User accidentally shared credit card information and requested removal, and also wants to change their email address.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 2.44,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 489,
+      "success": true,
+      "analysis": {
+        "summary": "User unable to reset password for account registered with tara.bose67@gmail.com.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.55,
+      "updated": true,
+      "pii_protected": false,
+      "redactions": {}
+    },
+    {
+      "ticket_id": 493,
+      "success": true,
+      "analysis": {
+        "summary": "Request to remove user account for Vikram Joshi.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.65,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 496,
+      "success": true,
+      "analysis": {
+        "summary": "User wants to update billing details including a new contact number and email.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.12,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 499,
+      "success": true,
+      "analysis": {
+        "summary": "User accidentally shared their credit card information and requests its removal, along with an email change.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.57,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 494,
+      "success": true,
+      "analysis": {
+        "summary": "User requests account removal.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.3,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 500,
+      "success": true,
+      "analysis": {
+        "summary": "Customer reported an error with their account.",
+        "root_cause": "bug",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 2.01,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 498,
+      "success": true,
+      "analysis": {
+        "summary": "Sandeep Gupta reported a failed order attempt and requested assistance.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.59,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 497,
+      "success": true,
+      "analysis": {
+        "summary": "User accidentally shared their credit card information and requests its removal, along with an email address change.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.68,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 495,
+      "success": true,
+      "analysis": {
+        "summary": "User is unable to reset their password associated with the email sohail.khan83@gmail.com.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.67,
+      "updated": true,
+      "pii_protected": false,
+      "redactions": {}
+    },
+    {
+      "ticket_id": 501,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Priya Patel experienced a failure when attempting to place an order.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 2.17,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 503,
+      "success": true,
+      "analysis": {
+        "summary": "Divya Singh is experiencing a failed order attempt.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 2.23,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "phone_india": 1
+      }
+    },
+    {
+      "ticket_id": 508,
+      "success": true,
+      "analysis": {
+        "summary": "User Arun Reddy from Germany is unable to login.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.55,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 505,
+      "success": true,
+      "analysis": {
+        "summary": "User accidentally shared their credit card information and requested removal, along with a change of email address.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.58,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 509,
+      "success": true,
+      "analysis": {
+        "summary": "Request to remove account for Sohail Khan.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.17,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 511,
+      "success": true,
+      "analysis": {
+        "summary": "Customer reports a fraudulent charge on their credit card.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.55,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 507,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Arun Reddy requests a refund for order OD328731.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.26,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1
+      }
+    },
+    {
+      "ticket_id": 502,
+      "success": true,
+      "analysis": {
+        "summary": "Order placement failed for customer Meera Nair.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.29,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "phone_india": 1
+      }
+    },
+    {
+      "ticket_id": 512,
+      "success": true,
+      "analysis": {
+        "summary": "User shared their credit card information by accident and requested its removal, along with a change of email address.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.98,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 510,
+      "success": true,
+      "analysis": {
+        "summary": "Karan Verma requests a refund for order OD159468.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.2,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1
+      }
+    },
+    {
+      "ticket_id": 504,
+      "success": true,
+      "analysis": {
+        "summary": "User cannot reset their password for the registered email.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.39,
+      "updated": true,
+      "pii_protected": false,
+      "redactions": {}
+    },
+    {
+      "ticket_id": 506,
+      "success": true,
+      "analysis": {
+        "summary": "Customer requested to update billing details and provided a new contact number and email.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.47,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "phone_india": 1
+      }
+    },
+    {
+      "ticket_id": 521,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Aditya Jain reported a failure when trying to place an order.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.34,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 515,
+      "success": true,
+      "analysis": {
+        "summary": "User requested account removal.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.31,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 520,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Sneha Rao requests a refund for order OD815873.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.4,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1
+      }
+    },
+    {
+      "ticket_id": 517,
+      "success": true,
+      "analysis": {
+        "summary": "Customer reported an error related to their account.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.34,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "phone_india": 1
+      }
+    },
+    {
+      "ticket_id": 516,
+      "success": true,
+      "analysis": {
+        "summary": "Anil Menon requests a refund for order OD780952.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.83,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1
+      }
+    },
+    {
+      "ticket_id": 522,
+      "success": true,
+      "analysis": {
+        "summary": "Customer reported an error regarding their account and provided contact information.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.53,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 519,
+      "success": true,
+      "analysis": {
+        "summary": "User requests removal of shared credit card and change of email address.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.51,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 513,
+      "success": true,
+      "analysis": {
+        "summary": "User Tara Bose from the United Kingdom is unable to log in.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.69,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 514,
+      "success": true,
+      "analysis": {
+        "summary": "User is unable to reset their password for the account associated with meera.nair32@gmail.com.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.9,
+      "updated": true,
+      "pii_protected": false,
+      "redactions": {}
+    },
+    {
+      "ticket_id": 518,
+      "success": true,
+      "analysis": {
+        "summary": "User cannot reset their password for the account registered with amit.sharma40@hotmail.com.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.74,
+      "updated": true,
+      "pii_protected": false,
+      "redactions": {}
+    },
+    {
+      "ticket_id": 465,
+      "success": true,
+      "analysis": {
+        "summary": "Meera Nair requests a refund for order OD836150, providing contact information and mentioning an old email.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.7,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1
+      }
+    },
+    {
+      "ticket_id": 471,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Anil Menon requests a refund for order OD512175.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.42,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1
+      }
+    },
+    {
+      "ticket_id": 470,
+      "success": true,
+      "analysis": {
+        "summary": "Customer reported an error with their account details.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.1,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 462,
+      "success": true,
+      "analysis": {
+        "summary": "Customer reported an error with their account.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.03,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 469,
+      "success": true,
+      "analysis": {
+        "summary": "Urgent report of a fraudulent charge on a credit card.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.3,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 466,
+      "success": true,
+      "analysis": {
+        "summary": "Customer reported a fraudulent charge on their card.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.5,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 464,
+      "success": true,
+      "analysis": {
+        "summary": "User Anil Menon from the United States cannot login.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 2.63,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 468,
+      "success": true,
+      "analysis": {
+        "summary": "User requested deletion of personal data associated with a specific transaction ID.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.83,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "ssn": 1,
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 467,
+      "success": true,
+      "analysis": {
+        "summary": "Urgent fraudulent charge reported on credit card.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.89,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 473,
+      "success": true,
+      "analysis": {
+        "summary": "Request for account removal from Leena Thomas",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 3.47,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 461,
+      "success": true,
+      "analysis": {
+        "summary": "User Meera Nair from India is unable to login.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.18,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 456,
+      "success": true,
+      "analysis": {
+        "summary": "User requested account removal.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.32,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 463,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Rohit Kumar experienced a failed order attempt.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.44,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 459,
+      "success": true,
+      "analysis": {
+        "summary": "Customer reported an error with their account.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.69,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "phone_india": 1
+      }
+    },
+    {
+      "ticket_id": 458,
+      "success": true,
+      "analysis": {
+        "summary": "User requested deletion of data associated with transaction ID TRX3660906.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.25,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "ssn": 1,
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 460,
+      "success": true,
+      "analysis": {
+        "summary": "User requested the removal of a shared credit card and needed an email address change.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.52,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 452,
+      "success": true,
+      "analysis": {
+        "summary": "Request for refund for order OD486473 from Sandeep Gupta.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.25,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1
+      }
+    },
+    {
+      "ticket_id": 453,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Manoj Pillai requests a refund for order OD722273 paid by card.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.2,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1,
+        "phone_india": 1
+      }
+    },
+    {
+      "ticket_id": 455,
+      "success": true,
+      "analysis": {
+        "summary": "User requests to update billing details including new contact number and email.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.36,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 457,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Meera Nair is requesting a refund for order OD305967.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.52,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1
+      }
+    },
+    {
+      "ticket_id": 449,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Vikram Joshi reported a failed order attempt.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.23,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "phone_india": 1
+      }
+    },
+    {
+      "ticket_id": 445,
+      "success": true,
+      "analysis": {
+        "summary": "Pooja Iyer experienced a failed order attempt and needs assistance.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 3.64,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 441,
+      "success": true,
+      "analysis": {
+        "summary": "User requested the removal of a shared credit card and an email address change.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.53,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 447,
+      "success": true,
+      "analysis": {
+        "summary": "Pooja Iyer requests a refund for order OD926369.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.28,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1
+      }
+    },
+    {
+      "ticket_id": 446,
+      "success": true,
+      "analysis": {
+        "summary": "User is unable to reset their password for their registered account.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.24,
+      "updated": true,
+      "pii_protected": false,
+      "redactions": {}
+    },
+    {
+      "ticket_id": 443,
+      "success": true,
+      "analysis": {
+        "summary": "Riya Das is requesting a refund for order OD292843.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.4,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1
+      }
+    },
+    {
+      "ticket_id": 448,
+      "success": true,
+      "analysis": {
+        "summary": "User is unable to reset their password for the account associated with divya.singh88@example.com.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 2.15,
+      "updated": true,
+      "pii_protected": false,
+      "redactions": {}
+    },
+    {
+      "ticket_id": 451,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Pooja Iyer experienced a failure while trying to place an order.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.55,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "phone_india": 1
+      }
+    },
+    {
+      "ticket_id": 454,
+      "success": true,
+      "analysis": {
+        "summary": "Customer reported an error related to their account.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.59,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 450,
+      "success": true,
+      "analysis": {
+        "summary": "User Vikram Joshi is unable to login to his account.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.54,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 435,
+      "success": true,
+      "analysis": {
+        "summary": "User Sohail Khan from Canada is unable to login.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.22,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 444,
+      "success": true,
+      "analysis": {
+        "summary": "User requested deletion of personal data associated with transaction ID TRX8992883.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.53,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "ssn": 1,
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 440,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Pooja Iyer requests a refund for order OD647093.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.22,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1,
+        "phone_india": 1
+      }
+    },
+    {
+      "ticket_id": 442,
+      "success": true,
+      "analysis": {
+        "summary": "Meera Nair requests a refund for order OD969414.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.74,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1,
+        "phone_india": 1
+      }
+    },
+    {
+      "ticket_id": 439,
+      "success": true,
+      "analysis": {
+        "summary": "User Arun Reddy from the United Kingdom is unable to log in.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.43,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 281,
+      "success": true,
+      "analysis": {
+        "summary": "Customer wants to update billing details including contact number and email.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.29,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "phone_india": 1
+      }
+    },
+    {
+      "ticket_id": 289,
+      "success": true,
+      "analysis": {
+        "summary": "User is unable to reset their password for the account associated with pooja.iyer66@businessco.com.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.63,
+      "updated": true,
+      "pii_protected": false,
+      "redactions": {}
+    },
+    {
+      "ticket_id": 277,
+      "success": true,
+      "analysis": {
+        "summary": "User Leena Thomas from Germany is unable to login to her account.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.75,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 285,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Amit Sharma is experiencing an issue with placing an order.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.12,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "phone_india": 1
+      }
+    },
+    {
+      "ticket_id": 267,
+      "success": true,
+      "analysis": {
+        "summary": "Request to remove user account for Vikram Joshi.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.7,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 403,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Karan Verma requests a refund for order OD845476.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.65,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1
+      }
+    },
+    {
+      "ticket_id": 432,
+      "success": true,
+      "analysis": {
+        "summary": "User requested data deletion associated with transaction ID TRX2389057.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.14,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "ssn": 1,
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 409,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Sandeep Gupta reported an error and provided contact information.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.51,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 251,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Meera Nair requests a refund for order OD415917.",
+        "root_cause": "refund",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.65,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1,
+        "ssn": 1,
+        "phone_india": 1
+      }
+    },
+    {
+      "ticket_id": 436,
+      "success": true,
+      "analysis": {
+        "summary": "Customer requests an update to billing details including a new contact number and email address.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.65,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 438,
+      "success": true,
+      "analysis": {
+        "summary": "Urgent report of a fraudulent charge on a credit card.",
+        "root_cause": "other",
+        "urgency": "high",
+        "sentiment": "negative"
+      },
+      "processing_time": 1.33,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 380,
+      "success": true,
+      "analysis": {
+        "summary": "Customer Manoj Pillai reported an error and provided contact information.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.21,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    },
+    {
+      "ticket_id": 437,
+      "success": true,
+      "analysis": {
+        "summary": "User is unable to reset their password associated with their email.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "negative"
+      },
+      "processing_time": 2.42,
+      "updated": true,
+      "pii_protected": false,
+      "redactions": {}
+    },
+    {
+      "ticket_id": 433,
+      "success": true,
+      "analysis": {
+        "summary": "User Sandeep Gupta from India is unable to log in with their registered email.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.37,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "aadhaar": 1
+      }
+    },
+    {
+      "ticket_id": 434,
+      "success": true,
+      "analysis": {
+        "summary": "Customer requests to update billing details including card information, contact number, and email address.",
+        "root_cause": "feature",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 1.5,
+      "updated": true,
+      "pii_protected": true,
+      "redactions": {
+        "credit_card": 1
+      }
+    }
+  ]
+}

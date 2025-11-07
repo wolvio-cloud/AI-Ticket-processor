@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-06T19:48:44.799799",
+  "total": 1,
+  "processed": 1,
+  "failed": 0,
+  "avg_time_per_ticket": 2.86,
+  "total_time": 5.92,
+  "cost_estimate": 0.001,
+  "results": [
+    {
+      "ticket_id": 15,
+      "success": true,
+      "analysis": {
+        "summary": "Developer requests detailed API documentation with code examples for integration.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 2.86,
+      "updated": true
+    }
+  ]
+}

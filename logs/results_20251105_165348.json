@@ -1,0 +1,19 @@
+{
+  "total": 1,
+  "processed": 1,
+  "failed": 0,
+  "results": [
+    {
+      "ticket_id": 1,
+      "success": true,
+      "analysis": {
+        "summary": "Inquiry about how Zendesk works and how to respond to tickets.",
+        "root_cause": "other",
+        "urgency": "medium",
+        "sentiment": "neutral"
+      },
+      "processing_time": 4.15,
+      "updated": true
+    }
+  ]
+}

@@ -1,0 +1,2511 @@
+{
+  "generated_at": "2025-11-07T16:12:47.159343",
+  "total_tickets": 250,
+  "distribution": {
+    "ecommerce": 110,
+    "saas": 110,
+    "general": 30
+  },
+  "tickets": [
+    {
+      "id": 1,
+      "subject": "Package #86542 delivered to wrong address. I never...",
+      "description": "Package #86542 delivered to wrong address. I never received it. Need immediate redelivery.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-17T16:12:47.159343",
+      "expected_category": "delivery_issue",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 2,
+      "subject": "Wrong variant sent. Ordered iPhone 13 Pro received...",
+      "description": "Wrong variant sent. Ordered iPhone 13 Pro received regular iPhone 13. Order #99220.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-16T16:12:47.159343",
+      "expected_category": "wrong_item",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 3,
+      "subject": "App extremely slow today. Taking 14 seconds to loa...",
+      "description": "App extremely slow today. Taking 14 seconds to load dashboard.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-14T16:12:47.159343",
+      "expected_category": "performance_slow",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 4,
+      "subject": "My card was declined at merchant but I have suffic...",
+      "description": "My card was declined at merchant but I have sufficient balance.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-07T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 5,
+      "subject": "API response time increased from 102ms to 1250ms. ...",
+      "description": "API response time increased from 102ms to 1250ms. Performance issue?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-04T16:12:47.159343",
+      "expected_category": "api_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 6,
+      "subject": "Want full refund - product is not what I expected....",
+      "description": "Want full refund - product is not what I expected. Order #98543. How long does refund take?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-06T16:12:47.159343",
+      "expected_category": "refund_request",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 7,
+      "subject": "Accidentally ordered wrong size. Want to cancel or...",
+      "description": "Accidentally ordered wrong size. Want to cancel order #60915 and reorder correct one.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-25T16:12:47.159343",
+      "expected_category": "order_cancellation",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 8,
+      "subject": "API returning 500 Internal Server Error for /api/u...",
+      "description": "API returning 500 Internal Server Error for /api/users endpoint.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-07T16:12:47.159343",
+      "expected_category": "api_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 9,
+      "subject": "Found a bug - clicking Save button does nothing. T...",
+      "description": "Found a bug - clicking Save button does nothing. Tried on Chrome and Firefox.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-11T16:12:47.159343",
+      "expected_category": "bug_report",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 10,
+      "subject": "Want to exchange item for different color. Order #...",
+      "description": "Want to exchange item for different color. Order #98750. What's the process?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-22T16:12:47.159343",
+      "expected_category": "return_exchange",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 11,
+      "subject": "SSO login not working - redirects to error page. U...",
+      "description": "SSO login not working - redirects to error page. Using Okta authentication.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-07T16:12:47.159343",
+      "expected_category": "login_issue",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 12,
+      "subject": "Duplicate entries appearing after sync. Database g...",
+      "description": "Duplicate entries appearing after sync. Database getting messy.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-17T16:12:47.159343",
+      "expected_category": "data_sync",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 13,
+      "subject": "Tracking says delivered but I didn't receive anyth...",
+      "description": "Tracking says delivered but I didn't receive anything. Order #49415. Please investigate.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-12T16:12:47.159343",
+      "expected_category": "delivery_issue",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 14,
+      "subject": "Data not syncing between web and mobile app. Last ...",
+      "description": "Data not syncing between web and mobile app. Last sync: 47 hours ago.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-30T16:12:47.159343",
+      "expected_category": "data_sync",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 15,
+      "subject": "Can't complete setup - stuck on step 5. What am I ...",
+      "description": "Can't complete setup - stuck on step 5. What am I doing wrong?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-04T16:12:47.159343",
+      "expected_category": "account_setup",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 16,
+      "subject": "Want to exchange item for different color. Order #...",
+      "description": "Want to exchange item for different color. Order #59618. What's the process?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-25T16:12:47.159343",
+      "expected_category": "return_exchange",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 17,
+      "subject": "Forgot my password and security question. How do I...",
+      "description": "Forgot my password and security question. How do I recover account?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-18T16:12:47.159343",
+      "expected_category": "account_help",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 18,
+      "subject": "Promo code VIP30 not working at checkout. Says inv...",
+      "description": "Promo code VIP30 not working at checkout. Says invalid but I just received it.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-22T16:12:47.159343",
+      "expected_category": "promo_code",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 19,
+      "subject": "Payment went through but order shows as failed. Mo...",
+      "description": "Payment went through but order shows as failed. Money was taken from account. Order #47279.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-10T16:12:47.159343",
+      "expected_category": "payment_failed",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 20,
+      "subject": "Getting error at checkout - payment keeps failing....",
+      "description": "Getting error at checkout - payment keeps failing. Tried 2 times. Card is valid.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-21T16:12:47.159343",
+      "expected_category": "payment_failed",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 21,
+      "subject": "Order #90768 status stuck on 'Processing' for a we...",
+      "description": "Order #90768 status stuck on 'Processing' for a week. What's going on?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-11T16:12:47.159343",
+      "expected_category": "tracking_inquiry",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 22,
+      "subject": "Can't login - getting 'Invalid credentials' but pa...",
+      "description": "Can't login - getting 'Invalid credentials' but password is correct. Username: user3933",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-18T16:12:47.159343",
+      "expected_category": "login_issue",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 23,
+      "subject": "Return label not working. Can't print it. Order #5...",
+      "description": "Return label not working. Can't print it. Order #55818. Need help ASAP.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-14T16:12:47.159343",
+      "expected_category": "return_exchange",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 24,
+      "subject": "Is this the right email for partnerships?...",
+      "description": "Is this the right email for partnerships?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-24T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 25,
+      "subject": "Charged $280 but invoice says $144. Which is corre...",
+      "description": "Charged $280 but invoice says $144. Which is correct?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-12T16:12:47.159343",
+      "expected_category": "billing_question",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 26,
+      "subject": "Forgot my password and security question. How do I...",
+      "description": "Forgot my password and security question. How do I recover account?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-15T16:12:47.159343",
+      "expected_category": "account_help",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 27,
+      "subject": "Webhook stopped firing. Checked endpoint - it's wo...",
+      "description": "Webhook stopped firing. Checked endpoint - it's working. Issue on your end?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-25T16:12:47.159343",
+      "expected_category": "integration_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 28,
+      "subject": "Prescription refill request for Prescription B. La...",
+      "description": "Prescription refill request for Prescription B. Last refill was 5 months ago.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-11T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 29,
+      "subject": "Sync stuck at 39%. Been 22 minutes. What's wrong?...",
+      "description": "Sync stuck at 39%. Been 22 minutes. What's wrong?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-19T16:12:47.159343",
+      "expected_category": "data_sync",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 30,
+      "subject": "Team setup questions - how many seats do I need fo...",
+      "description": "Team setup questions - how many seats do I need for 298 users?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-11T16:12:47.159343",
+      "expected_category": "account_setup",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 31,
+      "subject": "Reports timing out - can't generate anything. Been...",
+      "description": "Reports timing out - can't generate anything. Been trying for 15 minutes.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-08T16:12:47.159343",
+      "expected_category": "performance_slow",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 32,
+      "subject": "My package arrived damaged - box was crushed. Orde...",
+      "description": "My package arrived damaged - box was crushed. Order #85273. Who do I contact about this?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "delivery_issue",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 33,
+      "subject": "How do I import existing data from Other Tool? Nee...",
+      "description": "How do I import existing data from Other Tool? Need migration help.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-10T16:12:47.159343",
+      "expected_category": "account_setup",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 34,
+      "subject": "Lost data after sync failed. Can you recover from ...",
+      "description": "Lost data after sync failed. Can you recover from backup?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-20T16:12:47.159343",
+      "expected_category": "data_sync",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 35,
+      "subject": "Need bulk import feature. Currently have to add 36...",
+      "description": "Need bulk import feature. Currently have to add 362 items manually.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-21T16:12:47.159343",
+      "expected_category": "feature_request",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 36,
+      "subject": "Shoes arrived with defect - sole is coming off alr...",
+      "description": "Shoes arrived with defect - sole is coming off already. Only wore once! Order #32733.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-09T16:12:47.159343",
+      "expected_category": "product_defect",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 37,
+      "subject": "Order delayed by a week! This is unacceptable. Ord...",
+      "description": "Order delayed by a week! This is unacceptable. Order #53684. I need it urgently for a gift.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-29T16:12:47.159343",
+      "expected_category": "delivery_issue",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 38,
+      "subject": "Tracking says delivered but never arrived. Order #...",
+      "description": "Tracking says delivered but never arrived. Order #71810. Please help.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-04T16:12:47.159343",
+      "expected_category": "tracking_inquiry",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 39,
+      "subject": "Requesting refund for order #31513. Changed my min...",
+      "description": "Requesting refund for order #31513. Changed my mind about purchase. Item unopened.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-06T16:12:47.159343",
+      "expected_category": "refund_request",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 40,
+      "subject": "How do I upgrade from Starter to Pro plan? Need mo...",
+      "description": "How do I upgrade from Starter to Pro plan? Need more seats.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-06T16:12:47.159343",
+      "expected_category": "billing_question",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 41,
+      "subject": "Tracking number UPS860531456 shows no information....",
+      "description": "Tracking number UPS860531456 shows no information. Is it shipped yet?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-16T16:12:47.159343",
+      "expected_category": "tracking_inquiry",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 42,
+      "subject": "Everything lagging - typing has noticeable delay. ...",
+      "description": "Everything lagging - typing has noticeable delay. Is this a known issue?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-22T16:12:47.159343",
+      "expected_category": "performance_slow",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 43,
+      "subject": "Requesting refund for order #58207. Changed my min...",
+      "description": "Requesting refund for order #58207. Changed my mind about purchase. Item unopened.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-18T16:12:47.159343",
+      "expected_category": "refund_request",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 44,
+      "subject": "Does your product work with ClickUp?...",
+      "description": "Does your product work with ClickUp?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-24T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 45,
+      "subject": "Want to exchange item for different color. Order #...",
+      "description": "Want to exchange item for different color. Order #40166. What's the process?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-30T16:12:47.159343",
+      "expected_category": "return_exchange",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 46,
+      "subject": "Can't complete setup - stuck on step 5. What am I ...",
+      "description": "Can't complete setup - stuck on step 5. What am I doing wrong?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-04T16:12:47.159343",
+      "expected_category": "account_setup",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 47,
+      "subject": "Wrong variant sent. Ordered iPhone 13 Pro received...",
+      "description": "Wrong variant sent. Ordered iPhone 13 Pro received regular iPhone 13. Order #81441.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "wrong_item",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 48,
+      "subject": "How do I delete my account? Want to close it perma...",
+      "description": "How do I delete my account? Want to close it permanently.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-25T16:12:47.159343",
+      "expected_category": "account_help",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 49,
+      "subject": "Dashboard freezes when loading large datasets. Unu...",
+      "description": "Dashboard freezes when loading large datasets. Unusable right now.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-21T16:12:47.159343",
+      "expected_category": "performance_slow",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 50,
+      "subject": "Duplicate entries appearing after sync. Database g...",
+      "description": "Duplicate entries appearing after sync. Database getting messy.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-08T16:12:47.159343",
+      "expected_category": "data_sync",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 51,
+      "subject": "Promo code FIRST56 not working at checkout. Says i...",
+      "description": "Promo code FIRST56 not working at checkout. Says invalid but I just received it.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-14T16:12:47.159343",
+      "expected_category": "promo_code",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 52,
+      "subject": "Zapier connection keeps failing. Error: 'Authentic...",
+      "description": "Zapier connection keeps failing. Error: 'Authentication failed'.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-07T16:12:47.159343",
+      "expected_category": "integration_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 53,
+      "subject": "Found a bug - clicking Save button does nothing. T...",
+      "description": "Found a bug - clicking Save button does nothing. Tried on Chrome and Firefox.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-29T16:12:47.159343",
+      "expected_category": "bug_report",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 54,
+      "subject": "Payment went through but order shows as failed. Mo...",
+      "description": "Payment went through but order shows as failed. Money was taken from account. Order #47724.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-13T16:12:47.159343",
+      "expected_category": "payment_failed",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 55,
+      "subject": "Random feedback - UI could be better....",
+      "description": "Random feedback - UI could be better.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-02T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 56,
+      "subject": "Can't update my shipping address. Getting error me...",
+      "description": "Can't update my shipping address. Getting error message. Need to change it urgently.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-25T16:12:47.159343",
+      "expected_category": "account_help",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 57,
+      "subject": "Item not as described - color is completely differ...",
+      "description": "Item not as described - color is completely different from photos. Order #16091. Very disappointed.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-07T16:12:47.159343",
+      "expected_category": "product_defect",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 58,
+      "subject": "API response time increased from 166ms to 2748ms. ...",
+      "description": "API response time increased from 166ms to 2748ms. Performance issue?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-10T16:12:47.159343",
+      "expected_category": "api_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 59,
+      "subject": "Accidentally ordered wrong size. Want to cancel or...",
+      "description": "Accidentally ordered wrong size. Want to cancel order #66631 and reorder correct one.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-13T16:12:47.159343",
+      "expected_category": "order_cancellation",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 60,
+      "subject": "Can't update my shipping address. Getting error me...",
+      "description": "Can't update my shipping address. Getting error message. Need to change it urgently.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-13T16:12:47.159343",
+      "expected_category": "account_help",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 61,
+      "subject": "Getting 429 Too Many Requests error. Need rate lim...",
+      "description": "Getting 429 Too Many Requests error. Need rate limit increased ASAP.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-10T16:12:47.159343",
+      "expected_category": "api_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 62,
+      "subject": "Do you cover return shipping? Item doesn't fit. Or...",
+      "description": "Do you cover return shipping? Item doesn't fit. Order #85551.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-23T16:12:47.159343",
+      "expected_category": "return_exchange",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 63,
+      "subject": "Refund not received yet. It's been 13 days since I...",
+      "description": "Refund not received yet. It's been 13 days since I returned item. Order #31514.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-17T16:12:47.159343",
+      "expected_category": "payment_failed",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 64,
+      "subject": "Applied code but discount is less than advertised....",
+      "description": "Applied code but discount is less than advertised. Code SAVE53 should give 10% off.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-21T16:12:47.159343",
+      "expected_category": "promo_code",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 65,
+      "subject": "Dashboard freezes when loading large datasets. Unu...",
+      "description": "Dashboard freezes when loading large datasets. Unusable right now.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-27T16:12:47.159343",
+      "expected_category": "performance_slow",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 66,
+      "subject": "Need bulk import feature. Currently have to add 87...",
+      "description": "Need bulk import feature. Currently have to add 87 items manually.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-11T16:12:47.159343",
+      "expected_category": "feature_request",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 67,
+      "subject": "Return label not working. Can't print it. Order #7...",
+      "description": "Return label not working. Can't print it. Order #73968. Need help ASAP.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-27T16:12:47.159343",
+      "expected_category": "return_exchange",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 68,
+      "subject": "Bulk user import - have 347 users to add. CSV uplo...",
+      "description": "Bulk user import - have 347 users to add. CSV upload available?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-03T16:12:47.159343",
+      "expected_category": "user_management",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 69,
+      "subject": "Need to remove user access - they left the company...",
+      "description": "Need to remove user access - they left the company. Urgent.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-14T16:12:47.159343",
+      "expected_category": "user_management",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 70,
+      "subject": "Wrong size sent - ordered Large received Small. Or...",
+      "description": "Wrong size sent - ordered Large received Small. Order #43747. Need exchange.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-11T16:12:47.159343",
+      "expected_category": "wrong_item",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 71,
+      "subject": "Just browsing, no specific question....",
+      "description": "Just browsing, no specific question.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-11T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 72,
+      "subject": "Initial configuration help needed. What are best p...",
+      "description": "Initial configuration help needed. What are best practice settings?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-19T16:12:47.159343",
+      "expected_category": "account_setup",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 73,
+      "subject": "Grade shows as F but I submitted assignment on tim...",
+      "description": "Grade shows as F but I submitted assignment on time. Need review.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-22T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 74,
+      "subject": "Search function broken - returns no results even f...",
+      "description": "Search function broken - returns no results even for exact matches.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-02T16:12:47.159343",
+      "expected_category": "bug_report",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 75,
+      "subject": "Slack integration stopped working - not receiving ...",
+      "description": "Slack integration stopped working - not receiving notifications anymore.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-29T16:12:47.159343",
+      "expected_category": "integration_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 76,
+      "subject": "Quality is terrible - fabric is cheap and tears ea...",
+      "description": "Quality is terrible - fabric is cheap and tears easily. This is not what I paid for. Order #20503.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-25T16:12:47.159343",
+      "expected_category": "product_defect",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 77,
+      "subject": "Order delayed by a week! This is unacceptable. Ord...",
+      "description": "Order delayed by a week! This is unacceptable. Order #12045. I need it urgently for a gift.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-03T16:12:47.159343",
+      "expected_category": "delivery_issue",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 78,
+      "subject": "Electronic item doesn't work at all - won't turn o...",
+      "description": "Electronic item doesn't work at all - won't turn on. Dead on arrival. Order #41259.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-24T16:12:47.159343",
+      "expected_category": "product_defect",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 79,
+      "subject": "Can you recommend a good competitor? Your product ...",
+      "description": "Can you recommend a good competitor? Your product doesn't fit our needs.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-09T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 80,
+      "subject": "Dashboard freezes when loading large datasets. Unu...",
+      "description": "Dashboard freezes when loading large datasets. Unusable right now.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-19T16:12:47.159343",
+      "expected_category": "performance_slow",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 81,
+      "subject": "Payment went through but order shows as failed. Mo...",
+      "description": "Payment went through but order shows as failed. Money was taken from account. Order #22527.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-15T16:12:47.159343",
+      "expected_category": "payment_failed",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 82,
+      "subject": "Haven't received my lab test results yet. It's bee...",
+      "description": "Haven't received my lab test results yet. It's been 2 days.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-28T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 83,
+      "subject": "Data not syncing between web and mobile app. Last ...",
+      "description": "Data not syncing between web and mobile app. Last sync: 29 hours ago.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-19T16:12:47.159343",
+      "expected_category": "data_sync",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 84,
+      "subject": "Quick question - are you hiring? Saw the role on L...",
+      "description": "Quick question - are you hiring? Saw the role on LinkedIn.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-25T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 85,
+      "subject": "Account locked after failed login attempts. Please...",
+      "description": "Account locked after failed login attempts. Please unlock immediately.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-10T16:12:47.159343",
+      "expected_category": "login_issue",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 86,
+      "subject": "Want full refund - product is not what I expected....",
+      "description": "Want full refund - product is not what I expected. Order #39932. How long does refund take?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-12T16:12:47.159343",
+      "expected_category": "refund_request",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 87,
+      "subject": "Can't complete setup - stuck on step 2. What am I ...",
+      "description": "Can't complete setup - stuck on step 2. What am I doing wrong?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "account_setup",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 88,
+      "subject": "How do I upgrade from Starter to Pro plan? Need mo...",
+      "description": "How do I upgrade from Starter to Pro plan? Need more seats.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-09T16:12:47.159343",
+      "expected_category": "billing_question",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 89,
+      "subject": "Need invoice for last month. Accounting department...",
+      "description": "Need invoice for last month. Accounting department needs it urgently.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-30T16:12:47.159343",
+      "expected_category": "billing_question",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 90,
+      "subject": "Accidentally ordered wrong size. Want to cancel or...",
+      "description": "Accidentally ordered wrong size. Want to cancel order #61770 and reorder correct one.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "order_cancellation",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 91,
+      "subject": "Cancel order and refund immediately - don't want i...",
+      "description": "Cancel order and refund immediately - don't want it anymore. Order #69535.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-23T16:12:47.159343",
+      "expected_category": "refund_request",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 92,
+      "subject": "Can't update my shipping address. Getting error me...",
+      "description": "Can't update my shipping address. Getting error message. Need to change it urgently.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-06T16:12:47.159343",
+      "expected_category": "account_help",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 93,
+      "subject": "Where is my order? #16651. Tracking hasn't updated...",
+      "description": "Where is my order? #16651. Tracking hasn't updated in 13 days.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-02T16:12:47.159343",
+      "expected_category": "tracking_inquiry",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 94,
+      "subject": "How long do returns take? Sent item back 14 days a...",
+      "description": "How long do returns take? Sent item back 14 days ago. Order #44754.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "return_exchange",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 95,
+      "subject": "Tracking says delivered but I didn't receive anyth...",
+      "description": "Tracking says delivered but I didn't receive anything. Order #58920. Please investigate.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-18T16:12:47.159343",
+      "expected_category": "delivery_issue",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 96,
+      "subject": "Received completely different product! Ordered sho...",
+      "description": "Received completely different product! Ordered shoes got a t-shirt. Order #25190.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-05T16:12:47.159343",
+      "expected_category": "wrong_item",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 97,
+      "subject": "My order #30103 was supposed to arrive 1 days ago ...",
+      "description": "My order #30103 was supposed to arrive 1 days ago but still hasn't come. Tracking shows it's stuck in transit.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-07T16:12:47.159343",
+      "expected_category": "delivery_issue",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 98,
+      "subject": "Tracking says delivered but never arrived. Order #...",
+      "description": "Tracking says delivered but never arrived. Order #31845. Please help.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-25T16:12:47.159343",
+      "expected_category": "tracking_inquiry",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 99,
+      "subject": "How do I add users to my workspace? Can't find the...",
+      "description": "How do I add users to my workspace? Can't find the option.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-08T16:12:47.159343",
+      "expected_category": "user_management",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 100,
+      "subject": "App crashes when I try to export data. Happens eve...",
+      "description": "App crashes when I try to export data. Happens every time. Version 5.7.11.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-17T16:12:47.159343",
+      "expected_category": "bug_report",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 101,
+      "subject": "Maintenance request - AC not working in unit 2C....",
+      "description": "Maintenance request - AC not working in unit 2C.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-19T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 102,
+      "subject": "Payment went through but order shows as failed. Mo...",
+      "description": "Payment went through but order shows as failed. Money was taken from account. Order #10885.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-01T16:12:47.159343",
+      "expected_category": "payment_failed",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 103,
+      "subject": "Can't complete setup - stuck on step 5. What am I ...",
+      "description": "Can't complete setup - stuck on step 5. What am I doing wrong?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "account_setup",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 104,
+      "subject": "Charged twice for the same order! See duplicate ch...",
+      "description": "Charged twice for the same order! See duplicate charges on my statement. Order #64725.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-01T16:12:47.159343",
+      "expected_category": "payment_failed",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 105,
+      "subject": "Maintenance request - AC not working in unit 20C....",
+      "description": "Maintenance request - AC not working in unit 20C.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-03T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 106,
+      "subject": "App extremely slow today. Taking 18 seconds to loa...",
+      "description": "App extremely slow today. Taking 18 seconds to load dashboard.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-27T16:12:47.159343",
+      "expected_category": "performance_slow",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 107,
+      "subject": "Zapier connection keeps failing. Error: 'Authentic...",
+      "description": "Zapier connection keeps failing. Error: 'Authentication failed'.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-03T16:12:47.159343",
+      "expected_category": "integration_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 108,
+      "subject": "Tracking number FEDEX313580902 shows no informatio...",
+      "description": "Tracking number FEDEX313580902 shows no information. Is it shipped yet?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-17T16:12:47.159343",
+      "expected_category": "tracking_inquiry",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 109,
+      "subject": "Shoes arrived with defect - sole is coming off alr...",
+      "description": "Shoes arrived with defect - sole is coming off already. Only wore once! Order #55261.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-01T16:12:47.159343",
+      "expected_category": "product_defect",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 110,
+      "subject": "Card declined - please update payment method manua...",
+      "description": "Card declined - please update payment method manually. Card ending 3094.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-24T16:12:47.159343",
+      "expected_category": "billing_question",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 111,
+      "subject": "Do you have an office in San Francisco? Want to vi...",
+      "description": "Do you have an office in San Francisco? Want to visit.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-31T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 112,
+      "subject": "How do I import existing data from Competitor A? N...",
+      "description": "How do I import existing data from Competitor A? Need migration help.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-23T16:12:47.159343",
+      "expected_category": "account_setup",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 113,
+      "subject": "Payment went through but order shows as failed. Mo...",
+      "description": "Payment went through but order shows as failed. Money was taken from account. Order #66400.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-29T16:12:47.159343",
+      "expected_category": "payment_failed",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 114,
+      "subject": "API returning 500 Internal Server Error for /api/u...",
+      "description": "API returning 500 Internal Server Error for /api/users endpoint.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-24T16:12:47.159343",
+      "expected_category": "api_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 115,
+      "subject": "How much does your enterprise plan cost?...",
+      "description": "How much does your enterprise plan cost?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-16T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 116,
+      "subject": "Please add dark mode! Would really help with night...",
+      "description": "Please add dark mode! Would really help with night-time usage.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-23T16:12:47.159343",
+      "expected_category": "feature_request",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 117,
+      "subject": "Order #61645 status stuck on 'Processing' for a we...",
+      "description": "Order #61645 status stuck on 'Processing' for a week. What's going on?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-27T16:12:47.159343",
+      "expected_category": "tracking_inquiry",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 118,
+      "subject": "Google Calendar sync not working. Events aren't sh...",
+      "description": "Google Calendar sync not working. Events aren't showing up.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-12T16:12:47.159343",
+      "expected_category": "integration_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 119,
+      "subject": "Return label not working. Can't print it. Order #7...",
+      "description": "Return label not working. Can't print it. Order #72154. Need help ASAP.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-27T16:12:47.159343",
+      "expected_category": "return_exchange",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 120,
+      "subject": "Found a bug - clicking Save button does nothing. T...",
+      "description": "Found a bug - clicking Save button does nothing. Tried on Chrome and Firefox.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-27T16:12:47.159343",
+      "expected_category": "bug_report",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 121,
+      "subject": "Promo code FIRST43 not working at checkout. Says i...",
+      "description": "Promo code FIRST43 not working at checkout. Says invalid but I just received it.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-31T16:12:47.159343",
+      "expected_category": "promo_code",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 122,
+      "subject": "Forgot my password and security question. How do I...",
+      "description": "Forgot my password and security question. How do I recover account?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-02T16:12:47.159343",
+      "expected_category": "account_help",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 123,
+      "subject": "Do you have an office in Berlin? Want to visit....",
+      "description": "Do you have an office in Berlin? Want to visit.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 124,
+      "subject": "Received completely different product! Ordered sho...",
+      "description": "Received completely different product! Ordered shoes got a t-shirt. Order #90511.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-02T16:12:47.159343",
+      "expected_category": "wrong_item",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 125,
+      "subject": "Account locked after too many login attempts. Plea...",
+      "description": "Account locked after too many login attempts. Please unlock. Username: user8395",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-30T16:12:47.159343",
+      "expected_category": "account_help",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 126,
+      "subject": "Can't upload files - getting error 'File too large...",
+      "description": "Can't upload files - getting error 'File too large' even for small files.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-04T16:12:47.159343",
+      "expected_category": "bug_report",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 127,
+      "subject": "Return label not working. Can't print it. Order #1...",
+      "description": "Return label not working. Can't print it. Order #15955. Need help ASAP.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "return_exchange",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 128,
+      "subject": "First time customer discount not working. Code FIR...",
+      "description": "First time customer discount not working. Code FIRST45.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-21T16:12:47.159343",
+      "expected_category": "promo_code",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 129,
+      "subject": "How do I import existing data from Previous System...",
+      "description": "How do I import existing data from Previous System? Need migration help.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-10T16:12:47.159343",
+      "expected_category": "account_setup",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 130,
+      "subject": "Google Calendar sync not working. Events aren't sh...",
+      "description": "Google Calendar sync not working. Events aren't showing up.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-07T16:12:47.159343",
+      "expected_category": "integration_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 131,
+      "subject": "Webhook stopped firing. Checked endpoint - it's wo...",
+      "description": "Webhook stopped firing. Checked endpoint - it's working. Issue on your end?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-27T16:12:47.159343",
+      "expected_category": "integration_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 132,
+      "subject": "Tracking says delivered but never arrived. Order #...",
+      "description": "Tracking says delivered but never arrived. Order #11599. Please help.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "tracking_inquiry",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 133,
+      "subject": "Dashboard freezes when loading large datasets. Unu...",
+      "description": "Dashboard freezes when loading large datasets. Unusable right now.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-21T16:12:47.159343",
+      "expected_category": "performance_slow",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 134,
+      "subject": "Please add dark mode! Would really help with night...",
+      "description": "Please add dark mode! Would really help with night-time usage.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-11T16:12:47.159343",
+      "expected_category": "feature_request",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 135,
+      "subject": "Request: Add keyboard shortcuts for common actions...",
+      "description": "Request: Add keyboard shortcuts for common actions. Would speed up workflow significantly.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-06T16:12:47.159343",
+      "expected_category": "feature_request",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 136,
+      "subject": "Cancel my subscription order #15276. Moving to dif...",
+      "description": "Cancel my subscription order #15276. Moving to different product.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-10T16:12:47.159343",
+      "expected_category": "order_cancellation",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 137,
+      "subject": "Can I change user roles? Want to make John an admi...",
+      "description": "Can I change user roles? Want to make John an admin.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-30T16:12:47.159343",
+      "expected_category": "user_management",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 138,
+      "subject": "Getting error at checkout - payment keeps failing....",
+      "description": "Getting error at checkout - payment keeps failing. Tried 5 times. Card is valid.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-13T16:12:47.159343",
+      "expected_category": "payment_failed",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 139,
+      "subject": "Card declined - please update payment method manua...",
+      "description": "Card declined - please update payment method manually. Card ending 5458.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-10T16:12:47.159343",
+      "expected_category": "billing_question",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 140,
+      "subject": "User permissions not working correctly. Everyone c...",
+      "description": "User permissions not working correctly. Everyone can see everything.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-05T16:12:47.159343",
+      "expected_category": "user_management",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 141,
+      "subject": "Product arrived broken! The screen is cracked. Ord...",
+      "description": "Product arrived broken! The screen is cracked. Order #11469. Want full refund.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-23T16:12:47.159343",
+      "expected_category": "product_defect",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 142,
+      "subject": "Got the wrong color. Ordered black received white....",
+      "description": "Got the wrong color. Ordered black received white. Order #21259.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-21T16:12:47.159343",
+      "expected_category": "wrong_item",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 143,
+      "subject": "Received wrong item so want refund instead of repl...",
+      "description": "Received wrong item so want refund instead of replacement. Order #91119.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-04T16:12:47.159343",
+      "expected_category": "refund_request",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 144,
+      "subject": "Forgot my password and security question. How do I...",
+      "description": "Forgot my password and security question. How do I recover account?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-23T16:12:47.159343",
+      "expected_category": "account_help",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 145,
+      "subject": "Order delayed by a week! This is unacceptable. Ord...",
+      "description": "Order delayed by a week! This is unacceptable. Order #34737. I need it urgently for a gift.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-10T16:12:47.159343",
+      "expected_category": "delivery_issue",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 146,
+      "subject": "Hi, just wanted to say I love your product! Keep u...",
+      "description": "Hi, just wanted to say I love your product! Keep up the great work!",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-16T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 147,
+      "subject": "Webhook stopped firing. Checked endpoint - it's wo...",
+      "description": "Webhook stopped firing. Checked endpoint - it's working. Issue on your end?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-07T16:12:47.159343",
+      "expected_category": "integration_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 148,
+      "subject": "Do you have an office in London? Want to visit....",
+      "description": "Do you have an office in London? Want to visit.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-28T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 149,
+      "subject": "Need to remove user access - they left the company...",
+      "description": "Need to remove user access - they left the company. Urgent.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-21T16:12:47.159343",
+      "expected_category": "user_management",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 150,
+      "subject": "Webhook payload format changed without notice. Bre...",
+      "description": "Webhook payload format changed without notice. Breaking our integration.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-29T16:12:47.159343",
+      "expected_category": "api_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 151,
+      "subject": "Sync stuck at 16%. Been 5 minutes. What's wrong?...",
+      "description": "Sync stuck at 16%. Been 5 minutes. What's wrong?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-24T16:12:47.159343",
+      "expected_category": "data_sync",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 152,
+      "subject": "Dashboard showing wrong numbers. Revenue is off by...",
+      "description": "Dashboard showing wrong numbers. Revenue is off by $427. Please fix urgently.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-16T16:12:47.159343",
+      "expected_category": "bug_report",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 153,
+      "subject": "Grade shows as F but I submitted assignment on tim...",
+      "description": "Grade shows as F but I submitted assignment on time. Need review.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-04T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 154,
+      "subject": "Need to cancel order #62418 urgently! Just placed ...",
+      "description": "Need to cancel order #62418 urgently! Just placed it 10 minutes ago.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-25T16:12:47.159343",
+      "expected_category": "order_cancellation",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 155,
+      "subject": "Need statement for tax purposes. Account number: 9...",
+      "description": "Need statement for tax purposes. Account number: 958078",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-22T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 156,
+      "subject": "Tracking says delivered but I didn't receive anyth...",
+      "description": "Tracking says delivered but I didn't receive anything. Order #79144. Please investigate.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-12T16:12:47.159343",
+      "expected_category": "delivery_issue",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 157,
+      "subject": "How do I upgrade from Starter to Pro plan? Need mo...",
+      "description": "How do I upgrade from Starter to Pro plan? Need more seats.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-08T16:12:47.159343",
+      "expected_category": "billing_question",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 158,
+      "subject": "Account locked after failed login attempts. Please...",
+      "description": "Account locked after failed login attempts. Please unlock immediately.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-20T16:12:47.159343",
+      "expected_category": "login_issue",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 159,
+      "subject": "Duplicate entries appearing after sync. Database g...",
+      "description": "Duplicate entries appearing after sync. Database getting messy.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-31T16:12:47.159343",
+      "expected_category": "data_sync",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 160,
+      "subject": "Need invoice for last month. Accounting department...",
+      "description": "Need invoice for last month. Accounting department needs it urgently.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-12T16:12:47.159343",
+      "expected_category": "billing_question",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 161,
+      "subject": "Wrong size sent - ordered Large received Small. Or...",
+      "description": "Wrong size sent - ordered Large received Small. Order #85376. Need exchange.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-07T16:12:47.159343",
+      "expected_category": "wrong_item",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 162,
+      "subject": "Forgot my password and security question. How do I...",
+      "description": "Forgot my password and security question. How do I recover account?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-15T16:12:47.159343",
+      "expected_category": "account_help",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 163,
+      "subject": "Press inquiry - writing article about your industr...",
+      "description": "Press inquiry - writing article about your industry.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-24T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 164,
+      "subject": "Need bulk import feature. Currently have to add 39...",
+      "description": "Need bulk import feature. Currently have to add 394 items manually.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-17T16:12:47.159343",
+      "expected_category": "feature_request",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 165,
+      "subject": "When will my order ship? Placed it 7 days ago. Ord...",
+      "description": "When will my order ship? Placed it 7 days ago. Order #58850.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-29T16:12:47.159343",
+      "expected_category": "tracking_inquiry",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 166,
+      "subject": "Received completely different product! Ordered sho...",
+      "description": "Received completely different product! Ordered shoes got a t-shirt. Order #60373.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-27T16:12:47.159343",
+      "expected_category": "wrong_item",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 167,
+      "subject": "Electronic item doesn't work at all - won't turn o...",
+      "description": "Electronic item doesn't work at all - won't turn on. Dead on arrival. Order #15883.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-25T16:12:47.159343",
+      "expected_category": "product_defect",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 168,
+      "subject": "Wrong variant sent. Ordered iPhone 13 Pro received...",
+      "description": "Wrong variant sent. Ordered iPhone 13 Pro received regular iPhone 13. Order #33067.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-20T16:12:47.159343",
+      "expected_category": "wrong_item",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 169,
+      "subject": "Want to downgrade plan. How does prorated refund w...",
+      "description": "Want to downgrade plan. How does prorated refund work?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-22T16:12:47.159343",
+      "expected_category": "billing_question",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 170,
+      "subject": "Do you have an office in New York? Want to visit....",
+      "description": "Do you have an office in New York? Want to visit.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-28T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 171,
+      "subject": "Team setup questions - how many seats do I need fo...",
+      "description": "Team setup questions - how many seats do I need for 28 users?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-06T16:12:47.159343",
+      "expected_category": "account_setup",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 172,
+      "subject": "Account locked after too many login attempts. Plea...",
+      "description": "Account locked after too many login attempts. Please unlock. Username: user4091",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-01T16:12:47.159343",
+      "expected_category": "account_help",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 173,
+      "subject": "How do I import existing data from Previous System...",
+      "description": "How do I import existing data from Previous System? Need migration help.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "account_setup",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 174,
+      "subject": "Dashboard freezes when loading large datasets. Unu...",
+      "description": "Dashboard freezes when loading large datasets. Unusable right now.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-07T16:12:47.159343",
+      "expected_category": "performance_slow",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 175,
+      "subject": "App extremely slow today. Taking 14 seconds to loa...",
+      "description": "App extremely slow today. Taking 14 seconds to load dashboard.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-19T16:12:47.159343",
+      "expected_category": "performance_slow",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 176,
+      "subject": "Can't login - getting 'Invalid credentials' but pa...",
+      "description": "Can't login - getting 'Invalid credentials' but password is correct. Username: user5316",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-08T16:12:47.159343",
+      "expected_category": "login_issue",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 177,
+      "subject": "Webhook stopped firing. Checked endpoint - it's wo...",
+      "description": "Webhook stopped firing. Checked endpoint - it's working. Issue on your end?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-15T16:12:47.159343",
+      "expected_category": "integration_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 178,
+      "subject": "Need to remove user access - they left the company...",
+      "description": "Need to remove user access - they left the company. Urgent.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-05T16:12:47.159343",
+      "expected_category": "user_management",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 179,
+      "subject": "Promo code VIP49 not working at checkout. Says inv...",
+      "description": "Promo code VIP49 not working at checkout. Says invalid but I just received it.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-22T16:12:47.159343",
+      "expected_category": "promo_code",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 180,
+      "subject": "Item not as described - color is completely differ...",
+      "description": "Item not as described - color is completely different from photos. Order #25284. Very disappointed.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-05T16:12:47.159343",
+      "expected_category": "product_defect",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 181,
+      "subject": "Cancel order and refund immediately - don't want i...",
+      "description": "Cancel order and refund immediately - don't want it anymore. Order #28143.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-14T16:12:47.159343",
+      "expected_category": "refund_request",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 182,
+      "subject": "SSO login not working - redirects to error page. U...",
+      "description": "SSO login not working - redirects to error page. Using Google authentication.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-04T16:12:47.159343",
+      "expected_category": "login_issue",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 183,
+      "subject": "Changes made on desktop not appearing on mobile. T...",
+      "description": "Changes made on desktop not appearing on mobile. Tried logging out/in.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-01T16:12:47.159343",
+      "expected_category": "data_sync",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 184,
+      "subject": "Cancel my subscription order #60822. Moving to dif...",
+      "description": "Cancel my subscription order #60822. Moving to different product.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-05T16:12:47.159343",
+      "expected_category": "order_cancellation",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 185,
+      "subject": "Requesting refund for order #81458. Changed my min...",
+      "description": "Requesting refund for order #81458. Changed my mind about purchase. Item unopened.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-18T16:12:47.159343",
+      "expected_category": "refund_request",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 186,
+      "subject": "Can I still cancel? Order #50068. Found better pri...",
+      "description": "Can I still cancel? Order #50068. Found better price elsewhere.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-13T16:12:47.159343",
+      "expected_category": "order_cancellation",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 187,
+      "subject": "Can't login - getting 'Invalid credentials' but pa...",
+      "description": "Can't login - getting 'Invalid credentials' but password is correct. Username: user1886",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-29T16:12:47.159343",
+      "expected_category": "login_issue",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 188,
+      "subject": "Account locked after failed login attempts. Please...",
+      "description": "Account locked after failed login attempts. Please unlock immediately.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-21T16:12:47.159343",
+      "expected_category": "login_issue",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 189,
+      "subject": "Need to remove user access - they left the company...",
+      "description": "Need to remove user access - they left the company. Urgent.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-14T16:12:47.159343",
+      "expected_category": "user_management",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 190,
+      "subject": "Return label not working. Can't print it. Order #7...",
+      "description": "Return label not working. Can't print it. Order #71748. Need help ASAP.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-13T16:12:47.159343",
+      "expected_category": "return_exchange",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 191,
+      "subject": "My package arrived damaged - box was crushed. Orde...",
+      "description": "My package arrived damaged - box was crushed. Order #33256. Who do I contact about this?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "delivery_issue",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 192,
+      "subject": "Wrong variant sent. Ordered iPhone 13 Pro received...",
+      "description": "Wrong variant sent. Ordered iPhone 13 Pro received regular iPhone 13. Order #66696.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-01T16:12:47.159343",
+      "expected_category": "wrong_item",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 193,
+      "subject": "How long do returns take? Sent item back 6 days ag...",
+      "description": "How long do returns take? Sent item back 6 days ago. Order #49063.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-15T16:12:47.159343",
+      "expected_category": "return_exchange",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 194,
+      "subject": "Want full refund - product is not what I expected....",
+      "description": "Want full refund - product is not what I expected. Order #53578. How long does refund take?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-09T16:12:47.159343",
+      "expected_category": "refund_request",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 195,
+      "subject": "Need to remove user access - they left the company...",
+      "description": "Need to remove user access - they left the company. Urgent.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-13T16:12:47.159343",
+      "expected_category": "user_management",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 196,
+      "subject": "User permissions not working correctly. Everyone c...",
+      "description": "User permissions not working correctly. Everyone can see everything.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-15T16:12:47.159343",
+      "expected_category": "user_management",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 197,
+      "subject": "Found a bug - clicking Save button does nothing. T...",
+      "description": "Found a bug - clicking Save button does nothing. Tried on Chrome and Firefox.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-13T16:12:47.159343",
+      "expected_category": "bug_report",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 198,
+      "subject": "API returning 500 Internal Server Error for /api/u...",
+      "description": "API returning 500 Internal Server Error for /api/users endpoint.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-18T16:12:47.159343",
+      "expected_category": "api_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 199,
+      "subject": "Found a bug - clicking Save button does nothing. T...",
+      "description": "Found a bug - clicking Save button does nothing. Tried on Chrome and Firefox.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-14T16:12:47.159343",
+      "expected_category": "bug_report",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 200,
+      "subject": "Please add dark mode! Would really help with night...",
+      "description": "Please add dark mode! Would really help with night-time usage.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "feature_request",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 201,
+      "subject": "Payment declined but I have sufficient balance. Ca...",
+      "description": "Payment declined but I have sufficient balance. Card ending 9625. Order #52498.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-16T16:12:47.159343",
+      "expected_category": "payment_failed",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 202,
+      "subject": "Need bulk import feature. Currently have to add 21...",
+      "description": "Need bulk import feature. Currently have to add 211 items manually.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-11T16:12:47.159343",
+      "expected_category": "feature_request",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 203,
+      "subject": "Please add dark mode! Would really help with night...",
+      "description": "Please add dark mode! Would really help with night-time usage.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-05T16:12:47.159343",
+      "expected_category": "feature_request",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 204,
+      "subject": "Can't access course materials. Getting 404 error. ...",
+      "description": "Can't access course materials. Getting 404 error. Course: CS347",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-19T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 205,
+      "subject": "Internet down for 33 hours. No connection. Service...",
+      "description": "Internet down for 33 hours. No connection. Service ID: 5971",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-22T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 206,
+      "subject": "Need bulk import feature. Currently have to add 43...",
+      "description": "Need bulk import feature. Currently have to add 436 items manually.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-20T16:12:47.159343",
+      "expected_category": "feature_request",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 207,
+      "subject": "Applied code but discount is less than advertised....",
+      "description": "Applied code but discount is less than advertised. Code DEAL61 should give 15% off.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-28T16:12:47.159343",
+      "expected_category": "promo_code",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 208,
+      "subject": "Product arrived broken! The screen is cracked. Ord...",
+      "description": "Product arrived broken! The screen is cracked. Order #50824. Want full refund.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-20T16:12:47.159343",
+      "expected_category": "product_defect",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 209,
+      "subject": "Google Calendar sync not working. Events aren't sh...",
+      "description": "Google Calendar sync not working. Events aren't showing up.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-01T16:12:47.159343",
+      "expected_category": "integration_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 210,
+      "subject": "Need statement for tax purposes. Account number: 4...",
+      "description": "Need statement for tax purposes. Account number: 415157",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 211,
+      "subject": "Tracking says delivered but never arrived. Order #...",
+      "description": "Tracking says delivered but never arrived. Order #26659. Please help.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-24T16:12:47.159343",
+      "expected_category": "tracking_inquiry",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 212,
+      "subject": "Electronic item doesn't work at all - won't turn o...",
+      "description": "Electronic item doesn't work at all - won't turn on. Dead on arrival. Order #90692.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-03T16:12:47.159343",
+      "expected_category": "product_defect",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 213,
+      "subject": "Promo code VIP34 not working at checkout. Says inv...",
+      "description": "Promo code VIP34 not working at checkout. Says invalid but I just received it.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-10T16:12:47.159343",
+      "expected_category": "promo_code",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 214,
+      "subject": "Can you recommend a good competitor? Your product ...",
+      "description": "Can you recommend a good competitor? Your product doesn't fit our needs.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-14T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 215,
+      "subject": "Getting 429 Too Many Requests error. Need rate lim...",
+      "description": "Getting 429 Too Many Requests error. Need rate limit increased ASAP.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-10T16:12:47.159343",
+      "expected_category": "api_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 216,
+      "subject": "Would love to see calendar view option instead of ...",
+      "description": "Would love to see calendar view option instead of just list view.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-27T16:12:47.159343",
+      "expected_category": "feature_request",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 217,
+      "subject": "Tracking number USPS345297982 shows no information...",
+      "description": "Tracking number USPS345297982 shows no information. Is it shipped yet?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-12T16:12:47.159343",
+      "expected_category": "tracking_inquiry",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 218,
+      "subject": "Need to cancel order #79384 urgently! Just placed ...",
+      "description": "Need to cancel order #79384 urgently! Just placed it 10 minutes ago.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-13T16:12:47.159343",
+      "expected_category": "order_cancellation",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 219,
+      "subject": "Dashboard showing wrong numbers. Revenue is off by...",
+      "description": "Dashboard showing wrong numbers. Revenue is off by $315. Please fix urgently.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-04T16:12:47.159343",
+      "expected_category": "bug_report",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 220,
+      "subject": "This is a test ticket. Please ignore....",
+      "description": "This is a test ticket. Please ignore.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-11T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 221,
+      "subject": "Data not syncing between web and mobile app. Last ...",
+      "description": "Data not syncing between web and mobile app. Last sync: 23 hours ago.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "data_sync",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 222,
+      "subject": "Wrong size sent - ordered Large received Small. Or...",
+      "description": "Wrong size sent - ordered Large received Small. Order #36934. Need exchange.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "wrong_item",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 223,
+      "subject": "Reports timing out - can't generate anything. Been...",
+      "description": "Reports timing out - can't generate anything. Been trying for 16 minutes.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-13T16:12:47.159343",
+      "expected_category": "performance_slow",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 224,
+      "subject": "Authentication failing - API key is valid but gett...",
+      "description": "Authentication failing - API key is valid but getting 401 Unauthorized.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-11T16:12:47.159343",
+      "expected_category": "api_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 225,
+      "subject": "Prescription refill request for Medication A. Last...",
+      "description": "Prescription refill request for Medication A. Last refill was 2 months ago.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-17T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 226,
+      "subject": "Need to remove user access - they left the company...",
+      "description": "Need to remove user access - they left the company. Urgent.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-29T16:12:47.159343",
+      "expected_category": "user_management",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 227,
+      "subject": "Is this the right email for partnerships?...",
+      "description": "Is this the right email for partnerships?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-03T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 228,
+      "subject": "Charged $221 but invoice says $180. Which is corre...",
+      "description": "Charged $221 but invoice says $180. Which is correct?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-02T16:12:47.159343",
+      "expected_category": "billing_question",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 229,
+      "subject": "Duplicate entries appearing after sync. Database g...",
+      "description": "Duplicate entries appearing after sync. Database getting messy.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-14T16:12:47.159343",
+      "expected_category": "data_sync",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 230,
+      "subject": "Cancel my subscription order #33417. Moving to dif...",
+      "description": "Cancel my subscription order #33417. Moving to different product.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-16T16:12:47.159343",
+      "expected_category": "order_cancellation",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 231,
+      "subject": "Shoes arrived with defect - sole is coming off alr...",
+      "description": "Shoes arrived with defect - sole is coming off already. Only wore once! Order #85243.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-22T16:12:47.159343",
+      "expected_category": "product_defect",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 232,
+      "subject": "Getting error at checkout - payment keeps failing....",
+      "description": "Getting error at checkout - payment keeps failing. Tried 3 times. Card is valid.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-03T16:12:47.159343",
+      "expected_category": "payment_failed",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 233,
+      "subject": "2FA code not arriving. Can't login without it. Che...",
+      "description": "2FA code not arriving. Can't login without it. Checked spam folder.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-21T16:12:47.159343",
+      "expected_category": "login_issue",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 234,
+      "subject": "Want full refund - product is not what I expected....",
+      "description": "Want full refund - product is not what I expected. Order #69097. How long does refund take?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-26T16:12:47.159343",
+      "expected_category": "refund_request",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 235,
+      "subject": "Applied code but discount is less than advertised....",
+      "description": "Applied code but discount is less than advertised. Code VIP61 should give 30% off.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-28T16:12:47.159343",
+      "expected_category": "promo_code",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 236,
+      "subject": "Getting 429 Too Many Requests error. Need rate lim...",
+      "description": "Getting 429 Too Many Requests error. Need rate limit increased ASAP.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-06T16:12:47.159343",
+      "expected_category": "api_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 237,
+      "subject": "Card declined - please update payment method manua...",
+      "description": "Card declined - please update payment method manually. Card ending 1108.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-09T16:12:47.159343",
+      "expected_category": "billing_question",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 238,
+      "subject": "Can I still cancel? Order #91718. Found better pri...",
+      "description": "Can I still cancel? Order #91718. Found better price elsewhere.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-08T16:12:47.159343",
+      "expected_category": "order_cancellation",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 239,
+      "subject": "Authentication failing - API key is valid but gett...",
+      "description": "Authentication failing - API key is valid but getting 401 Unauthorized.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-07T16:12:47.159343",
+      "expected_category": "api_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 240,
+      "subject": "This is a test ticket. Please ignore....",
+      "description": "This is a test ticket. Please ignore.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-25T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 241,
+      "subject": "Product didn't fit. Need refund to original paymen...",
+      "description": "Product didn't fit. Need refund to original payment method. Order #52271.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-25T16:12:47.159343",
+      "expected_category": "refund_request",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 242,
+      "subject": "Webhook stopped firing. Checked endpoint - it's wo...",
+      "description": "Webhook stopped firing. Checked endpoint - it's working. Issue on your end?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-11T16:12:47.159343",
+      "expected_category": "integration_error",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 243,
+      "subject": "Can I still cancel? Order #15079. Found better pri...",
+      "description": "Can I still cancel? Order #15079. Found better price elsewhere.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-02T16:12:47.159343",
+      "expected_category": "order_cancellation",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 244,
+      "subject": "Applied code but discount is less than advertised....",
+      "description": "Applied code but discount is less than advertised. Code VIP51 should give 30% off.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-15T16:12:47.159343",
+      "expected_category": "promo_code",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 245,
+      "subject": "2FA code not arriving. Can't login without it. Che...",
+      "description": "2FA code not arriving. Can't login without it. Checked spam folder.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-04T16:12:47.159343",
+      "expected_category": "login_issue",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 246,
+      "subject": "Search function broken - returns no results even f...",
+      "description": "Search function broken - returns no results even for exact matches.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-08T16:12:47.159343",
+      "expected_category": "bug_report",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 247,
+      "subject": "My package arrived damaged - box was crushed. Orde...",
+      "description": "My package arrived damaged - box was crushed. Order #81743. Who do I contact about this?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-24T16:12:47.159343",
+      "expected_category": "delivery_issue",
+      "expected_industry": "ecommerce"
+    },
+    {
+      "id": 248,
+      "subject": "Password reset email never came. Tried 3 times. Em...",
+      "description": "Password reset email never came. Tried 3 times. Email: customer929@gmail.com",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-09T16:12:47.159343",
+      "expected_category": "login_issue",
+      "expected_industry": "saas"
+    },
+    {
+      "id": 249,
+      "subject": "How much does your enterprise plan cost?...",
+      "description": "How much does your enterprise plan cost?",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-11-06T16:12:47.159343",
+      "expected_category": "general",
+      "expected_industry": "general"
+    },
+    {
+      "id": 250,
+      "subject": "Promo code SAVE50 not working at checkout. Says in...",
+      "description": "Promo code SAVE50 not working at checkout. Says invalid but I just received it.",
+      "status": "new",
+      "priority": "new",
+      "created_at": "2025-10-18T16:12:47.159343",
+      "expected_category": "promo_code",
+      "expected_industry": "ecommerce"
+    }
+  ]
+}

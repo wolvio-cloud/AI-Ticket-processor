@@ -1,0 +1,546 @@
+2025-11-06 16:26:32,369 | INFO | Starting batch processing (limit: 50)
+2025-11-06 16:26:33,987 | INFO | Processing ticket 14
+2025-11-06 16:26:33,997 | INFO | Processing ticket 16
+2025-11-06 16:26:33,997 | INFO | Processing ticket 9
+2025-11-06 16:26:33,999 | INFO | Processing ticket 3
+2025-11-06 16:26:33,999 | INFO | Processing ticket 6
+2025-11-06 16:26:33,999 | INFO | Processing ticket 2
+2025-11-06 16:26:33,999 | INFO | Processing ticket 11
+2025-11-06 16:26:33,999 | INFO | Processing ticket 5
+2025-11-06 16:26:34,007 | INFO | Processing ticket 19
+2025-11-06 16:26:34,007 | INFO | Processing ticket 20
+2025-11-06 16:26:40,128 | INFO | Ticket 14 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 16:26:40,128 | INFO | Processing ticket 13
+2025-11-06 16:26:41,864 | INFO | Ticket 2 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 16:26:41,864 | INFO | Processing ticket 7
+2025-11-06 16:26:41,999 | INFO | Ticket 20 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 16:26:42,001 | INFO | Processing ticket 18
+2025-11-06 16:26:42,129 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 16:26:42,129 | INFO | Processing ticket 15
+2025-11-06 16:26:42,272 | INFO | Ticket 6 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 16:26:42,272 | INFO | Processing ticket 8
+2025-11-06 16:26:42,309 | INFO | Ticket 5 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 16:26:42,311 | INFO | Processing ticket 4
+2025-11-06 16:26:42,401 | INFO | Ticket 9 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 16:26:42,401 | INFO | Processing ticket 1
+2025-11-06 16:26:42,439 | INFO | Ticket 16 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 16:26:42,439 | INFO | Processing ticket 21
+2025-11-06 16:26:42,739 | INFO | Ticket 3 updated with tags: ['ai_processed', 'ai_refund', 'ai_high', 'ai_negative']
+2025-11-06 16:26:42,739 | INFO | Processing ticket 10
+2025-11-06 16:26:43,926 | INFO | Ticket 11 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 16:26:43,927 | INFO | Processing ticket 12
+2025-11-06 16:26:44,244 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 16:26:44,253 | INFO | Processing ticket 17
+2025-11-06 16:26:44,673 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 16:26:44,756 | INFO | Ticket 13 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_negative']
+2025-11-06 16:26:44,777 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 16:26:45,071 | INFO | Ticket 7 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_negative']
+2025-11-06 16:26:45,100 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-06 16:26:45,219 | INFO | Ticket 8 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-06 16:26:45,228 | INFO | Ticket 10 updated with tags: ['ai_processed', 'ai_other', 'ai_low', 'ai_positive']
+2025-11-06 16:26:45,357 | INFO | Ticket 4 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-06 16:26:46,527 | INFO | Ticket 12 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 16:27:01,381 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 16:27:01,402 | INFO | Batch complete: 21/21 | Avg: 3.56s | Total: 29.02s
+2025-11-06 18:06:31,665 | INFO | Starting batch processing (limit: 50)
+2025-11-06 18:06:35,810 | INFO | Processing ticket 17
+2025-11-06 18:06:35,812 | INFO | Processing ticket 12
+2025-11-06 18:06:35,815 | INFO | Processing ticket 10
+2025-11-06 18:06:35,817 | INFO | Processing ticket 8
+2025-11-06 18:06:35,818 | INFO | Processing ticket 4
+2025-11-06 18:06:35,818 | INFO | Processing ticket 13
+2025-11-06 18:06:35,818 | INFO | Processing ticket 21
+2025-11-06 18:06:35,818 | INFO | Processing ticket 7
+2025-11-06 18:06:35,825 | INFO | Processing ticket 18
+2025-11-06 18:06:35,825 | INFO | Processing ticket 15
+2025-11-06 18:06:50,147 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-06 18:06:50,149 | INFO | Processing ticket 1
+2025-11-06 18:06:53,598 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 18:06:53,598 | INFO | Processing ticket 11
+2025-11-06 18:06:56,703 | INFO | Ticket 11 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 18:06:56,703 | INFO | Processing ticket 16
+2025-11-06 18:06:56,879 | INFO | Ticket 8 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-06 18:06:56,879 | INFO | Processing ticket 5
+2025-11-06 18:06:56,980 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 18:06:56,980 | INFO | Processing ticket 9
+2025-11-06 18:06:57,040 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 18:06:57,040 | INFO | Processing ticket 3
+2025-11-06 18:06:57,088 | INFO | Ticket 7 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 18:06:57,100 | INFO | Processing ticket 6
+2025-11-06 18:06:57,104 | INFO | Ticket 10 updated with tags: ['ai_processed', 'ai_other', 'ai_low', 'ai_positive']
+2025-11-06 18:06:57,104 | INFO | Processing ticket 19
+2025-11-06 18:06:57,104 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:06:57,104 | INFO | Processing ticket 20
+2025-11-06 18:06:57,152 | INFO | Ticket 4 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-06 18:06:57,152 | INFO | Processing ticket 2
+2025-11-06 18:06:57,434 | INFO | Ticket 12 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 18:06:57,440 | INFO | Processing ticket 14
+2025-11-06 18:06:57,440 | INFO | Ticket 13 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_negative']
+2025-11-06 18:06:59,476 | INFO | Ticket 16 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 18:06:59,534 | INFO | Ticket 20 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:07:00,217 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 18:07:00,217 | INFO | Ticket 6 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:07:00,217 | INFO | Ticket 2 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:07:00,217 | INFO | Ticket 3 updated with tags: ['ai_processed', 'ai_refund', 'ai_high', 'ai_negative']
+2025-11-06 18:07:00,247 | INFO | Ticket 14 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 18:07:00,286 | INFO | Ticket 9 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 18:07:00,817 | INFO | Ticket 5 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 18:07:00,828 | INFO | Batch complete: 21/21 | Avg: 7.4s | Total: 29.15s
+2025-11-06 18:25:11,814 | INFO | Starting batch processing (limit: 50)
+2025-11-06 18:25:14,996 | INFO | Processing ticket 5
+2025-11-06 18:25:14,998 | INFO | Processing ticket 9
+2025-11-06 18:25:15,001 | INFO | Processing ticket 19
+2025-11-06 18:25:15,003 | INFO | Processing ticket 20
+2025-11-06 18:25:15,005 | INFO | Processing ticket 16
+2025-11-06 18:25:15,007 | INFO | Processing ticket 14
+2025-11-06 18:25:15,007 | INFO | Processing ticket 3
+2025-11-06 18:25:15,007 | INFO | Processing ticket 6
+2025-11-06 18:25:15,007 | INFO | Processing ticket 2
+2025-11-06 18:25:15,013 | INFO | Processing ticket 13
+2025-11-06 18:25:27,377 | INFO | Ticket 14 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:25:27,377 | INFO | Processing ticket 12
+2025-11-06 18:25:30,422 | INFO | Ticket 12 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 18:25:30,422 | INFO | Processing ticket 10
+2025-11-06 18:25:32,908 | INFO | Ticket 10 updated with tags: ['ai_processed', 'ai_other', 'ai_low', 'ai_positive']
+2025-11-06 18:25:32,908 | INFO | Processing ticket 17
+2025-11-06 18:25:34,332 | INFO | Ticket 6 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:25:34,334 | INFO | Processing ticket 11
+2025-11-06 18:25:34,956 | INFO | Ticket 16 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_negative']
+2025-11-06 18:25:34,967 | INFO | Processing ticket 7
+2025-11-06 18:25:35,051 | INFO | Ticket 13 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_negative']
+2025-11-06 18:25:35,051 | INFO | Processing ticket 18
+2025-11-06 18:25:35,095 | INFO | Ticket 3 updated with tags: ['ai_processed', 'ai_refund', 'ai_high', 'ai_negative']
+2025-11-06 18:25:35,095 | INFO | Processing ticket 15
+2025-11-06 18:25:35,188 | INFO | Ticket 9 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_neutral']
+2025-11-06 18:25:35,188 | INFO | Processing ticket 8
+2025-11-06 18:25:35,237 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 18:25:35,237 | INFO | Processing ticket 4
+2025-11-06 18:25:35,253 | INFO | Ticket 2 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:25:35,253 | INFO | Processing ticket 1
+2025-11-06 18:25:35,614 | INFO | Ticket 5 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 18:25:35,621 | INFO | Processing ticket 21
+2025-11-06 18:25:35,623 | INFO | Ticket 20 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:25:35,624 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 18:25:37,001 | INFO | Ticket 11 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 18:25:37,469 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 18:25:37,609 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:25:37,855 | INFO | Ticket 4 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-06 18:25:37,924 | INFO | Ticket 7 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 18:25:38,006 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 18:25:38,225 | INFO | Ticket 8 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-06 18:26:00,817 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-06 18:26:00,826 | INFO | Batch complete: 21/21 | Avg: 6.13s | Total: 49.01s
+2025-11-06 18:35:10,388 | INFO | Starting batch processing (limit: 50)
+2025-11-06 18:35:13,521 | INFO | Processing ticket 5
+2025-11-06 18:35:13,523 | INFO | Processing ticket 9
+2025-11-06 18:35:13,524 | INFO | Processing ticket 19
+2025-11-06 18:35:13,543 | INFO | Processing ticket 20
+2025-11-06 18:35:13,543 | INFO | Processing ticket 16
+2025-11-06 18:35:13,546 | INFO | Processing ticket 14
+2025-11-06 18:35:13,564 | INFO | Processing ticket 3
+2025-11-06 18:35:13,577 | INFO | Processing ticket 6
+2025-11-06 18:35:13,591 | INFO | Processing ticket 2
+2025-11-06 18:35:13,613 | INFO | Processing ticket 13
+2025-11-06 18:35:26,839 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 18:35:26,839 | INFO | Processing ticket 12
+2025-11-06 18:35:29,341 | INFO | Ticket 6 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:35:29,343 | INFO | Processing ticket 10
+2025-11-06 18:35:32,443 | INFO | Ticket 10 updated with tags: ['ai_processed', 'ai_other', 'ai_low', 'ai_positive']
+2025-11-06 18:35:32,445 | INFO | Processing ticket 17
+2025-11-06 18:35:35,734 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 18:35:35,736 | INFO | Processing ticket 11
+2025-11-06 18:35:37,495 | INFO | Ticket 9 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 18:35:37,495 | INFO | Processing ticket 7
+2025-11-06 18:35:37,905 | INFO | Ticket 20 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:35:37,907 | INFO | Processing ticket 18
+2025-11-06 18:35:37,908 | INFO | Ticket 16 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 18:35:37,911 | INFO | Processing ticket 15
+2025-11-06 18:35:37,909 | INFO | Ticket 3 updated with tags: ['ai_processed', 'ai_refund', 'ai_high', 'ai_negative']
+2025-11-06 18:35:37,909 | INFO | Ticket 13 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_negative']
+2025-11-06 18:35:37,966 | INFO | Ticket 2 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:35:37,968 | INFO | Ticket 14 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:35:37,968 | INFO | Ticket 5 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 18:35:37,968 | INFO | Processing ticket 8
+2025-11-06 18:35:37,968 | INFO | Processing ticket 4
+2025-11-06 18:35:37,968 | INFO | Processing ticket 1
+2025-11-06 18:35:37,970 | INFO | Processing ticket 21
+2025-11-06 18:35:38,745 | INFO | Ticket 11 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 18:35:38,775 | INFO | Ticket 12 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 18:35:39,537 | INFO | Ticket 7 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_negative']
+2025-11-06 18:35:40,417 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 18:35:40,551 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 18:35:40,614 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 18:35:41,069 | INFO | Ticket 4 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 18:35:41,190 | INFO | Ticket 8 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-06 18:36:00,756 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-06 18:36:00,773 | INFO | Batch complete: 21/21 | Avg: 7.03s | Total: 50.37s
+2025-11-06 18:54:32,516 | INFO | Starting batch processing (limit: 50)
+2025-11-06 18:54:37,087 | INFO | Processing ticket 21
+2025-11-06 18:54:37,091 | INFO | Processing ticket 18
+2025-11-06 18:54:37,091 | INFO | Processing ticket 15
+2025-11-06 18:54:37,094 | INFO | Processing ticket 8
+2025-11-06 18:54:37,094 | INFO | Processing ticket 4
+2025-11-06 18:54:37,094 | INFO | Processing ticket 1
+2025-11-06 18:54:37,094 | INFO | Processing ticket 7
+2025-11-06 18:54:37,094 | INFO | Processing ticket 12
+2025-11-06 18:54:37,096 | INFO | Processing ticket 11
+2025-11-06 18:54:37,096 | INFO | Processing ticket 20
+2025-11-06 18:54:50,329 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 18:54:50,331 | INFO | Processing ticket 13
+2025-11-06 18:54:53,125 | INFO | Ticket 13 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_negative']
+2025-11-06 18:54:53,125 | INFO | Processing ticket 16
+2025-11-06 18:54:56,479 | INFO | Ticket 16 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 18:54:56,480 | INFO | Processing ticket 14
+2025-11-06 18:54:57,400 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 18:54:57,400 | INFO | Processing ticket 5
+2025-11-06 18:54:57,417 | INFO | Ticket 12 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 18:54:57,417 | INFO | Processing ticket 9
+2025-11-06 18:54:57,467 | INFO | Ticket 4 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-06 18:54:57,467 | INFO | Processing ticket 3
+2025-11-06 18:54:57,505 | INFO | Ticket 11 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 18:54:57,507 | INFO | Processing ticket 2
+2025-11-06 18:54:57,613 | INFO | Ticket 20 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 18:54:57,613 | INFO | Processing ticket 17
+2025-11-06 18:54:57,646 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-06 18:54:57,646 | INFO | Processing ticket 10
+2025-11-06 18:54:57,662 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 18:54:57,662 | INFO | Processing ticket 6
+2025-11-06 18:54:57,678 | INFO | Ticket 8 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-06 18:54:57,678 | INFO | Processing ticket 19
+2025-11-06 18:54:57,823 | INFO | Ticket 7 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_negative']
+2025-11-06 18:54:59,517 | INFO | Ticket 9 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_neutral']
+2025-11-06 18:54:59,710 | INFO | Ticket 2 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:54:59,890 | INFO | Ticket 14 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 18:55:00,003 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 18:55:00,057 | INFO | Ticket 6 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:55:00,425 | INFO | Ticket 10 updated with tags: ['ai_processed', 'ai_other', 'ai_low', 'ai_positive']
+2025-11-06 18:55:00,576 | INFO | Ticket 5 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 18:55:00,657 | INFO | Ticket 3 updated with tags: ['ai_processed', 'ai_refund', 'ai_high', 'ai_negative']
+2025-11-06 18:55:00,761 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 18:55:00,771 | INFO | Batch complete: 21/21 | Avg: 6.59s | Total: 28.25s
+2025-11-06 18:55:24,333 | INFO | Starting batch processing (limit: 50)
+2025-11-06 18:55:26,535 | INFO | Processing ticket 10
+2025-11-06 18:55:26,535 | INFO | Processing ticket 17
+2025-11-06 18:55:26,535 | INFO | Processing ticket 5
+2025-11-06 18:55:26,542 | INFO | Processing ticket 3
+2025-11-06 18:55:26,543 | INFO | Processing ticket 19
+2025-11-06 18:55:26,543 | INFO | Processing ticket 14
+2025-11-06 18:55:26,545 | INFO | Processing ticket 9
+2025-11-06 18:55:26,545 | INFO | Processing ticket 6
+2025-11-06 18:55:26,545 | INFO | Processing ticket 2
+2025-11-06 18:55:26,545 | INFO | Processing ticket 20
+2025-11-06 18:55:36,660 | INFO | Ticket 2 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:55:36,660 | INFO | Processing ticket 12
+2025-11-06 18:55:39,253 | INFO | Ticket 12 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 18:55:39,255 | INFO | Processing ticket 21
+2025-11-06 18:55:41,509 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-06 18:55:41,510 | INFO | Processing ticket 11
+2025-11-06 18:55:43,661 | INFO | Ticket 11 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-06 18:55:43,661 | INFO | Processing ticket 7
+2025-11-06 18:55:43,863 | INFO | Ticket 20 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:55:43,863 | INFO | Processing ticket 18
+2025-11-06 18:55:43,965 | INFO | Ticket 6 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 18:55:43,965 | INFO | Processing ticket 8
+2025-11-06 18:55:43,972 | INFO | Ticket 3 updated with tags: ['ai_processed', 'ai_refund', 'ai_high', 'ai_negative']
+2025-11-06 18:55:43,972 | INFO | Processing ticket 4
+2025-11-06 18:55:43,990 | INFO | Ticket 5 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 18:55:43,992 | INFO | Processing ticket 1
+2025-11-06 18:55:44,003 | INFO | Ticket 10 updated with tags: ['ai_processed', 'ai_other', 'ai_low', 'ai_positive']
+2025-11-06 18:55:44,003 | INFO | Processing ticket 16
+2025-11-06 18:55:44,029 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 18:55:44,029 | INFO | Processing ticket 13
+2025-11-06 18:55:44,086 | INFO | Ticket 9 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 18:55:44,091 | INFO | Processing ticket 15
+2025-11-06 18:55:44,102 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 18:55:44,202 | INFO | Ticket 14 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 18:55:45,934 | INFO | Ticket 8 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-06 18:55:46,030 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 18:55:46,294 | INFO | Ticket 7 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 18:55:46,308 | INFO | Ticket 4 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 18:56:00,793 | INFO | Ticket 13 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_negative']
+2025-11-06 18:56:00,793 | INFO | Ticket 16 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 18:56:01,035 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 18:56:01,569 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 18:56:01,585 | INFO | Batch complete: 21/21 | Avg: 5.3s | Total: 37.25s
+2025-11-06 19:48:38,875 | INFO | Starting batch processing (limit: 1)
+2025-11-06 19:48:40,525 | INFO | Processing ticket 15
+2025-11-06 19:48:44,795 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 19:48:44,799 | INFO | Batch complete: 1/1 | Avg: 2.86s | Total: 5.92s
+2025-11-06 20:00:15,973 | INFO | Starting batch processing (limit: 50)
+2025-11-06 20:00:18,965 | INFO | Processing ticket 15
+2025-11-06 20:00:18,968 | INFO | Processing ticket 13
+2025-11-06 20:00:18,971 | INFO | Processing ticket 16
+2025-11-06 20:00:18,971 | INFO | Processing ticket 1
+2025-11-06 20:00:18,975 | INFO | Processing ticket 7
+2025-11-06 20:00:18,975 | INFO | Processing ticket 4
+2025-11-06 20:00:18,977 | INFO | Processing ticket 18
+2025-11-06 20:00:18,985 | INFO | Processing ticket 8
+2025-11-06 20:00:18,987 | INFO | Processing ticket 19
+2025-11-06 20:00:18,989 | INFO | Processing ticket 20
+2025-11-06 20:00:31,697 | INFO | Ticket 13 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_negative']
+2025-11-06 20:00:31,700 | INFO | Processing ticket 10
+2025-11-06 20:00:35,492 | INFO | Ticket 10 updated with tags: ['ai_processed', 'ai_other', 'ai_low', 'ai_positive']
+2025-11-06 20:00:35,492 | INFO | Processing ticket 17
+2025-11-06 20:00:38,660 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 20:00:38,660 | INFO | Processing ticket 14
+2025-11-06 20:00:39,228 | INFO | Ticket 20 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 20:00:39,228 | INFO | Processing ticket 5
+2025-11-06 20:00:39,243 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 20:00:39,245 | INFO | Processing ticket 11
+2025-11-06 20:00:39,251 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 20:00:39,253 | INFO | Processing ticket 9
+2025-11-06 20:00:39,278 | INFO | Ticket 16 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 20:00:39,278 | INFO | Processing ticket 3
+2025-11-06 20:00:39,438 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 20:00:39,438 | INFO | Processing ticket 6
+2025-11-06 20:00:39,507 | INFO | Ticket 7 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_negative']
+2025-11-06 20:00:39,507 | INFO | Processing ticket 21
+2025-11-06 20:00:39,605 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 20:00:39,609 | INFO | Processing ticket 12
+2025-11-06 20:00:39,650 | INFO | Ticket 4 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-06 20:00:39,650 | INFO | Processing ticket 2
+2025-11-06 20:00:39,667 | INFO | Ticket 8 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-06 20:00:41,050 | INFO | Ticket 14 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 20:00:41,300 | INFO | Ticket 5 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 20:00:41,604 | INFO | Ticket 6 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 20:00:41,654 | INFO | Ticket 9 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_neutral']
+2025-11-06 20:00:42,059 | INFO | Ticket 3 updated with tags: ['ai_processed', 'ai_refund', 'ai_high', 'ai_negative']
+2025-11-06 20:00:42,082 | INFO | Ticket 2 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 20:00:42,161 | INFO | Ticket 12 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 20:00:42,276 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-06 20:01:01,702 | INFO | Ticket 11 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 20:01:01,716 | INFO | Batch complete: 21/21 | Avg: 6.19s | Total: 45.74s
+2025-11-06 20:06:26,813 | INFO | Starting batch processing (limit: 50)
+2025-11-06 20:06:29,460 | INFO | Processing ticket 11
+2025-11-06 20:06:29,464 | INFO | Processing ticket 12
+2025-11-06 20:06:29,466 | INFO | Processing ticket 21
+2025-11-06 20:06:29,466 | INFO | Processing ticket 9
+2025-11-06 20:06:29,468 | INFO | Processing ticket 3
+2025-11-06 20:06:29,468 | INFO | Processing ticket 6
+2025-11-06 20:06:29,472 | INFO | Processing ticket 2
+2025-11-06 20:06:29,472 | INFO | Processing ticket 14
+2025-11-06 20:06:29,476 | INFO | Processing ticket 5
+2025-11-06 20:06:29,476 | INFO | Processing ticket 7
+2025-11-06 20:06:40,995 | INFO | Ticket 5 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 20:06:40,995 | INFO | Processing ticket 15
+2025-11-06 20:06:42,069 | INFO | Ticket 3 updated with tags: ['ai_processed', 'ai_refund', 'ai_high', 'ai_negative']
+2025-11-06 20:06:42,071 | INFO | Processing ticket 8
+2025-11-06 20:06:43,025 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 20:06:43,025 | INFO | Processing ticket 4
+2025-11-06 20:06:44,906 | INFO | Ticket 8 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-06 20:06:44,906 | INFO | Processing ticket 1
+2025-11-06 20:06:47,615 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 20:06:47,615 | INFO | Processing ticket 19
+2025-11-06 20:06:48,683 | INFO | Ticket 11 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 20:06:48,683 | INFO | Processing ticket 20
+2025-11-06 20:06:48,780 | INFO | Ticket 9 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_neutral']
+2025-11-06 20:06:48,783 | INFO | Processing ticket 17
+2025-11-06 20:06:48,882 | INFO | Ticket 6 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 20:06:48,882 | INFO | Processing ticket 16
+2025-11-06 20:06:48,957 | INFO | Ticket 7 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 20:06:48,959 | INFO | Processing ticket 18
+2025-11-06 20:06:49,118 | INFO | Ticket 2 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 20:06:49,118 | INFO | Processing ticket 10
+2025-11-06 20:06:49,155 | INFO | Ticket 14 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 20:06:49,155 | INFO | Processing ticket 13
+2025-11-06 20:06:49,204 | INFO | Ticket 12 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 20:06:49,271 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-06 20:06:49,999 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 20:06:50,407 | INFO | Ticket 4 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-06 20:06:50,885 | INFO | Ticket 16 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 20:06:51,301 | INFO | Ticket 20 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 20:06:51,309 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 20:06:51,738 | INFO | Ticket 13 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_negative']
+2025-11-06 20:06:51,914 | INFO | Ticket 10 updated with tags: ['ai_processed', 'ai_other', 'ai_low', 'ai_positive']
+2025-11-06 20:07:01,170 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 20:07:01,185 | INFO | Batch complete: 21/21 | Avg: 5.97s | Total: 34.37s
+2025-11-06 20:15:31,507 | INFO | Starting batch processing (limit: 50)
+2025-11-06 20:15:33,773 | INFO | Processing ticket 17
+2025-11-06 20:15:33,773 | INFO | Processing ticket 13
+2025-11-06 20:15:33,782 | INFO | Processing ticket 10
+2025-11-06 20:15:33,784 | INFO | Processing ticket 20
+2025-11-06 20:15:33,786 | INFO | Processing ticket 16
+2025-11-06 20:15:33,788 | INFO | Processing ticket 18
+2025-11-06 20:15:33,790 | INFO | Processing ticket 4
+2025-11-06 20:15:33,790 | INFO | Processing ticket 19
+2025-11-06 20:15:33,790 | INFO | Processing ticket 12
+2025-11-06 20:15:33,797 | INFO | Processing ticket 21
+2025-11-06 20:15:45,578 | INFO | Ticket 13 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_negative']
+2025-11-06 20:15:45,580 | INFO | Processing ticket 14
+2025-11-06 20:15:48,353 | INFO | Ticket 14 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 20:15:48,355 | INFO | Processing ticket 11
+2025-11-06 20:15:50,757 | INFO | Ticket 11 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 20:15:50,759 | INFO | Processing ticket 7
+2025-11-06 20:15:51,943 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-06 20:15:51,945 | INFO | Processing ticket 9
+2025-11-06 20:15:52,042 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 20:15:52,044 | INFO | Processing ticket 6
+2025-11-06 20:15:52,190 | INFO | Ticket 16 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 20:15:52,190 | INFO | Processing ticket 2
+2025-11-06 20:15:52,279 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 20:15:52,279 | INFO | Processing ticket 1
+2025-11-06 20:15:52,316 | INFO | Ticket 20 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 20:15:52,316 | INFO | Processing ticket 8
+2025-11-06 20:15:52,430 | INFO | Ticket 12 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 20:15:52,430 | INFO | Processing ticket 15
+2025-11-06 20:15:52,454 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 20:15:52,454 | INFO | Processing ticket 3
+2025-11-06 20:15:52,470 | INFO | Ticket 4 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-06 20:15:52,470 | INFO | Processing ticket 5
+2025-11-06 20:15:52,725 | INFO | Ticket 10 updated with tags: ['ai_processed', 'ai_other', 'ai_low', 'ai_positive']
+2025-11-06 20:15:53,506 | INFO | Ticket 7 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_negative']
+2025-11-06 20:15:54,458 | INFO | Ticket 6 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 20:15:54,820 | INFO | Ticket 9 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 20:15:54,821 | INFO | Ticket 5 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 20:15:54,904 | INFO | Ticket 2 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 20:15:54,995 | INFO | Ticket 3 updated with tags: ['ai_processed', 'ai_refund', 'ai_high', 'ai_negative']
+2025-11-06 20:15:54,998 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 20:15:55,018 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 20:16:01,617 | INFO | Ticket 8 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-06 20:16:01,626 | INFO | Batch complete: 21/21 | Avg: 6.27s | Total: 30.11s
+2025-11-06 21:45:33,132 | INFO | Starting batch processing (limit: 50)
+2025-11-06 21:45:35,200 | INFO | Processing ticket 8
+2025-11-06 21:45:35,204 | INFO | Processing ticket 5
+2025-11-06 21:45:35,204 | INFO | Processing ticket 15
+2025-11-06 21:45:35,224 | INFO | Processing ticket 9
+2025-11-06 21:45:35,224 | INFO | Processing ticket 3
+2025-11-06 21:45:35,226 | INFO | Processing ticket 6
+2025-11-06 21:45:35,233 | INFO | Processing ticket 2
+2025-11-06 21:45:35,234 | INFO | Processing ticket 1
+2025-11-06 21:45:35,238 | INFO | Processing ticket 7
+2025-11-06 21:45:35,239 | INFO | Processing ticket 19
+2025-11-06 21:45:45,370 | INFO | Ticket 2 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 21:45:45,372 | INFO | Processing ticket 20
+2025-11-06 21:45:46,756 | INFO | Ticket 6 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 21:45:46,756 | INFO | Processing ticket 12
+2025-11-06 21:45:47,503 | INFO | Ticket 15 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 21:45:47,503 | INFO | Processing ticket 10
+2025-11-06 21:45:47,567 | INFO | Ticket 1 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_neutral']
+2025-11-06 21:45:47,567 | INFO | Processing ticket 4
+2025-11-06 21:45:47,594 | INFO | Ticket 19 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 21:45:47,594 | INFO | Processing ticket 21
+2025-11-06 21:45:47,702 | INFO | Ticket 9 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 21:45:47,702 | INFO | Processing ticket 17
+2025-11-06 21:45:48,117 | INFO | Ticket 7 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 21:45:48,117 | INFO | Processing ticket 16
+2025-11-06 21:45:48,886 | INFO | Ticket 5 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_positive']
+2025-11-06 21:45:48,887 | INFO | Ticket 8 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_neutral']
+2025-11-06 21:45:48,888 | INFO | Ticket 3 updated with tags: ['ai_processed', 'ai_refund', 'ai_high', 'ai_negative']
+2025-11-06 21:45:49,851 | INFO | Processing ticket 18
+2025-11-06 21:45:49,853 | INFO | Processing ticket 11
+2025-11-06 21:45:49,853 | INFO | Processing ticket 14
+2025-11-06 21:45:51,092 | INFO | Ticket 20 updated with tags: ['ai_processed', 'ai_bug', 'ai_high', 'ai_negative']
+2025-11-06 21:45:51,092 | INFO | Processing ticket 13
+2025-11-06 21:45:51,255 | INFO | Ticket 12 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 21:45:51,533 | INFO | Ticket 10 updated with tags: ['ai_processed', 'ai_other', 'ai_low', 'ai_positive']
+2025-11-06 21:45:51,584 | INFO | Ticket 17 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 21:45:51,661 | INFO | Ticket 21 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_positive']
+2025-11-06 21:45:51,721 | INFO | Ticket 4 updated with tags: ['ai_processed', 'ai_other', 'ai_high', 'ai_negative']
+2025-11-06 21:45:52,691 | INFO | Ticket 16 updated with tags: ['ai_processed', 'ai_feature', 'ai_medium', 'ai_neutral']
+2025-11-06 21:45:52,809 | INFO | Ticket 18 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 21:45:53,768 | INFO | Ticket 13 updated with tags: ['ai_processed', 'ai_refund', 'ai_medium', 'ai_negative']
+2025-11-06 21:45:54,054 | INFO | Ticket 14 updated with tags: ['ai_processed', 'ai_bug', 'ai_medium', 'ai_negative']
+2025-11-06 21:46:01,626 | INFO | Ticket 11 updated with tags: ['ai_processed', 'ai_other', 'ai_medium', 'ai_negative']
+2025-11-06 21:46:01,676 | INFO | Batch complete: 21/21 | Avg: 5.28s | Total: 28.49s
+2025-11-06 22:24:25,438 | INFO | Starting batch processing (limit: 50)
+2025-11-06 22:24:26,796 | INFO | Processing ticket 480
+2025-11-06 22:24:26,798 | INFO | Processing ticket 479
+2025-11-06 22:24:26,798 | INFO | Processing ticket 478
+2025-11-06 22:24:26,799 | INFO | Processing ticket 375
+2025-11-06 22:24:26,799 | INFO | Processing ticket 368
+2025-11-06 22:24:26,800 | INFO | Processing ticket 357
+2025-11-06 22:24:26,800 | INFO | Processing ticket 371
+2025-11-06 22:24:26,801 | INFO | Processing ticket 366
+2025-11-06 22:24:26,801 | INFO | Processing ticket 355
+2025-11-06 22:24:26,801 | INFO | Processing ticket 350
+2025-11-06 22:24:33,050 | ERROR | Zendesk update failed (ID 478): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/478.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:33,051 | INFO | Processing ticket 381
+2025-11-06 22:24:35,372 | ERROR | Zendesk update failed (ID 479): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/479.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:35,374 | INFO | Processing ticket 378
+2025-11-06 22:24:35,561 | ERROR | Zendesk update failed (ID 368): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/368.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:35,562 | INFO | Processing ticket 369
+2025-11-06 22:24:35,601 | ERROR | Zendesk update failed (ID 480): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/480.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:35,602 | INFO | Processing ticket 354
+2025-11-06 22:24:35,649 | ERROR | Zendesk update failed (ID 350): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/350.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:35,649 | INFO | Processing ticket 373
+2025-11-06 22:24:35,672 | ERROR | Zendesk update failed (ID 355): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/355.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:35,672 | INFO | Processing ticket 370
+2025-11-06 22:24:35,813 | ERROR | Zendesk update failed (ID 375): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/375.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:35,813 | INFO | Processing ticket 329
+2025-11-06 22:24:35,826 | ERROR | Zendesk update failed (ID 381): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/381.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:35,826 | INFO | Processing ticket 384
+2025-11-06 22:24:35,848 | ERROR | Zendesk update failed (ID 366): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/366.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:35,848 | INFO | Processing ticket 383
+2025-11-06 22:24:35,864 | ERROR | Zendesk update failed (ID 371): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/371.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:35,864 | INFO | Processing ticket 363
+2025-11-06 22:24:36,817 | ERROR | Zendesk update failed (ID 357): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/357.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:36,818 | INFO | Processing ticket 352
+2025-11-06 22:24:37,968 | ERROR | Zendesk update failed (ID 363): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/363.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:37,968 | INFO | Processing ticket 333
+2025-11-06 22:24:38,206 | ERROR | Zendesk update failed (ID 378): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/378.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:38,206 | INFO | Processing ticket 361
+2025-11-06 22:24:38,275 | ERROR | Zendesk update failed (ID 383): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/383.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:38,276 | INFO | Processing ticket 338
+2025-11-06 22:24:38,342 | ERROR | Zendesk update failed (ID 384): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/384.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:38,344 | INFO | Processing ticket 332
+2025-11-06 22:24:38,412 | ERROR | Zendesk update failed (ID 329): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/329.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:38,412 | INFO | Processing ticket 326
+2025-11-06 22:24:38,460 | ERROR | Zendesk update failed (ID 370): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/370.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:38,460 | INFO | Processing ticket 362
+2025-11-06 22:24:38,647 | ERROR | Zendesk update failed (ID 369): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/369.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:38,647 | INFO | Processing ticket 356
+2025-11-06 22:24:38,701 | ERROR | Zendesk update failed (ID 373): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/373.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:38,701 | INFO | Processing ticket 345
+2025-11-06 22:24:38,980 | ERROR | Zendesk update failed (ID 354): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/354.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:24:38,981 | INFO | Processing ticket 367
+2025-11-06 22:25:00,712 | ERROR | Zendesk update failed (ID 338): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/338.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:00,712 | INFO | Processing ticket 365
+2025-11-06 22:25:00,720 | ERROR | Zendesk update failed (ID 361): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/361.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:00,720 | INFO | Processing ticket 360
+2025-11-06 22:25:00,799 | ERROR | Zendesk update failed (ID 332): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/332.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:00,799 | INFO | Processing ticket 359
+2025-11-06 22:25:01,008 | ERROR | Zendesk update failed (ID 356): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/356.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:01,008 | INFO | Processing ticket 353
+2025-11-06 22:25:01,090 | ERROR | Zendesk update failed (ID 362): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/362.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:01,090 | INFO | Processing ticket 327
+2025-11-06 22:25:01,191 | ERROR | Zendesk update failed (ID 326): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/326.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:01,191 | INFO | Processing ticket 325
+2025-11-06 22:25:01,357 | ERROR | Zendesk update failed (ID 345): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/345.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:01,357 | INFO | Processing ticket 322
+2025-11-06 22:25:01,554 | ERROR | Zendesk update failed (ID 367): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/367.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:01,554 | INFO | Processing ticket 344
+2025-11-06 22:25:01,611 | ERROR | Zendesk update failed (ID 352): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/352.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:01,611 | INFO | Processing ticket 349
+2025-11-06 22:25:01,640 | ERROR | Zendesk update failed (ID 333): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/333.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:01,640 | INFO | Processing ticket 343
+2025-11-06 22:25:02,835 | ERROR | Zendesk update failed (ID 360): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/360.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:02,835 | INFO | Processing ticket 341
+2025-11-06 22:25:03,170 | ERROR | Zendesk update failed (ID 359): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/359.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:03,170 | INFO | Processing ticket 339
+2025-11-06 22:25:03,426 | ERROR | Zendesk update failed (ID 327): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/327.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:03,426 | INFO | Processing ticket 303
+2025-11-06 22:25:03,515 | ERROR | Zendesk update failed (ID 325): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/325.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:03,515 | INFO | Processing ticket 347
+2025-11-06 22:25:03,630 | ERROR | Zendesk update failed (ID 322): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/322.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:03,630 | INFO | Processing ticket 337
+2025-11-06 22:25:03,849 | ERROR | Zendesk update failed (ID 353): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/353.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:03,849 | INFO | Processing ticket 314
+2025-11-06 22:25:03,897 | ERROR | Zendesk update failed (ID 344): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/344.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:03,898 | INFO | Processing ticket 316
+2025-11-06 22:25:04,121 | ERROR | Zendesk update failed (ID 349): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/349.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:04,122 | INFO | Processing ticket 308
+2025-11-06 22:25:04,448 | ERROR | Zendesk update failed (ID 365): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/365.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:04,448 | INFO | Processing ticket 291
+2025-11-06 22:25:04,500 | ERROR | Zendesk update failed (ID 343): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/343.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:25:04,500 | INFO | Processing ticket 336
+2025-11-06 22:26:00,733 | ERROR | Zendesk update failed (ID 303): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/303.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:26:00,770 | ERROR | Zendesk update failed (ID 291): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/291.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:26:00,930 | ERROR | Zendesk update failed (ID 347): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/347.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:26:00,932 | ERROR | Zendesk update failed (ID 339): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/339.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:26:01,280 | ERROR | Zendesk update failed (ID 336): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/336.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:26:01,281 | ERROR | Zendesk update failed (ID 308): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/308.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:26:01,389 | ERROR | Zendesk update failed (ID 314): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/314.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:26:01,446 | ERROR | Zendesk update failed (ID 316): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/316.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:26:01,537 | ERROR | Zendesk update failed (ID 337): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/337.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:26:01,575 | ERROR | Zendesk update failed (ID 341): 422 Client Error: Unprocessable Entity for url: https://cognizant-72363.zendesk.com/api/v2/tickets/341.json - {"error":"RecordInvalid","description":"Record validation errors","details":{"base":[{"description":"ticket cannot be created/updated; this Zendesk account has expired"}]}}
+2025-11-06 22:26:01,587 | INFO | Batch complete: 50/50 | Avg: 2.81s | Total: 96.14s
