@@ -231,18 +231,32 @@ def analyze_with_openai(description, industry=None):
         }
 
 # === ZENDESK UPDATE ===
-def update_ticket(ticket_id, analysis):
-    """Update Zendesk ticket with AI analysis"""
+def update_ticket(ticket_id, analysis, existing_ticket=None):
+    """
+    Update Zendesk ticket with AI analysis (idempotent)
+
+    Args:
+        ticket_id: Zendesk ticket ID
+        analysis: AI analysis results
+        existing_ticket: Optional pre-fetched ticket data to avoid extra API call
+    """
     start = time.time()
     url = f"https://{SUBDOMAIN}.zendesk.com/api/v2/tickets/{ticket_id}.json"
-    
+
     try:
-        # Fetch existing tags
-        resp_get = session.get(url, auth=zendesk_auth, timeout=10)
-        resp_get.raise_for_status()
-        current_ticket = resp_get.json()['ticket']
+        # Fetch existing tags if not provided
+        if existing_ticket is None:
+            resp_get = session.get(url, auth=zendesk_auth, timeout=10)
+            resp_get.raise_for_status()
+            current_ticket = resp_get.json()['ticket']
+        else:
+            current_ticket = existing_ticket
+
         existing_tags = current_ticket.get('tags', [])
-        
+
+        # Check if already has AI_PROCESSED tag
+        already_processed = 'ai_processed' in existing_tags
+
         # Create AI tags
         ai_tags = [
             "ai_processed",
@@ -250,113 +264,205 @@ def update_ticket(ticket_id, analysis):
             f"ai_{analysis['urgency']}",
             f"ai_{analysis['sentiment']}"
         ]
-        
-        # Combine tags
-        all_tags = list(set(existing_tags + ai_tags))
-        
-        # Create comment
-        comment_body = f"""AI Analysis:
 
-Summary: {analysis['summary']}
-Root Cause: {analysis['root_cause']}
-Urgency: {analysis['urgency']}
-Sentiment: {analysis['sentiment']}
-"""
-        
-        # Update ticket
+        # Remove old ai_* tags (except ai_processed) to avoid accumulation
+        cleaned_tags = [tag for tag in existing_tags if not tag.startswith('ai_') or tag == 'ai_processed']
+
+        # Combine tags
+        all_tags = list(set(cleaned_tags + ai_tags))
+
+        # Add processing timestamp tag
+        timestamp = datetime.now().strftime('%Y%m%d')
+        all_tags.append(f"ai_processed_{timestamp}")
+
+        # Build payload
         payload = {
             "ticket": {
-                "comment": {"body": comment_body, "public": False},
                 "tags": all_tags,
                 "priority": map_urgency_to_priority(analysis['urgency'])
             }
         }
-        
+
+        # Only add comment if NOT already processed (prevents duplicates)
+        if not already_processed:
+            comment_body = f"""🤖 AI Analysis (Automated):
+
+📋 Summary: {analysis['summary']}
+🔍 Root Cause: {analysis['root_cause']}
+⚡ Urgency: {analysis['urgency']}
+😊 Sentiment: {analysis['sentiment']}
+
+---
+Processed: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}
+"""
+            payload["ticket"]["comment"] = {"body": comment_body, "public": False}
+            logger.info(f"Adding AI analysis comment to ticket {ticket_id}")
+        else:
+            logger.info(f"Ticket {ticket_id} already has AI analysis, updating tags only (no duplicate comment)")
+
+        # Update ticket
         resp_put = session.put(url, json=payload, auth=zendesk_auth, timeout=10)
         resp_put.raise_for_status()
-        
+
         logger.info(f"Ticket {ticket_id} updated with tags: {ai_tags}")
-        return {"updated": True, "time": round(time.time() - start, 2)}
-        
+        return {
+            "updated": True,
+            "time": round(time.time() - start, 2),
+            "comment_added": not already_processed
+        }
+
     except Exception as e:
         logger.error(f"Zendesk update failed (ID {ticket_id}): {e}")
         return {"updated": False, "error": str(e), "time": round(time.time() - start, 2)}
 
+# === HELPER: CHECK IF ALREADY PROCESSED ===
+def is_ticket_already_processed(ticket):
+    """
+    Check if ticket was already processed by AI
+
+    Args:
+        ticket: Ticket data from Zendesk
+
+    Returns:
+        bool: True if ticket has ai_processed tag
+    """
+    tags = ticket.get('tags', [])
+    return 'ai_processed' in tags
+
 # === PROCESS TICKET ===
-def process_ticket(ticket, industry=None):
-    """Process one ticket through pipeline"""
+def process_ticket(ticket, industry=None, force=False):
+    """
+    Process one ticket through pipeline with deduplication
+
+    Args:
+        ticket: Ticket data from Zendesk
+        industry: Optional industry override
+        force: Force reprocessing even if already processed
+
+    Returns:
+        dict: Processing result with success status
+    """
     ticket_id = ticket['id']
     description = ticket.get('description', '') or ticket.get('subject', '')
-    
+
     if not description.strip():
         return {"ticket_id": ticket_id, "success": False, "error": "No description"}
-    
+
+    # Check if already processed (unless forced)
+    if not force and is_ticket_already_processed(ticket):
+        logger.info(f"Ticket {ticket_id} already processed, skipping")
+        return {
+            "ticket_id": ticket_id,
+            "success": True,
+            "skipped": True,
+            "reason": "already_processed"
+        }
+
     logger.info(f"Processing ticket {ticket_id}")
-    
+
     # Analyze with AI
     ai_result = analyze_with_openai(description, industry=industry)
     if not ai_result["success"]:
         return {**ai_result, "ticket_id": ticket_id, "updated": False}
-    
-    # Update Zendesk
-    update_result = update_ticket(ticket_id, ai_result["analysis"])
-    
+
+    # Update Zendesk (pass existing ticket to avoid extra API call)
+    update_result = update_ticket(ticket_id, ai_result["analysis"], ticket)
+
     return {
         "ticket_id": ticket_id,
         "success": True,
+        "skipped": False,
         "industry": ai_result.get("industry", "unknown"),
         "analysis": ai_result["analysis"],
         "processing_time": ai_result["processing_time"],
         "updated": update_result["updated"],
+        "comment_added": update_result.get("comment_added", False),
         "pii_protected": ai_result.get("pii_protected", False),
         "redactions": ai_result.get("redactions", {})
     }
 
 # === MAIN ===
-def main(limit=50, industry=None):
-    """Main processing function"""
+def main(limit=50, industry=None, force=False, only_unprocessed=True):
+    """
+    Main processing function with deduplication
+
+    Args:
+        limit: Max number of tickets to process
+        industry: Force specific industry
+        force: Force reprocessing of already-processed tickets
+        only_unprocessed: Only fetch tickets without ai_processed tag
+    """
     start_total = time.time()
-    
-    logger.info(f"Starting batch processing (limit: {limit}, industry: {industry or 'auto-detect'})")
+
+    logger.info(f"Starting batch processing (limit: {limit}, industry: {industry or 'auto-detect'}, force: {force})")
     print(f"AI TICKET PROCESSOR - Started at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("="*60)
-    
+
     # Fetch tickets
     url = f"https://{SUBDOMAIN}.zendesk.com/api/v2/search.json"
+
+    # Fetch only unprocessed tickets by default (prevents duplicates)
+    if only_unprocessed and not force:
+        query = 'type:ticket -tags:ai_processed'
+        logger.info("Fetching only unprocessed tickets (without ai_processed tag)")
+        print("Mode: Processing NEW tickets only (skipping already processed)\n")
+    else:
+        query = 'type:ticket'
+        logger.info("Fetching all tickets")
+        if force:
+            print("Mode: FORCE reprocessing (will update all tickets)\n")
+        else:
+            print("Mode: Processing ALL tickets (will skip already processed)\n")
+
     params = {
-        'query': 'type:ticket',
-        'sort_by': 'updated_at',
-        'sort_order': 'desc'
+        'query': query,
+        'sort_by': 'created_at',  # Process oldest first
+        'sort_order': 'asc'
     }
-    
+
     try:
         resp = session.get(url, params=params, auth=zendesk_auth, timeout=10)
         resp.raise_for_status()
         tickets = resp.json()['results'][:limit]
+
+        if not tickets:
+            print("\n✅ No unprocessed tickets found!")
+            print("All tickets have been processed. Great job!")
+            logger.info("No tickets to process")
+            return
+
         print(f"Successfully fetched {len(tickets)} tickets\n")
     except Exception as e:
         logger.critical(f"Failed to fetch tickets: {e}")
         print(f"ERROR: Failed to fetch tickets - {e}")
         return
-    
+
     # Process tickets
     results = []
+    skipped = 0
+
     with ThreadPoolExecutor(max_workers=10) as executor:
-        futures = {executor.submit(process_ticket, ticket, industry): ticket for ticket in tickets}
-        
+        futures = {executor.submit(process_ticket, ticket, industry, force): ticket for ticket in tickets}
+
         for i, future in enumerate(as_completed(futures), 1):
             result = future.result()
             results.append(result)
-            
-            status = "SUCCESS" if result.get("success") else "FAILED"
+
+            # Track skipped tickets
+            if result.get("skipped"):
+                skipped += 1
+                status = "⏭️  SKIPPED (already processed)"
+            else:
+                status = "✅ SUCCESS" if result.get("success") else "❌ FAILED"
+
             detected_industry = result.get("industry", "unknown")
             print(f"[{i}/{len(tickets)}] Ticket #{result['ticket_id']} ({detected_industry}): {status}")
-    
+
     # Calculate statistics
     total_time = round(time.time() - start_total, 2)
-    success = sum(1 for r in results if r.get("success"))
-    failed = len(tickets) - success
-    avg_time = round(sum(r.get("processing_time", 0) for r in results) / len(results), 2) if results else 0
+    success = sum(1 for r in results if r.get("success") and not r.get("skipped"))
+    failed = sum(1 for r in results if not r.get("success"))
+    avg_time = round(sum(r.get("processing_time", 0) for r in results if not r.get("skipped")) / max(1, success), 2)
     
     # PII stats
     tickets_with_pii = sum(1 for r in results if r.get("pii_protected", False))
@@ -376,21 +482,25 @@ def main(limit=50, industry=None):
     category_counts = {}
     other_count = 0
     for r in results:
-        if r.get('success'):
-            cat = r['analysis']['root_cause']
+        if r.get('success') and not r.get('skipped'):
+            cat = r.get('analysis', {}).get('root_cause', 'unknown')
             category_counts[cat] = category_counts.get(cat, 0) + 1
             if cat in ['other', 'general']:
                 other_count += 1
-    
+
+    # Calculate actual cost (only for newly processed tickets, not skipped ones)
+    actual_cost = round(success * 0.001, 3)
+
     # Summary
     summary = {
         "timestamp": datetime.now().isoformat(),
         "total": len(tickets),
         "processed": success,
+        "skipped": skipped,
         "failed": failed,
         "avg_time_per_ticket": avg_time,
         "total_time": total_time,
-        "cost_estimate": round(len(tickets) * 0.001, 3),
+        "cost_estimate": actual_cost,
         "pii_protection": {
             "tickets_with_pii": tickets_with_pii,
             "total_redactions": sum(total_redactions.values()),
@@ -398,20 +508,21 @@ def main(limit=50, industry=None):
         },
         "industry_breakdown": industry_counts,
         "category_breakdown": category_counts,
-        "other_percentage": round(other_count/len(results)*100, 1) if results else 0,
+        "other_percentage": round(other_count/max(1, success)*100, 1) if success > 0 else 0,
         "results": results
     }
-    
+
     # Print summary
     print("\n" + "="*60)
     print("BATCH PROCESSING COMPLETE")
     print("="*60)
     print(f"Total Tickets:    {len(tickets)}")
     print(f"Processed:        {success}")
+    print(f"Skipped:          {skipped} (already processed)")
     print(f"Failed:           {failed}")
     print(f"Avg Time:         {avg_time}s per ticket")
     print(f"Total Time:       {total_time}s ({total_time/60:.1f} minutes)")
-    print(f"Cost Estimate:    ${summary['cost_estimate']}")
+    print(f"Cost Estimate:    ${actual_cost} (only for newly processed tickets)")
     
     print("\n" + "="*60)
     print("INDUSTRY BREAKDOWN")
@@ -463,10 +574,32 @@ def main(limit=50, industry=None):
     logger.info(f"Batch complete: {success}/{len(tickets)} | Avg: {avg_time}s | Other%: {other_pct}%")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='AI Ticket Processor - Multi-Industry')
-    parser.add_argument("--limit", type=int, default=50, help="Number of tickets to process")
-    parser.add_argument("--industry", type=str, choices=['ecommerce', 'saas', 'general'], 
+    parser = argparse.ArgumentParser(
+        description='AI Ticket Processor - Multi-Industry with Deduplication',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Process only new tickets (default)
+  python Ai_ticket_processor.py --limit 50
+
+  # Force reprocess all tickets (updates tags, no duplicate comments)
+  python Ai_ticket_processor.py --limit 50 --force
+
+  # Process all tickets including already processed ones (will skip duplicates)
+  python Ai_ticket_processor.py --limit 100 --all
+
+  # Force specific industry
+  python Ai_ticket_processor.py --limit 50 --industry ecommerce
+        """
+    )
+    parser.add_argument("--limit", type=int, default=50,
+                       help="Number of tickets to process (default: 50)")
+    parser.add_argument("--industry", type=str, choices=['ecommerce', 'saas', 'general'],
                        help="Force specific industry (optional, auto-detects if not specified)")
+    parser.add_argument("--force", action="store_true",
+                       help="Force reprocessing of already-processed tickets (updates tags only, no duplicate comments)")
+    parser.add_argument("--all", action="store_true",
+                       help="Fetch all tickets including already processed ones (will skip duplicates unless --force is also used)")
     args = parser.parse_args()
-    
-    main(args.limit, args.industry)
+
+    main(args.limit, args.industry, force=args.force, only_unprocessed=not args.all)
