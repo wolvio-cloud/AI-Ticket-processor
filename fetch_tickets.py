@@ -13,22 +13,32 @@ ZENDESK_EMAIL = os.getenv('ZENDESK_EMAIL')
 ZENDESK_API_TOKEN = os.getenv('ZENDESK_API_TOKEN')
 
 
-def get_recent_tickets(limit=100):
+def get_recent_tickets(limit=100, exclude_processed=False):
     """
-    Fetch recent tickets from Zendesk
-    
+    Fetch recent tickets from Zendesk with optional deduplication
+
     Args:
         limit: Maximum number of tickets to fetch (default 100)
-        
+        exclude_processed: If True, exclude tickets with 'ai_processed' tag (default False)
+
     Returns:
         List of ticket dictionaries
     """
     # Use search API to get all tickets, sorted by updated_at
     url = f"https://{ZENDESK_SUBDOMAIN}.zendesk.com/api/v2/search.json"
+
+    # Build query with optional exclusion of processed tickets
+    if exclude_processed:
+        query = 'type:ticket -tags:ai_processed'  # Exclude already processed tickets
+        print("🔍 Fetching only unprocessed tickets (excluding ai_processed tag)")
+    else:
+        query = 'type:ticket'  # Get all tickets regardless of status
+        print("🔍 Fetching all tickets")
+
     params = {
-        'query': 'type:ticket',  # Get all tickets regardless of status
-        'sort_by': 'updated_at',
-        'sort_order': 'desc'
+        'query': query,
+        'sort_by': 'created_at',  # Sort by created date (oldest first for processing)
+        'sort_order': 'asc'
     }
     
     try:
@@ -105,14 +115,40 @@ if __name__ == "__main__":
     print(f"   Subdomain: {ZENDESK_SUBDOMAIN}")
     print(f"   Email: {ZENDESK_EMAIL}")
     print()
-    
+
     if test_connection():
-        print("\n📋 Fetching recent tickets...\n")
-        tickets = get_recent_tickets(21)
-        
-        for i, ticket in enumerate(tickets, 1):
+        print("\n" + "="*60)
+        print("TEST 1: Fetch all tickets")
+        print("="*60)
+        all_tickets = get_recent_tickets(limit=21, exclude_processed=False)
+
+        for i, ticket in enumerate(all_tickets[:5], 1):  # Show first 5
+            tags = ticket.get('tags', [])
+            has_ai_tag = 'ai_processed' in tags
             print(f"{i}. Ticket #{ticket['id']}")
             print(f"   Subject: {ticket['subject']}")
             print(f"   Status: {ticket['status']}")
-            print(f"   Created: {ticket['created_at']}")
+            print(f"   AI Processed: {'✅ Yes' if has_ai_tag else '❌ No'}")
             print()
+
+        print("\n" + "="*60)
+        print("TEST 2: Fetch only unprocessed tickets")
+        print("="*60)
+        unprocessed_tickets = get_recent_tickets(limit=21, exclude_processed=True)
+
+        if not unprocessed_tickets:
+            print("✅ No unprocessed tickets found! All tickets have been processed.")
+        else:
+            for i, ticket in enumerate(unprocessed_tickets[:5], 1):  # Show first 5
+                print(f"{i}. Ticket #{ticket['id']}")
+                print(f"   Subject: {ticket['subject']}")
+                print(f"   Status: {ticket['status']}")
+                print()
+
+        print("\n" + "="*60)
+        print("SUMMARY")
+        print("="*60)
+        print(f"Total tickets (all):         {len(all_tickets)}")
+        print(f"Unprocessed tickets:         {len(unprocessed_tickets)}")
+        print(f"Already processed:           {len(all_tickets) - len(unprocessed_tickets)}")
+        print("="*60)
