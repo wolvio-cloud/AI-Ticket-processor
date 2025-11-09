@@ -14,6 +14,7 @@ from urllib3.util.retry import Retry
 import argparse
 from dotenv import load_dotenv
 from pii_redactor import PIIRedactor
+from analyze_ticket import generate_reply_draft
 
 # Load environment variables
 load_dotenv()
@@ -213,7 +214,12 @@ def analyze_with_openai(description, industry=None):
         resp.raise_for_status()
         result = resp.json()
         analysis = json.loads(result['choices'][0]['message']['content'])
-        
+
+        # Generate reply draft
+        logger.info("Generating reply draft...")
+        draft_result = generate_reply_draft("", clean_description, analysis)
+        analysis.update(draft_result)
+
         return {
             "success": True,
             "analysis": analysis,
@@ -225,8 +231,8 @@ def analyze_with_openai(description, industry=None):
     except Exception as e:
         logger.error(f"OpenAI failed: {e}")
         return {
-            "success": False, 
-            "error": str(e), 
+            "success": False,
+            "error": str(e),
             "processing_time": round(time.time() - start, 2)
         }
 
@@ -291,7 +297,24 @@ def update_ticket(ticket_id, analysis, existing_ticket=None):
 🔍 Root Cause: {analysis['root_cause']}
 ⚡ Urgency: {analysis['urgency']}
 😊 Sentiment: {analysis['sentiment']}
+"""
+            # Add reply draft if available
+            if analysis.get('reply_draft') and analysis.get('draft_status') == 'success':
+                comment_body += f"""
+---
+✍️  AI-GENERATED REPLY DRAFT:
 
+{analysis['reply_draft']}
+
+(⚠️  Review and edit before sending to customer)
+"""
+            elif analysis.get('draft_status') == 'failed':
+                comment_body += f"""
+---
+⚠️  Reply draft generation failed. Please manually compose a reply.
+"""
+
+            comment_body += f"""
 ---
 Processed: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}
 """
@@ -378,7 +401,10 @@ def process_ticket(ticket, industry=None, force=False):
         "updated": update_result["updated"],
         "comment_added": update_result.get("comment_added", False),
         "pii_protected": ai_result.get("pii_protected", False),
-        "redactions": ai_result.get("redactions", {})
+        "redactions": ai_result.get("redactions", {}),
+        "draft_status": ai_result["analysis"].get("draft_status", "unknown"),
+        "draft_word_count": ai_result["analysis"].get("draft_word_count", 0),
+        "draft_preview": ai_result["analysis"].get("reply_draft", "")[:50] + "..." if ai_result["analysis"].get("reply_draft") and len(ai_result["analysis"].get("reply_draft", "")) > 50 else ai_result["analysis"].get("reply_draft", "")
     }
 
 # === MAIN ===
@@ -456,7 +482,17 @@ def main(limit=50, industry=None, force=False, only_unprocessed=True):
                 status = "✅ SUCCESS" if result.get("success") else "❌ FAILED"
 
             detected_industry = result.get("industry", "unknown")
-            print(f"[{i}/{len(tickets)}] Ticket #{result['ticket_id']} ({detected_industry}): {status}")
+
+            # Add draft status to output
+            draft_info = ""
+            if result.get("draft_status") == "success":
+                draft_preview = result.get("draft_preview", "")
+                word_count = result.get("draft_word_count", 0)
+                draft_info = f" | Draft: ✅ ({word_count}w)"
+            elif result.get("draft_status") == "failed":
+                draft_info = " | Draft: ⚠️  Failed"
+
+            print(f"[{i}/{len(tickets)}] Ticket #{result['ticket_id']} ({detected_industry}): {status}{draft_info}")
 
     # Calculate statistics
     total_time = round(time.time() - start_total, 2)
@@ -491,6 +527,13 @@ def main(limit=50, industry=None, force=False, only_unprocessed=True):
     # Calculate actual cost (only for newly processed tickets, not skipped ones)
     actual_cost = round(success * 0.001, 3)
 
+    # Draft generation metrics
+    drafts_generated = sum(1 for r in results if r.get("draft_status") == "success")
+    drafts_failed = sum(1 for r in results if r.get("draft_status") == "failed")
+    draft_word_counts = [r.get("draft_word_count", 0) for r in results if r.get("draft_status") == "success"]
+    avg_draft_length = round(sum(draft_word_counts) / len(draft_word_counts), 1) if draft_word_counts else 0
+    draft_success_rate = round(drafts_generated / max(1, drafts_generated + drafts_failed) * 100, 1) if (drafts_generated + drafts_failed) > 0 else 0
+
     # Summary
     summary = {
         "timestamp": datetime.now().isoformat(),
@@ -505,6 +548,12 @@ def main(limit=50, industry=None, force=False, only_unprocessed=True):
             "tickets_with_pii": tickets_with_pii,
             "total_redactions": sum(total_redactions.values()),
             "by_type": total_redactions
+        },
+        "reply_drafts": {
+            "total_generated": drafts_generated,
+            "failed": drafts_failed,
+            "success_rate": draft_success_rate,
+            "avg_word_count": avg_draft_length
         },
         "industry_breakdown": industry_counts,
         "category_breakdown": category_counts,
@@ -563,6 +612,18 @@ def main(limit=50, industry=None, force=False, only_unprocessed=True):
             print(f"  - {pii_type}: {count}")
     else:
         print("  No PII detected")
+    print("="*60)
+
+    print("\n" + "="*60)
+    print("✍️  REPLY DRAFT GENERATION")
+    print("="*60)
+    print(f"Total Drafts:     {drafts_generated}")
+    print(f"Failed:           {drafts_failed}")
+    print(f"Success Rate:     {draft_success_rate}%")
+    print(f"Avg Word Count:   {avg_draft_length} words")
+    if drafts_generated > 0:
+        print(f"\n✅ Generated {drafts_generated} professional reply drafts")
+        print("   (Review drafts in Zendesk internal notes before sending)")
     print("="*60)
     
     # Save results

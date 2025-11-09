@@ -16,6 +16,95 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 redactor = PIIRedactor(preserve_emails=True)
 
 
+def generate_reply_draft(subject, description, analysis):
+    """
+    Generate a professional reply draft based on ticket analysis
+
+    Args:
+        subject: Ticket subject line
+        description: Ticket description/body
+        analysis: Dictionary with ticket analysis (summary, root_cause, urgency, sentiment)
+
+    Returns:
+        Dictionary with reply_draft, word_count, and generation timestamp
+    """
+    from datetime import datetime
+
+    # Build context-aware prompt
+    prompt = f"""You are a professional customer support agent. Based on this ticket analysis, generate a helpful, empathetic reply draft (2-3 sentences).
+
+Ticket Subject: {subject}
+Issue Summary: {analysis.get('summary', 'N/A')}
+Category: {analysis.get('root_cause', 'N/A')}
+Urgency: {analysis.get('urgency', 'N/A')}
+Sentiment: {analysis.get('sentiment', 'N/A')}
+
+Generate a professional reply that:
+1. Acknowledges the issue
+2. Shows empathy
+3. Provides next steps or resolution
+
+Reply draft (2-3 sentences only):"""
+
+    try:
+        response = requests.post(
+            "https://api.openai.com/v1/chat/completions",
+            headers={
+                "Authorization": f"Bearer {OPENAI_API_KEY}",
+                "Content-Type": "application/json"
+            },
+            json={
+                "model": "gpt-4o-mini",
+                "messages": [
+                    {
+                        "role": "system",
+                        "content": "You are a professional customer support agent. Generate helpful, concise reply drafts."
+                    },
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ],
+                "temperature": 0.7,  # Slightly higher for natural replies
+                "max_tokens": 150,   # 2-3 sentences
+                "top_p": 1.0
+            },
+            timeout=30
+        )
+        response.raise_for_status()
+
+        # Extract reply draft
+        draft_text = response.json()['choices'][0]['message']['content'].strip()
+        word_count = len(draft_text.split())
+
+        # Simple quality score based on length (50-150 words is good)
+        if 30 <= word_count <= 150:
+            quality_score = 100
+        elif 20 <= word_count < 30 or 150 < word_count <= 200:
+            quality_score = 75
+        else:
+            quality_score = 50
+
+        return {
+            'reply_draft': draft_text,
+            'draft_word_count': word_count,
+            'draft_generated_at': datetime.now().isoformat(),
+            'draft_quality_score': quality_score,
+            'draft_status': 'success'
+        }
+
+    except Exception as e:
+        print(f"⚠️  Reply draft generation failed: {str(e)}")
+        return {
+            'reply_draft': "Draft generation failed. Please manually compose a reply.",
+            'draft_word_count': 0,
+            'draft_generated_at': datetime.now().isoformat(),
+            'draft_quality_score': 0,
+            'draft_status': 'failed',
+            'draft_error': str(e)
+        }
+
+
 def analyze_ticket(subject, description):
     """
     Analyze ticket using OpenAI gpt-4o-mini with PII redaction
@@ -106,12 +195,22 @@ Ticket: {subject_clean}
         analysis['pii_redacted'] = has_pii
         analysis['redactions'] = all_redactions
 
+        # STEP 5: Generate reply draft
+        print(f"✍️  Generating reply draft...")
+        draft_result = generate_reply_draft(subject_clean, description_clean, analysis)
+        analysis.update(draft_result)
+
         print(f"✅ Analysis complete")
         print(f"   Root Cause: {analysis['root_cause']}")
         print(f"   Urgency: {analysis['urgency']}")
         print(f"   Sentiment: {analysis['sentiment']}")
         if has_pii:
             print(f"   PII Redacted: ✅ Yes ({total_count} instance(s))")
+        if draft_result.get('draft_status') == 'success':
+            draft_preview = draft_result['reply_draft'][:50] + "..." if len(draft_result['reply_draft']) > 50 else draft_result['reply_draft']
+            print(f"   Reply Draft: ✅ Generated ({draft_result['draft_word_count']} words) - \"{draft_preview}\"")
+        else:
+            print(f"   Reply Draft: ⚠️  Failed to generate")
 
         return analysis
         
