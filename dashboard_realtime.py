@@ -199,6 +199,35 @@ def calculate_metrics(results):
     total_categories = sum(category_counts.values())
     classification_accuracy = (classified_count / total_categories * 100) if total_categories > 0 else 0
 
+    # Draft generation metrics
+    drafts_generated = 0
+    drafts_failed = 0
+    draft_word_counts = []
+    sample_drafts = []
+
+    for r in results:
+        # Check if result has reply_drafts summary
+        if 'reply_drafts' in r:
+            drafts_generated += r['reply_drafts'].get('total_generated', 0)
+            drafts_failed += r['reply_drafts'].get('failed', 0)
+
+        # Collect sample drafts from individual tickets
+        for ticket in r.get('results', []):
+            if ticket.get('success'):
+                analysis = ticket.get('analysis', {})
+                if analysis.get('draft_status') == 'success':
+                    draft_word_counts.append(analysis.get('draft_word_count', 0))
+                    if len(sample_drafts) < 5:
+                        sample_drafts.append({
+                            'ticket_id': ticket.get('ticket_id'),
+                            'draft': analysis.get('reply_draft', ''),
+                            'word_count': analysis.get('draft_word_count', 0),
+                            'category': analysis.get('root_cause', 'unknown')
+                        })
+
+    avg_draft_word_count = sum(draft_word_counts) / len(draft_word_counts) if draft_word_counts else 0
+    draft_success_rate = (drafts_generated / (drafts_generated + drafts_failed) * 100) if (drafts_generated + drafts_failed) > 0 else 0
+
     return {
         'total_processed': total_processed,
         'total_failed': total_failed,
@@ -209,6 +238,11 @@ def calculate_metrics(results):
         'cost_savings': cost_savings,
         'pii_protected_count': pii_protected_count,
         'pii_redaction_types': pii_redaction_types,
+        'drafts_generated': drafts_generated,
+        'drafts_failed': drafts_failed,
+        'draft_success_rate': draft_success_rate,
+        'avg_draft_word_count': avg_draft_word_count,
+        'sample_drafts': sample_drafts,
         'industry_counts': industry_counts,
         'category_counts': category_counts,
         'urgency_counts': urgency_counts,
@@ -354,6 +388,57 @@ with col2:
 
     pii_protection_rate = (metrics['pii_protected_count'] / metrics['total_processed'] * 100) if metrics['total_processed'] > 0 else 0
     st.metric("PII Detection Rate", f"{pii_protection_rate:.1f}%")
+
+st.markdown("---")
+
+# ============================================================================
+# REPLY DRAFT GENERATION
+# ============================================================================
+
+st.subheader("✍️  AI Reply Draft Generation")
+
+col1, col2, col3, col4 = st.columns(4)
+
+with col1:
+    st.metric(
+        label="📝 Drafts Generated",
+        value=f"{metrics['drafts_generated']:,}",
+        delta="Auto-generated"
+    )
+
+with col2:
+    st.metric(
+        label="✅ Success Rate",
+        value=f"{metrics['draft_success_rate']:.1f}%",
+        delta="Excellent" if metrics['draft_success_rate'] >= 95 else "Good" if metrics['draft_success_rate'] >= 90 else "Needs Attention",
+        delta_color="normal" if metrics['draft_success_rate'] >= 95 else "inverse"
+    )
+
+with col3:
+    st.metric(
+        label="📊 Avg Word Count",
+        value=f"{metrics['avg_draft_word_count']:.0f}",
+        delta="words per draft"
+    )
+
+with col4:
+    st.metric(
+        label="⚠️  Failed",
+        value=f"{metrics['drafts_failed']}",
+        delta="Manual review needed" if metrics['drafts_failed'] > 0 else "None"
+    )
+
+# Sample drafts display
+if metrics['sample_drafts']:
+    st.markdown("### 📨 Sample Reply Drafts (Last 5)")
+    st.info("⚠️  These are AI-generated drafts. Review and edit before sending to customers.")
+
+    for i, draft_data in enumerate(metrics['sample_drafts'], 1):
+        with st.expander(f"Ticket #{draft_data['ticket_id']} - {draft_data['category']} ({draft_data['word_count']} words)"):
+            st.markdown(f"**Draft Reply:**\n\n{draft_data['draft']}")
+            st.caption("✏️  Review and personalize before sending")
+else:
+    st.info("No draft samples available yet. Process some tickets to see generated drafts!")
 
 st.markdown("---")
 
@@ -610,6 +695,7 @@ with st.sidebar:
     st.markdown("""
     - ✅ Real-time metrics
     - ✅ PII compliance tracking
+    - ✅ AI reply draft generation
     - ✅ Industry breakdown
     - ✅ Cost savings calculator
     - ✅ Classification accuracy

@@ -118,7 +118,24 @@ def update_ticket(ticket_id, analysis, force=False):
 🔍 Root Cause: {analysis['root_cause']}
 ⚡ Urgency: {analysis['urgency']}
 😊 Sentiment: {analysis['sentiment']}
+"""
+            # Add reply draft if available
+            if analysis.get('reply_draft') and analysis.get('draft_status') == 'success':
+                internal_comment += f"""
+---
+✍️  AI-GENERATED REPLY DRAFT:
 
+{analysis['reply_draft']}
+
+(⚠️  Review and edit before sending to customer)
+"""
+            elif analysis.get('draft_status') == 'failed':
+                internal_comment += f"""
+---
+⚠️  Reply draft generation failed. Please manually compose a reply.
+"""
+
+            internal_comment += f"""
 ---
 Processed: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}
 """

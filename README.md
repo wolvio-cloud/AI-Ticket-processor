@@ -7,8 +7,9 @@ Analyzes Zendesk tickets using OpenAI's gpt-4o-mini to extract:
 - Root Cause (bug, refund, feature, other)
 - Urgency (low, medium, high)
 - Sentiment (positive, neutral, negative)
+- **✨ NEW: Auto-generated professional reply drafts (2-3 sentences)**
 
-Then automatically tags and adds internal notes to tickets.
+Then automatically tags and adds internal notes with AI-generated reply drafts to tickets.
 
 ---
 
@@ -87,8 +88,9 @@ ai-ticket-processor-v2/
 ```
 1. FETCH     → Get tickets from Zendesk
 2. ANALYZE   → Send to OpenAI for AI analysis
-3. UPDATE    → Tag and comment ticket in Zendesk
-4. LOG       → Record results
+3. DRAFT     → Generate professional reply draft (NEW!)
+4. UPDATE    → Tag and comment ticket in Zendesk (includes draft)
+5. LOG       → Record results with draft metrics
 ```
 
 ### Individual Components
@@ -101,11 +103,15 @@ ai-ticket-processor-v2/
 #### **analyze_ticket.py**
 - Sends ticket to OpenAI gpt-4o-mini
 - Extracts structured JSON analysis
+- **Generates professional reply draft (2-3 sentences)**
+- Includes PII redaction for data protection
 - Handles errors with fallback responses
 
 #### **update_ticket.py**
 - Updates Zendesk ticket with tags
-- Adds internal comment (not visible to customer)
+- Adds internal comment with AI analysis
+- **Includes AI-generated reply draft for agent review**
+- Comment is internal only (not visible to customer)
 - Confirms successful update
 
 #### **ai_ticket_processor.py**
@@ -272,12 +278,43 @@ crontab -e
 
 ---
 
+## ✨ Features
+
+### Auto-Reply Draft Generation (v2.0) ✅
+Automatically generates professional 2-3 sentence reply drafts for every ticket:
+- **Context-aware**: Uses ticket summary, category, urgency, and sentiment
+- **Quality scoring**: Evaluates draft quality based on word count (30-150 words optimal)
+- **Seamless integration**: Drafts appear in Zendesk internal notes
+- **Dashboard metrics**: Track draft generation success rate, avg word count
+- **Sample preview**: View recent drafts in real-time dashboard
+
+**Example Draft:**
+```
+Thank you for reaching out about your delayed order. I sincerely apologize
+for the inconvenience this has caused. I've escalated this to our shipping
+team and you should receive tracking updates within 24 hours.
+```
+
+### PII Protection (v2.1) ✅
+- Automatically redacts 9 types of sensitive data
+- GDPR & CCPA compliant
+- Real-time compliance tracking in dashboard
+
+### Real-Time Dashboard (v2.2) ✅
+- Live metrics and analytics
+- Industry breakdown with classification accuracy
+- Cost savings calculator
+- PII compliance tracking
+- Reply draft generation metrics
+
 ## 📈 Roadmap
 
-- [ ] **v1.2** - Freshdesk & Intercom support
-- [ ] **v1.3** - Real-time webhook processing
-- [ ] **v2.0** - Auto-reply draft generation
-- [ ] **v2.1** - Analytics dashboard
+- [x] **v2.0** - Auto-reply draft generation ✅
+- [x] **v2.1** - PII protection & compliance ✅
+- [x] **v2.2** - Real-time analytics dashboard ✅
+- [ ] **v2.3** - Multi-language support
+- [ ] **v2.4** - Freshdesk & Intercom integration
+- [ ] **v3.0** - Real-time webhook processing
 
 ---
 
