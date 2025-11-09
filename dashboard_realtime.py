@@ -348,7 +348,7 @@ col1, col2 = st.columns([2, 1])
 
 with col1:
     if metrics['pii_redaction_types']:
-        st.markdown('<div class="pii-badge">✅ GDPR & CCPA COMPLIANT - PII Automatically Redacted</div>', unsafe_allow_html=True)
+        st.markdown('<div class="pii-badge">✅ GLOBALLY COMPLIANT: GDPR (EU) · CCPA (US) · Privacy Act (AU) · PIPEDA (CA)</div>', unsafe_allow_html=True)
 
         # PII redaction breakdown
         pii_df = pd.DataFrame(list(metrics['pii_redaction_types'].items()), columns=['PII Type', 'Redactions'])
@@ -376,18 +376,95 @@ with col1:
         st.info("No PII detected in processed tickets - All data is clean!")
 
 with col2:
-    st.markdown("### Protected PII Types")
+    st.markdown("### Protected PII Types (International)")
     st.markdown("""
+    **Global Banking:**
     - 💳 Credit Cards
-    - 🔢 SSN / Tax IDs
-    - 📞 Phone Numbers
+    - 🏦 IBAN (EU)
     - 🏦 Bank Accounts
-    - 🪪 ID Numbers
-    - 📧 Emails (preserved)
+
+    **US:**
+    - 🔢 Social Security Numbers (SSN)
+    - 🏦 Routing Numbers
+
+    **UK:**
+    - 🆔 National Insurance (NI)
+    - 🏦 Sort Codes
+
+    **Australia:**
+    - 🔢 Tax File Numbers (TFN)
+    - 🏥 Medicare Numbers
+
+    **Canada:**
+    - 🔢 Social Insurance Numbers (SIN)
+
+    **India:**
+    - 🪪 Aadhaar
+    - 💼 PAN Cards
+    - 📞 Phone Numbers
+    - 🏦 IFSC Codes
+
+    **General:**
+    - 📧 Emails (preserved by default)
     """)
 
     pii_protection_rate = (metrics['pii_protected_count'] / metrics['total_processed'] * 100) if metrics['total_processed'] > 0 else 0
     st.metric("PII Detection Rate", f"{pii_protection_rate:.1f}%")
+
+# Regional PII Breakdown
+if metrics['pii_redaction_types']:
+    st.markdown("### 🌍 Regional PII Detection Breakdown")
+
+    # Categorize PII by region
+    regional_pii = {
+        'US': 0,
+        'UK': 0,
+        'EU': 0,
+        'Australia': 0,
+        'Canada': 0,
+        'India': 0,
+        'Global': 0
+    }
+
+    for pii_type, count in metrics['pii_redaction_types'].items():
+        if pii_type in ['us_ssn', 'us_routing']:
+            regional_pii['US'] += count
+        elif pii_type in ['uk_ni', 'uk_sort']:
+            regional_pii['UK'] += count
+        elif pii_type == 'iban':
+            regional_pii['EU'] += count
+        elif pii_type in ['au_medicare', 'au_tfn_ca_sin']:
+            regional_pii['Australia'] += count
+        elif pii_type in ['aadhaar', 'pan_card', 'ifsc', 'phone_india', 'phone_india_code']:
+            regional_pii['India'] += count
+        elif pii_type in ['credit_card', 'account_number', 'email']:
+            regional_pii['Global'] += count
+
+    # Filter out regions with no PII
+    regional_pii_filtered = {k: v for k, v in regional_pii.items() if v > 0}
+
+    if regional_pii_filtered:
+        col1, col2 = st.columns([2, 1])
+
+        with col1:
+            # Pie chart for regional distribution
+            fig_regional = go.Figure(data=[go.Pie(
+                labels=list(regional_pii_filtered.keys()),
+                values=list(regional_pii_filtered.values()),
+                hole=.4,
+                marker_colors=['#3b82f6', '#06b6d4', '#8b5cf6', '#f59e0b', '#10b981', '#ef4444', '#6366f1']
+            )])
+            fig_regional.update_layout(
+                title="PII Detections by Region",
+                height=250,
+                showlegend=True
+            )
+            st.plotly_chart(fig_regional, use_container_width=True)
+
+        with col2:
+            st.markdown("#### Regional Totals")
+            for region, count in sorted(regional_pii_filtered.items(), key=lambda x: x[1], reverse=True):
+                st.markdown(f"**{region}:** {count} PII items")
 
 st.markdown("---")
 
