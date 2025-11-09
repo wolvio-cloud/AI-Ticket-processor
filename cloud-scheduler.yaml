@@ -1,0 +1,54 @@
+# GCP Cloud Scheduler Configuration
+# Triggers Cloud Run service every 5 minutes to process tickets
+#
+# Deploy:
+# gcloud scheduler jobs create http ai-ticket-processor-job \
+#   --location=us-central1 \
+#   --schedule="*/5 * * * *" \
+#   --uri="https://ai-ticket-processor-XXXXXX.run.app" \
+#   --http-method=POST \
+#   --oidc-service-account-email=ai-ticket-processor@PROJECT_ID.iam.gserviceaccount.com \
+#   --headers="Content-Type=application/json" \
+#   --message-body='{"limit": 50, "force": false}'
+
+# Schedule Configuration
+schedule: "*/5 * * * *"  # Every 5 minutes
+timezone: "UTC"          # Use your timezone (e.g., "America/New_York")
+
+# Target
+target:
+  uri: "https://ai-ticket-processor-XXXXXX-uc.a.run.app"
+  httpMethod: "POST"
+  
+  # Authentication (Cloud Run requires auth)
+  oidcToken:
+    serviceAccountEmail: "ai-ticket-processor@PROJECT_ID.iam.gserviceaccount.com"
+  
+  # Request headers
+  headers:
+    Content-Type: "application/json"
+  
+  # Request body (parameters for ticket processing)
+  body: |
+    {
+      "limit": 50,
+      "force": false,
+      "only_unprocessed": true
+    }
+
+# Retry configuration
+retryConfig:
+  retryCount: 3
+  maxRetryDuration: "600s"  # 10 minutes max retry
+  minBackoffDuration: "5s"
+  maxBackoffDuration: "300s"
+  maxDoublings: 5
+
+# Alternative schedules (uncomment to use):
+# Every 10 minutes: "*/10 * * * *"
+# Every 15 minutes: "*/15 * * * *"
+# Every 30 minutes: "*/30 * * * *"
+# Every hour: "0 * * * *"
+# Every 6 hours: "0 */6 * * *"
+# Daily at 9 AM: "0 9 * * *"
+# Business hours only (9 AM - 5 PM, Mon-Fri): "0 9-17 * * 1-5"

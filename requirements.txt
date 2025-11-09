@@ -1,5 +1,28 @@
+# Core dependencies for AI Ticket Processor
 requests==2.31.0
 python-dotenv==1.0.1
+urllib3==2.1.0
+
+# Web framework (for API endpoints and health checks)
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+gunicorn==21.2.0
+
+# Database (if using PostgreSQL for production)
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9
+
+# Authentication & Security
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.6
+bcrypt==4.1.2
+
+# Dashboard (optional - can be removed if not using Streamlit)
 streamlit==1.29.0
 pandas==2.1.4
 plotly==5.18.0
+
+# Production server
+# Note: gunicorn is for production, uvicorn for development
+# Use: gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app

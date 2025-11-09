@@ -1,0 +1,103 @@
+# GCP Cloud Run Service Configuration
+# Deploy: gcloud run services replace cloud-run.yaml
+
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: ai-ticket-processor
+  labels:
+    app: ai-ticket-processor
+    version: v1
+  annotations:
+    run.googleapis.com/launch-stage: BETA
+spec:
+  template:
+    metadata:
+      annotations:
+        # Auto-scaling configuration
+        autoscaling.knative.dev/minScale: "0"  # Scale to zero when idle
+        autoscaling.knative.dev/maxScale: "5"  # Max 5 concurrent instances
+        
+        # CPU allocation
+        run.googleapis.com/cpu-throttling: "true"  # Throttle CPU when idle
+        
+        # Execution environment
+        run.googleapis.com/execution-environment: gen2  # Use second generation execution environment
+        
+    spec:
+      # Service account (create one with necessary permissions)
+      serviceAccountName: ai-ticket-processor@PROJECT_ID.iam.gserviceaccount.com
+      
+      # Timeout: Max execution time per request
+      timeoutSeconds: 900  # 15 minutes (max for Cloud Run)
+      
+      containers:
+      - name: ai-ticket-processor
+        # Image will be built and pushed to GCR/Artifact Registry
+        image: gcr.io/PROJECT_ID/ai-ticket-processor:latest
+        
+        # Resource limits
+        resources:
+          limits:
+            cpu: "2"           # 2 vCPU
+            memory: "2Gi"      # 2 GB RAM
+          requests:
+            cpu: "1"           # Start with 1 vCPU
+            memory: "512Mi"    # Minimum 512 MB
+        
+        # Environment variables (REPLACE WITH YOUR VALUES)
+        env:
+        - name: ZENDESK_SUBDOMAIN
+          value: "your-subdomain"
+        
+        - name: ZENDESK_EMAIL
+          value: "your-email@example.com"
+        
+        # IMPORTANT: Use Secret Manager for sensitive data in production!
+        # Example using Secret Manager:
+        - name: ZENDESK_API_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: zendesk-api-token
+              key: latest
+        
+        - name: OPENAI_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: openai-api-key
+              key: latest
+        
+        # Application configuration
+        - name: LOG_DIR
+          value: "/app/logs"
+        
+        - name: PYTHONUNBUFFERED
+          value: "1"
+        
+        # Ports (if running as web service)
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        
+        # Startup probe (checks if app started)
+        startupProbe:
+          tcpSocket:
+            port: 8080
+          initialDelaySeconds: 10
+          periodSeconds: 10
+          failureThreshold: 3
+        
+        # Liveness probe (checks if app is alive)
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 30
+          failureThreshold: 3
+          timeoutSeconds: 5
+  
+  # Traffic routing
+  traffic:
+  - percent: 100
+    latestRevision: true
