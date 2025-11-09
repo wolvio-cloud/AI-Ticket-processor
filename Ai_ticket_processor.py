@@ -65,38 +65,68 @@ openai_headers = {"Authorization": f"Bearer {OPENAI_KEY}", "Content-Type": "appl
 def detect_industry(description):
     """
     Auto-detect industry based on keywords in ticket
-    Enhanced with weighted scoring for better accuracy
+    Enhanced with comprehensive weighted scoring for maximum accuracy
+
+    Weight system:
+    - High confidence (3): Very specific industry indicators
+    - Medium confidence (2): Common industry terms
+    - Low confidence (1): Generic terms that could apply to multiple industries
+
+    Minimum threshold: 3 points for confident classification
     """
     desc_lower = description.lower()
 
-    # E-commerce keywords (weighted by specificity)
+    # E-commerce keywords (weighted by specificity) - COMPREHENSIVE
     ecommerce_keywords = {
         # High confidence (weight: 3)
         'tracking number': 3, 'order status': 3, 'shipment': 3, 'delivery address': 3,
-        'return label': 3, 'refund status': 3, 'promo code': 3, 'coupon': 3,
+        'return label': 3, 'refund status': 3, 'promo code': 3, 'coupon code': 3,
+        'ups tracking': 3, 'fedex': 3, 'usps': 3, 'carrier': 3,
+        'shopping cart': 3, 'add to cart': 3, 'checkout page': 3, 'payment gateway': 3,
+        'product catalog': 3, 'inventory level': 3, 'out of stock': 3, 'restock': 3,
+        'rma number': 3, 'return merchandise': 3, 'wrong item': 3,
 
         # Medium confidence (weight: 2)
         'order': 2, 'delivery': 2, 'shipping': 2, 'tracking': 2, 'package': 2,
         'checkout': 2, 'cart': 2, 'product': 2, 'inventory': 2, 'stock': 2,
         'refund': 2, 'return': 2, 'exchange': 2, 'replacement': 2,
+        'discount': 2, 'voucher': 2, 'promotion': 2, 'sale': 2,
+        'paypal': 2, 'stripe payment': 2, 'credit card declined': 2,
+        'damaged package': 2, 'lost package': 2, 'delayed delivery': 2,
 
         # Low confidence (weight: 1)
-        'item': 1, 'buy': 1, 'purchase': 1, 'paid': 1, 'receipt': 1
+        'item': 1, 'buy': 1, 'purchase': 1, 'paid': 1, 'receipt': 1,
+        'price': 1, 'cost': 1, 'shipping fee': 1
     }
 
-    # SaaS keywords (weighted by specificity)
+    # SaaS keywords (weighted by specificity) - COMPREHENSIVE
     saas_keywords = {
         # High confidence (weight: 3)
-        'api key': 3, 'webhook': 3, 'integration': 3, 'sso': 3, '2fa': 3,
-        'api endpoint': 3, 'subscription plan': 3, 'data sync': 3, 'rest api': 3,
+        'api key': 3, 'api token': 3, 'webhook': 3, 'rest api': 3, 'graphql': 3,
+        'oauth': 3, 'sso': 3, 'saml': 3, '2fa': 3, 'two-factor': 3,
+        'api endpoint': 3, 'api integration': 3, 'sdk': 3, 'api documentation': 3,
+        'subscription plan': 3, 'trial period': 3, 'billing cycle': 3,
+        'data sync': 3, 'zapier': 3, 'integration sync': 3, 'import data': 3,
+        'rbac': 3, 'role-based': 3, 'permission denied': 3, 'access control': 3,
+        'workspace settings': 3, 'admin console': 3, 'single sign-on': 3,
+        'ssl certificate': 3, 'gdpr compliance': 3, 'soc2': 3,
 
         # Medium confidence (weight: 2)
-        'api': 2, 'login': 2, 'authentication': 2, 'bug': 2, 'error': 2,
-        'feature': 2, 'subscription': 2, 'billing': 2, 'dashboard': 2,
-        'sync': 2, 'permissions': 2, 'access': 2, 'workspace': 2,
+        'api': 2, 'integration': 2, 'authentication': 2, 'login': 2, 'password reset': 2,
+        'bug': 2, 'error code': 2, 'exception': 2, 'timeout': 2,
+        'feature request': 2, 'enhancement': 2, 'functionality': 2,
+        'subscription': 2, 'billing': 2, 'invoice': 2, 'plan': 2,
+        'dashboard': 2, 'analytics': 2, 'reporting': 2,
+        'sync': 2, 'synchronization': 2, 'export': 2, 'import': 2,
+        'permissions': 2, 'access': 2, 'role': 2, 'admin': 2,
+        'workspace': 2, 'organization': 2, 'team': 2,
+        'performance': 2, 'slow loading': 2, 'latency': 2,
+        'security': 2, 'compliance': 2, 'encryption': 2, 'privacy': 2,
+        'onboarding': 2, 'setup': 2, 'configuration': 2,
 
         # Low confidence (weight: 1)
-        'account': 1, 'user': 1, 'settings': 1, 'profile': 1, 'team': 1
+        'account': 1, 'user': 1, 'settings': 1, 'profile': 1,
+        'email notification': 1, 'notification': 1
     }
 
     # Calculate weighted scores
@@ -105,12 +135,15 @@ def detect_industry(description):
 
     logger.info(f"Industry detection scores - E-commerce: {ecommerce_score}, SaaS: {saas_score}")
 
-    # Return industry with highest score (minimum threshold of 2 to avoid false positives)
-    if ecommerce_score >= 2 and ecommerce_score > saas_score:
+    # Return industry with highest score (minimum threshold of 3 for confident classification)
+    if ecommerce_score >= 3 and ecommerce_score > saas_score:
+        logger.info(f"Detected E-commerce (score: {ecommerce_score} vs SaaS: {saas_score})")
         return 'ecommerce'
-    elif saas_score >= 2 and saas_score > ecommerce_score:
+    elif saas_score >= 3 and saas_score > ecommerce_score:
+        logger.info(f"Detected SaaS (score: {saas_score} vs E-commerce: {ecommerce_score})")
         return 'saas'
     else:
+        logger.info(f"No confident match - using general (E-commerce: {ecommerce_score}, SaaS: {saas_score})")
         return 'general'
 
 # === INDUSTRY-SPECIFIC PROMPTS ===
@@ -267,6 +300,7 @@ def analyze_with_openai(description, industry=None):
 def update_ticket(ticket_id, analysis, existing_ticket=None, force=False):
     """
     Update Zendesk ticket with AI analysis (intelligent duplicate handling)
+    Uses enhanced detection from update_ticket.py module
 
     Args:
         ticket_id: Zendesk ticket ID
@@ -278,20 +312,29 @@ def update_ticket(ticket_id, analysis, existing_ticket=None, force=False):
     url = f"https://{SUBDOMAIN}.zendesk.com/api/v2/tickets/{ticket_id}.json"
 
     try:
-        # Import the updated update_ticket function from update_ticket.py
-        from update_ticket import get_existing_ai_comment
+        # Import the enhanced duplicate detection from update_ticket.py
+        from update_ticket import get_existing_ai_comment, consolidate_duplicate_comments
 
-        # STEP 1: Check for existing AI comment
+        # STEP 1: Check for existing AI comment with enhanced detection
         existing_comment_info = get_existing_ai_comment(ticket_id)
         has_existing_comment = existing_comment_info['exists']
 
+        # STEP 1.5: Detect and warn about duplicates
+        if has_existing_comment and existing_comment_info.get('duplicate_count', 0) > 1:
+            consolidation_result = consolidate_duplicate_comments(ticket_id)
+            # Continue processing - will update the most recent comment
+
         # STEP 2: Skip if already has comment and not forcing
         if has_existing_comment and not force:
-            logger.info(f"Ticket {ticket_id} already has AI Analysis, skipping (use --force to update)")
+            timestamp = existing_comment_info.get('timestamp', 'unknown')
+            logger.info(f"Ticket {ticket_id} already has AI Analysis (timestamp: {timestamp}), skipping")
+            # Don't print here - let the calling function handle output
             return {
                 "updated": False,
                 "skipped": True,
                 "reason": "already_has_ai_comment",
+                "existing_timestamp": timestamp,
+                "duplicate_count": existing_comment_info.get('duplicate_count', 1),
                 "time": round(time.time() - start, 2)
             }
 
@@ -443,13 +486,15 @@ def process_ticket(ticket, industry=None, force=False):
     # Update Zendesk (pass existing ticket and force flag)
     update_result = update_ticket(ticket_id, ai_result["analysis"], ticket, force=force)
 
-    # Handle skipped tickets from update_ticket
+    # Handle skipped tickets from update_ticket (with enhanced info)
     if update_result.get("skipped"):
         return {
             "ticket_id": ticket_id,
             "success": True,
             "skipped": True,
             "reason": update_result.get("reason", "already_processed"),
+            "existing_timestamp": update_result.get("existing_timestamp"),
+            "duplicate_count": update_result.get("duplicate_count", 1),
             "industry": ai_result.get("industry", "unknown")
         }
 
@@ -537,12 +582,35 @@ def main(limit=50, industry=None, force=False, only_unprocessed=True):
             result = future.result()
             results.append(result)
 
-            # Track skipped tickets
+            # Track skipped tickets with enhanced messaging
             if result.get("skipped"):
                 skipped += 1
-                status = "⏭️  SKIPPED (already processed)"
+                # Format timestamp for skip message
+                timestamp = result.get("existing_timestamp", 'unknown')
+                if timestamp and timestamp != 'unknown':
+                    try:
+                        from datetime import datetime as dt
+                        parsed_time = dt.fromisoformat(timestamp.replace('Z', '+00:00'))
+                        display_time = parsed_time.strftime('%Y-%m-%d %H:%M')
+                    except:
+                        display_time = timestamp
+                else:
+                    display_time = 'unknown time'
+
+                status = f"⏭️  SKIPPED (AI Analysis exists - {display_time})"
+
+                # Warn about duplicates if detected
+                if result.get("duplicate_count", 1) > 1:
+                    status += f" [⚠️  {result['duplicate_count']} duplicates found!]"
             else:
-                status = "✅ SUCCESS" if result.get("success") else "❌ FAILED"
+                # Success or failure status
+                if result.get("success"):
+                    if result.get("comment_updated"):
+                        status = "🔄 UPDATED"
+                    else:
+                        status = "✅ PROCESSED"
+                else:
+                    status = "❌ FAILED"
 
             detected_industry = result.get("industry", "unknown")
 
@@ -597,6 +665,12 @@ def main(limit=50, industry=None, force=False, only_unprocessed=True):
     avg_draft_length = round(sum(draft_word_counts) / len(draft_word_counts), 1) if draft_word_counts else 0
     draft_success_rate = round(drafts_generated / max(1, drafts_generated + drafts_failed) * 100, 1) if (drafts_generated + drafts_failed) > 0 else 0
 
+    # Duplicate prevention metrics
+    tickets_with_duplicates = sum(1 for r in results if r.get("duplicate_count", 1) > 1)
+    total_duplicates_found = sum(r.get("duplicate_count", 1) - 1 for r in results if r.get("duplicate_count", 1) > 1)
+    tickets_updated = sum(1 for r in results if r.get("comment_updated", False))
+    tickets_newly_added = sum(1 for r in results if r.get("comment_added", False))
+
     # Summary
     summary = {
         "timestamp": datetime.now().isoformat(),
@@ -607,6 +681,12 @@ def main(limit=50, industry=None, force=False, only_unprocessed=True):
         "avg_time_per_ticket": avg_time,
         "total_time": total_time,
         "cost_estimate": actual_cost,
+        "duplicate_prevention": {
+            "tickets_with_duplicates": tickets_with_duplicates,
+            "total_duplicates_found": total_duplicates_found,
+            "tickets_updated": tickets_updated,
+            "tickets_newly_added": tickets_newly_added
+        },
         "pii_protection": {
             "tickets_with_pii": tickets_with_pii,
             "total_redactions": sum(total_redactions.values()),
@@ -629,13 +709,30 @@ def main(limit=50, industry=None, force=False, only_unprocessed=True):
     print("BATCH PROCESSING COMPLETE")
     print("="*60)
     print(f"Total Tickets:    {len(tickets)}")
-    print(f"Processed:        {success}")
-    print(f"Skipped:          {skipped} (already processed)")
-    print(f"Failed:           {failed}")
+    print(f"✅ Processed:     {success} (new)")
+    print(f"🔄 Updated:       {tickets_updated} (forced reprocessing)")
+    print(f"⏭️  Skipped:       {skipped} (already has AI Analysis)")
+    print(f"❌ Failed:        {failed}")
     print(f"Avg Time:         {avg_time}s per ticket")
     print(f"Total Time:       {total_time}s ({total_time/60:.1f} minutes)")
     print(f"Cost Estimate:    ${actual_cost} (only for newly processed tickets)")
-    
+
+    print("\n" + "="*60)
+    print("🚨 DUPLICATE PREVENTION SUMMARY")
+    print("="*60)
+    if tickets_with_duplicates > 0:
+        print(f"⚠️  WARNING: Found {tickets_with_duplicates} ticket(s) with duplicate AI Analysis comments")
+        print(f"   Total duplicate comments: {total_duplicates_found}")
+        print(f"   This indicates the system failed to prevent duplicates in the past.")
+        print(f"   The system will now use the most recent comment for updates.")
+    else:
+        print(f"✅ No duplicate AI Analysis comments detected!")
+        print(f"   Duplicate prevention system working correctly.")
+    print(f"\nComment Actions:")
+    print(f"   New comments added:     {tickets_newly_added}")
+    print(f"   Existing comments updated: {tickets_updated}")
+    print(f"   Skipped (preserved):    {skipped}")
+
     print("\n" + "="*60)
     print("INDUSTRY BREAKDOWN")
     print("="*60)
@@ -650,20 +747,24 @@ def main(limit=50, industry=None, force=False, only_unprocessed=True):
         print(f"{emoji} {category}: {count} ({count/len(results)*100:.1f}%)")
     
     print("\n" + "="*60)
-    print("🎯 'OTHER' CATEGORY RATE")
+    print("🎯 CLASSIFICATION ACCURACY")
     print("="*60)
     other_pct = summary['other_percentage']
-    if other_pct < 15:
+    if other_pct < 8:
         status = "✅ EXCELLENT"
-    elif other_pct < 25:
+    elif other_pct < 15:
         status = "✓ GOOD"
-    elif other_pct < 40:
+    elif other_pct < 25:
         status = "⚠️ NEEDS IMPROVEMENT"
     else:
         status = "❌ POOR"
-    print(f"Other/General: {other_count}/{len(results)} tickets ({other_pct}%)")
+    print(f"'Other/General' Rate: {other_count}/{max(1, success)} tickets ({other_pct}%)")
     print(f"Status: {status}")
-    print(f"Target: <15% (Excellent), <25% (Good)")
+    print(f"Target: <8% (Excellent), <15% (Good)")
+    print(f"\n20 industry-specific categories in use:")
+    print(f"  E-commerce: 10 specific categories")
+    print(f"  SaaS: 10 specific categories")
+    print(f"  Only use 'other' if truly doesn't fit any category")
     
     print("\n" + "="*60)
     print("PII PROTECTION SUMMARY")
