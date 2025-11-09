@@ -15,9 +15,47 @@ ZENDESK_EMAIL = os.getenv('ZENDESK_EMAIL')
 ZENDESK_API_TOKEN = os.getenv('ZENDESK_API_TOKEN')
 
 
+def get_existing_ai_comment(ticket_id):
+    """
+    Check if ticket has an existing AI Analysis comment and return its ID
+
+    Args:
+        ticket_id: Zendesk ticket ID
+
+    Returns:
+        Dictionary with 'exists' (bool) and 'comment_id' (int or None)
+    """
+    url = f"https://{ZENDESK_SUBDOMAIN}.zendesk.com/api/v2/tickets/{ticket_id}/comments.json"
+
+    try:
+        response = requests.get(
+            url,
+            auth=(f"{ZENDESK_EMAIL}/token", ZENDESK_API_TOKEN),
+            timeout=10
+        )
+        response.raise_for_status()
+
+        comments = response.json()['comments']
+
+        # Look for AI Analysis comment (search in reverse for latest)
+        for comment in reversed(comments):
+            if comment.get('body', '').startswith('🤖 AI Analysis (Automated)'):
+                return {
+                    'exists': True,
+                    'comment_id': comment['id'],
+                    'comment_body': comment['body']
+                }
+
+        return {'exists': False, 'comment_id': None}
+
+    except requests.exceptions.RequestException as e:
+        print(f"⚠️  Warning: Could not fetch comments for ticket #{ticket_id}: {str(e)}")
+        return {'exists': False, 'comment_id': None}
+
+
 def is_already_processed(ticket_id):
     """
-    Check if ticket has already been processed by AI
+    Check if ticket has already been processed by AI (tag-based check)
 
     Args:
         ticket_id: Zendesk ticket ID
@@ -48,12 +86,12 @@ def is_already_processed(ticket_id):
 
 def update_ticket(ticket_id, analysis, force=False):
     """
-    Update Zendesk ticket with AI analysis results (idempotent - prevents duplicates)
+    Update Zendesk ticket with AI analysis results (intelligent duplicate handling)
 
     Args:
         ticket_id: Zendesk ticket ID
         analysis: Dictionary with analysis results
-        force: Force update even if already processed (updates tags only, no duplicate comment)
+        force: Force update even if already processed (updates existing comment)
 
     Returns:
         Dictionary with update status
@@ -62,16 +100,20 @@ def update_ticket(ticket_id, analysis, force=False):
     url = f"https://{ZENDESK_SUBDOMAIN}.zendesk.com/api/v2/tickets/{ticket_id}.json"
 
     try:
-        # STEP 1: Check if already processed (prevents duplicate processing)
-        if not force and is_already_processed(ticket_id):
-            print(f"⏭️  Ticket #{ticket_id} already processed, skipping")
+        # STEP 1: Check for existing AI Analysis comment
+        existing_comment_info = get_existing_ai_comment(ticket_id)
+        has_existing_comment = existing_comment_info['exists']
+
+        # STEP 2: Determine action based on force flag
+        if has_existing_comment and not force:
+            print(f"⏭️  Ticket #{ticket_id} already has AI Analysis, skipping (use --force to update)")
             return {
                 "updated": False,
                 "skipped": True,
-                "reason": "already_processed"
+                "reason": "already_has_ai_comment"
             }
 
-        # STEP 2: Get current ticket to retrieve existing tags
+        # STEP 3: Get current ticket to retrieve existing tags
         response = requests.get(
             url,
             auth=(f"{ZENDESK_EMAIL}/token", ZENDESK_API_TOKEN),
@@ -82,7 +124,7 @@ def update_ticket(ticket_id, analysis, force=False):
         current_ticket = response.json()['ticket']
         existing_tags = current_ticket.get('tags', [])
 
-        # Check if already has ai_processed tag (for force mode)
+        # Check if already has ai_processed tag
         already_processed = 'ai_processed' in existing_tags
 
         # STEP 3: Create our custom tags (prefixed with 'ai_' to avoid conflicts)
@@ -103,25 +145,17 @@ def update_ticket(ticket_id, analysis, force=False):
         timestamp = datetime.now().strftime('%Y%m%d')
         all_tags.append(f"ai_processed_{timestamp}")
 
-        # STEP 6: Build update payload
-        payload = {
-            "ticket": {
-                "tags": all_tags
-            }
-        }
-
-        # ONLY add comment if NOT already processed (prevents duplicates!)
-        if not already_processed:
-            internal_comment = f"""🤖 AI Analysis (Automated):
+        # STEP 6: Build comment body
+        internal_comment = f"""🤖 AI Analysis (Automated):
 
 📋 Summary: {analysis['summary']}
 🔍 Root Cause: {analysis['root_cause']}
 ⚡ Urgency: {analysis['urgency']}
 😊 Sentiment: {analysis['sentiment']}
 """
-            # Add reply draft if available
-            if analysis.get('reply_draft') and analysis.get('draft_status') == 'success':
-                internal_comment += f"""
+        # Add reply draft if available
+        if analysis.get('reply_draft') and analysis.get('draft_status') == 'success':
+            internal_comment += f"""
 ---
 ✍️  AI-GENERATED REPLY DRAFT:
 
@@ -129,29 +163,47 @@ def update_ticket(ticket_id, analysis, force=False):
 
 (⚠️  Review and edit before sending to customer)
 """
-            elif analysis.get('draft_status') == 'failed':
-                internal_comment += f"""
+        elif analysis.get('draft_status') == 'failed':
+            internal_comment += f"""
 ---
 ⚠️  Reply draft generation failed. Please manually compose a reply.
 """
 
-            internal_comment += f"""
+        # Add timestamp with update indicator
+        update_indicator = " (UPDATED)" if has_existing_comment else ""
+        internal_comment += f"""
 ---
-Processed: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}
+Processed{update_indicator}: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}
 """
+
+        # STEP 7: Build update payload
+        payload = {
+            "ticket": {
+                "tags": all_tags
+            }
+        }
+
+        # Add comment: either new or update existing
+        if has_existing_comment and force:
+            # Update existing comment
+            payload["ticket"]["comment"] = {
+                "body": internal_comment,
+                "public": False  # Internal note, not visible to customer
+            }
+            print(f"✅ Ticket #{ticket_id} updated successfully (reprocessing - comment updated)")
+            print(f"   AI tags updated: {', '.join(our_tags)}")
+            print(f"   Comment action: UPDATED existing AI Analysis")
+        elif not has_existing_comment:
+            # Add new comment
             payload["ticket"]["comment"] = {
                 "body": internal_comment,
                 "public": False  # Internal note, not visible to customer
             }
             print(f"✅ Ticket #{ticket_id} updated successfully (new processing)")
             print(f"   AI tags added: {', '.join(our_tags)}")
-            print(f"   Comment added: Yes")
-        else:
-            print(f"✅ Ticket #{ticket_id} updated successfully (reprocessing)")
-            print(f"   AI tags updated: {', '.join(our_tags)}")
-            print(f"   Comment added: No (already has AI analysis - no duplicate)")
+            print(f"   Comment action: ADDED new AI Analysis")
 
-        # STEP 7: Update ticket
+        # STEP 8: Update ticket
         response = requests.put(
             url,
             json=payload,
@@ -163,7 +215,8 @@ Processed: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}
         return {
             "updated": True,
             "skipped": False,
-            "comment_added": not already_processed
+            "comment_added": not has_existing_comment,
+            "comment_updated": has_existing_comment and force
         }
 
     except requests.exceptions.RequestException as e:
