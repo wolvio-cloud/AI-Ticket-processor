@@ -295,10 +295,29 @@ for the inconvenience this has caused. I've escalated this to our shipping
 team and you should receive tracking updates within 24 hours.
 ```
 
-### PII Protection (v2.1) ✅
-- Automatically redacts 9 types of sensitive data
-- GDPR & CCPA compliant
-- Real-time compliance tracking in dashboard
+### International PII Protection (v2.3) ✅
+**Comprehensive global PII protection for international markets**
+
+**Supported Regions:**
+- 🇺🇸 **United States** - SSN, Bank Routing Numbers
+- 🇬🇧 **United Kingdom** - National Insurance Numbers, Sort Codes
+- 🇪🇺 **European Union** - IBAN (International Bank Account Numbers)
+- 🇦🇺 **Australia** - Tax File Numbers, Medicare Numbers
+- 🇨🇦 **Canada** - Social Insurance Numbers
+- 🇮🇳 **India** - Aadhaar, PAN, IFSC, Phone Numbers
+- 🌍 **Global** - Credit Cards, Bank Accounts
+
+**Compliance:**
+- ✅ GDPR (European Union)
+- ✅ CCPA (California/United States)
+- ✅ Privacy Act (Australia)
+- ✅ PIPEDA (Canada)
+
+**Features:**
+- 16+ PII pattern types automatically detected and redacted
+- Real-time regional PII breakdown in dashboard
+- Compliance tracking across all major markets
+- Zero PII sent to LLM - all data sanitized before processing
 
 ### Real-Time Dashboard (v2.2) ✅
 - Live metrics and analytics
@@ -310,10 +329,11 @@ team and you should receive tracking updates within 24 hours.
 ## 📈 Roadmap
 
 - [x] **v2.0** - Auto-reply draft generation ✅
-- [x] **v2.1** - PII protection & compliance ✅
+- [x] **v2.1** - PII protection & compliance (India) ✅
 - [x] **v2.2** - Real-time analytics dashboard ✅
-- [ ] **v2.3** - Multi-language support
-- [ ] **v2.4** - Freshdesk & Intercom integration
+- [x] **v2.3** - International PII protection (US, UK, EU, AU, CA) ✅
+- [ ] **v2.4** - Multi-language support
+- [ ] **v2.5** - Freshdesk & Intercom integration
 - [ ] **v3.0** - Real-time webhook processing
 
 ---
