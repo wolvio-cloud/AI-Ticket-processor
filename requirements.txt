@@ -1,28 +1,61 @@
-# Core dependencies for AI Ticket Processor
-requests==2.31.0
-python-dotenv==1.0.1
-urllib3==2.1.0
+# ============================================================================
+# AI Ticket Processor - Production Dependencies
+# Security: All versions pinned to prevent supply chain attacks
+# Run 'pip-audit' and 'safety check' regularly to scan for vulnerabilities
+# ============================================================================
+
+# Core dependencies
+requests==2.31.0  # HTTP library (latest stable)
+python-dotenv==1.0.1  # Environment variable management
+urllib3==2.1.0  # HTTP client (used by requests)
+certifi==2024.2.2  # SSL certificates (security)
 
 # Web framework (for API endpoints and health checks)
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
-gunicorn==21.2.0
+fastapi==0.109.0  # Modern web framework
+uvicorn[standard]==0.27.0  # ASGI server
+gunicorn==21.2.0  # Production WSGI server
+pydantic==2.5.3  # Data validation (used by FastAPI)
+starlette==0.35.1  # ASGI toolkit (used by FastAPI)
 
-# Database (if using PostgreSQL for production)
-sqlalchemy==2.0.25
-psycopg2-binary==2.9.9
+# Database (PostgreSQL support)
+sqlalchemy==2.0.25  # ORM for database
+psycopg2-binary==2.9.9  # PostgreSQL adapter
+alembic==1.13.1  # Database migrations
 
 # Authentication & Security
-passlib[bcrypt]==1.7.4
-python-jose[cryptography]==3.3.0
-python-multipart==0.0.6
-bcrypt==4.1.2
+passlib[bcrypt]==1.7.4  # Password hashing
+python-jose[cryptography]==3.3.0  # JWT tokens
+python-multipart==0.0.6  # Form parsing
+bcrypt==4.1.2  # Bcrypt hashing
+cryptography==42.0.2  # Cryptographic recipes
+
+# Security scanning and monitoring
+# Run these manually: pip install pip-audit safety
+# pip-audit  # Scan for known vulnerabilities
+# safety check  # Check against safety database
 
 # Dashboard (optional - can be removed if not using Streamlit)
-streamlit==1.29.0
-pandas==2.1.4
-plotly==5.18.0
+streamlit==1.29.0  # Dashboard framework
+pandas==2.1.4  # Data manipulation
+plotly==5.18.0  # Interactive charts
+numpy==1.26.3  # Numerical computing (pandas dependency)
 
-# Production server
-# Note: gunicorn is for production, uvicorn for development
-# Use: gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
+# Additional security dependencies
+python-dateutil==2.8.2  # Date parsing (security fix)
+idna==3.6  # Internationalized domain names
+charset-normalizer==3.3.2  # Character encoding detection
+
+# Production server configuration
+# For production deployment:
+#   gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app \
+#     --timeout 120 --keep-alive 5 --max-requests 1000 \
+#     --max-requests-jitter 50 --access-logfile -
+
+# ============================================================================
+# Security Notes:
+# 1. Keep all dependencies up to date
+# 2. Run 'pip list --outdated' monthly
+# 3. Use 'pip-audit' to check for CVEs
+# 4. Use 'safety check' for known vulnerabilities
+# 5. Enable Dependabot in GitHub for auto-updates
+# ============================================================================
