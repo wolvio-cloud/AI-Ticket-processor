@@ -682,6 +682,7 @@ interface ActivityItemProps {
 
 function ActivityItem({ activity }: ActivityItemProps) {
   const typeConfig = {
+    ticket_processed: { icon: CheckCircle2, color: 'text-green-600', bg: 'bg-green-50' },
     batch_complete: { icon: CheckCircle2, color: 'text-green-600', bg: 'bg-green-50' },
     compliance_alert: { icon: Shield, color: 'text-blue-600', bg: 'bg-blue-50' },
     milestone: { icon: Sparkles, color: 'text-purple-600', bg: 'bg-purple-50' },
@@ -689,7 +690,12 @@ function ActivityItem({ activity }: ActivityItemProps) {
     system_update: { icon: Zap, color: 'text-gray-600', bg: 'bg-gray-50' }
   }
 
-  const config = typeConfig[activity.type as keyof typeof typeConfig]
+  // Get config with fallback for unknown types
+  const config = typeConfig[activity.type as keyof typeof typeConfig] || {
+    icon: Activity,
+    color: 'text-gray-600',
+    bg: 'bg-gray-50'
+  }
   const Icon = config.icon
 
   return (
