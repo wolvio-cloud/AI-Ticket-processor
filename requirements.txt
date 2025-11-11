@@ -16,6 +16,7 @@ uvicorn[standard]==0.27.0  # ASGI server
 gunicorn==21.2.0  # Production WSGI server
 pydantic==2.5.3  # Data validation (used by FastAPI)
 starlette==0.35.1  # ASGI toolkit (used by FastAPI)
+websockets==12.0  # WebSocket support for real-time updates
 
 # Database (PostgreSQL support)
 sqlalchemy==2.0.25  # ORM for database

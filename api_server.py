@@ -221,6 +221,81 @@ class DataStore:
 data_store = DataStore()
 
 # ============================================================================
+# Initialize with sample data if empty (for testing)
+# ============================================================================
+def initialize_sample_data():
+    """Initialize with sample data for demonstration"""
+    if data_store.metrics["ticketsProcessed"] == 0:
+        logger.info("Initializing with sample data...")
+
+        # Sample metrics
+        data_store.metrics = {
+            "ticketsProcessed": 20,
+            "accuracyRate": 85.0,
+            "agentTimeSaved": 170,
+            "costSavings": 1151.0,
+            "confidenceScore": 0.92,
+            "piiDetections": 3,
+            "draftsGenerated": 18,
+            "fallbackRate": 15.0,
+            "lastUpdated": datetime.now().isoformat()
+        }
+
+        # Sample categories from user's data
+        sample_categories = {
+            "API Integration Error": 7,
+            "Other": 3,
+            "Login/Authentication": 2,
+            "Feature Request": 2,
+            "Billing": 2,
+            "Payment": 1,
+            "Returns": 1,
+            "Account": 1,
+            "Data Sync": 1
+        }
+        data_store.categories = defaultdict(int, sample_categories)
+
+        # Sample regions
+        data_store.regions = {
+            "US": {"tickets": 16, "accuracy": 87.5, "compliance": "compliant"},
+            "EU": {"tickets": 2, "accuracy": 80.0, "compliance": "compliant"},
+            "General": {"tickets": 2, "accuracy": 75.0, "compliance": "compliant"}
+        }
+
+        # Sample activity
+        sample_activities = [
+            {
+                "type": "ticket_processed",
+                "message": "Ticket #12345 classified as 'API Integration Error'",
+                "region": "US",
+                "time": "2 minutes ago",
+                "timestamp": (datetime.now() - timedelta(minutes=2)).isoformat()
+            },
+            {
+                "type": "ticket_processed",
+                "message": "Ticket #12346 classified as 'Feature Request'",
+                "region": "US",
+                "time": "5 minutes ago",
+                "timestamp": (datetime.now() - timedelta(minutes=5)).isoformat()
+            },
+            {
+                "type": "ticket_processed",
+                "message": "Ticket #12347 classified as 'Billing'",
+                "region": "EU",
+                "time": "8 minutes ago",
+                "timestamp": (datetime.now() - timedelta(minutes=8)).isoformat()
+            }
+        ]
+        for idx, activity in enumerate(sample_activities):
+            activity["id"] = idx + 1
+        data_store.activity = sample_activities
+
+        logger.info("Sample data initialized successfully")
+
+# Initialize sample data on startup
+initialize_sample_data()
+
+# ============================================================================
 # WebSocket Connection Manager
 # ============================================================================
 
@@ -276,6 +351,17 @@ async def health_check():
         "status": "healthy",
         "timestamp": datetime.now().isoformat(),
         "connections": len(manager.active_connections)
+    }
+
+@app.get("/api/status")
+async def get_status():
+    """Get system status (alias for health check)"""
+    return {
+        "status": "online",
+        "timestamp": datetime.now().isoformat(),
+        "connections": len(manager.active_connections),
+        "ticketsProcessed": data_store.metrics["ticketsProcessed"],
+        "apiVersion": "1.0.0"
     }
 
 @app.get("/api/dashboard/metrics")
@@ -338,6 +424,11 @@ async def get_category_distribution():
         })
 
     return JSONResponse(content=categories)
+
+@app.get("/api/categories")
+async def get_categories_alias():
+    """Alias for /api/dashboard/categories"""
+    return await get_category_distribution()
 
 @app.get("/api/dashboard/compliance")
 async def get_compliance_status():

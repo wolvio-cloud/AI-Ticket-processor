@@ -339,18 +339,35 @@ export default function DashboardPage() {
             {/* Category Distribution */}
             <ChartCard title="Category Distribution" subtitle="Top 10 Classifications (v2.4)">
               <div className="space-y-3">
-                {categoryData.slice(0, 10).map((category, index) => (
-                  <CategoryBar key={category.name} category={category} index={index} />
-                ))}
+                {categoryData && categoryData.length > 0 ? (
+                  categoryData.slice(0, 10).map((category, index) => (
+                    <CategoryBar
+                      key={category.name}
+                      category={category}
+                      index={index}
+                      allCategories={categoryData}
+                    />
+                  ))
+                ) : (
+                  <div className="text-center py-8 text-gray-500">
+                    No category data available
+                  </div>
+                )}
               </div>
             </ChartCard>
 
             {/* Regional Performance */}
             <ChartCard title="Regional Performance" subtitle="Tickets & Accuracy by Region">
               <div className="space-y-3">
-                {regionData.map((region) => (
-                  <RegionBar key={region.region} data={region} />
-                ))}
+                {regionData && regionData.length > 0 ? (
+                  regionData.map((region) => (
+                    <RegionBar key={region.region} data={region} />
+                  ))
+                ) : (
+                  <div className="text-center py-8 text-gray-500">
+                    No regional data available
+                  </div>
+                )}
               </div>
             </ChartCard>
           </div>
@@ -361,9 +378,15 @@ export default function DashboardPage() {
             <div className="lg:col-span-2">
               <ChartCard title="Compliance Status" subtitle="Global Data Protection Frameworks">
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {Object.entries(complianceData).map(([region, data]) => (
-                    <ComplianceCard key={region} region={region as Region} data={data} />
-                  ))}
+                  {complianceData && Object.keys(complianceData).length > 0 ? (
+                    Object.entries(complianceData).map(([region, data]) => (
+                      <ComplianceCard key={region} region={region as Region} data={data} />
+                    ))
+                  ) : (
+                    <div className="col-span-full text-center py-8 text-gray-500">
+                      No compliance data available
+                    </div>
+                  )}
                 </div>
               </ChartCard>
             </div>
@@ -371,9 +394,15 @@ export default function DashboardPage() {
             {/* Activity Feed */}
             <ChartCard title="Recent Activity" subtitle="Live Updates">
               <div className="space-y-3 max-h-96 overflow-y-auto">
-                {recentActivity.map((activity) => (
-                  <ActivityItem key={activity.id} activity={activity} />
-                ))}
+                {recentActivity && recentActivity.length > 0 ? (
+                  recentActivity.map((activity) => (
+                    <ActivityItem key={activity.id} activity={activity} />
+                  ))
+                ) : (
+                  <div className="text-center py-8 text-gray-500">
+                    No recent activity
+                  </div>
+                )}
               </div>
             </ChartCard>
           </div>
@@ -528,13 +557,16 @@ function ChartCard({ title, subtitle, children }: ChartCardProps) {
 }
 
 interface CategoryBarProps {
-  category: typeof categoryData[0]
+  category: any
   index: number
+  allCategories: any[]
 }
 
-function CategoryBar({ category, index }: CategoryBarProps) {
-  const maxValue = Math.max(...categoryData.map(c => c.value))
-  const percentage = (category.value / maxValue) * 100
+function CategoryBar({ category, index, allCategories }: CategoryBarProps) {
+  const maxValue = allCategories && allCategories.length > 0
+    ? Math.max(...allCategories.map(c => c.value))
+    : category.value
+  const percentage = maxValue > 0 ? (category.value / maxValue) * 100 : 0
 
   return (
     <div className="group cursor-pointer">
