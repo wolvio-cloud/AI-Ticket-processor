@@ -1,5 +1,63 @@
 """
-fetch_tickets.py - Fetch recent tickets from Zendesk
+================================================================================
+Ticket Fetcher - Zendesk Ticket Retrieval Service
+================================================================================
+
+DESCRIPTION:
+    Fetches recent support tickets from Zendesk API with optional filtering
+    to exclude already-processed tickets. Supports pagination and customizable
+    ticket limits.
+
+FEATURES:
+    - Fetch recent tickets from Zendesk (default: last 100)
+    - Filter out already-processed tickets (ai_processed tag)
+    - Customizable ticket limits
+    - Automatic pagination handling
+    - Error handling with detailed error messages
+    - Test mode for connection verification
+
+KEY FUNCTIONS:
+    - get_recent_tickets(): Fetch recent tickets with optional filtering
+      Args: limit (int), exclude_processed (bool)
+      Returns: list of ticket dictionaries
+
+    - test_zendesk_connection(): Verify Zendesk API connectivity
+      Returns: bool indicating connection success
+
+FILTERING:
+    When exclude_processed=True, fetches tickets WITHOUT 'ai_processed' tag.
+    When exclude_processed=False, fetches all recent tickets regardless of tags.
+
+INTEGRATION:
+    Used by Ai_ticket_processor.py to retrieve tickets for processing.
+    Works with update_ticket.py tagging system to avoid reprocessing.
+
+USAGE:
+    from fetch_tickets import get_recent_tickets, test_zendesk_connection
+
+    # Test connection first
+    if test_zendesk_connection():
+        print("Connected to Zendesk!")
+
+    # Fetch unprocessed tickets
+    tickets = get_recent_tickets(limit=50, exclude_processed=True)
+    print(f"Found {len(tickets)} unprocessed tickets")
+
+    # Fetch all recent tickets
+    all_tickets = get_recent_tickets(limit=100, exclude_processed=False)
+
+ENVIRONMENT VARIABLES:
+    ZENDESK_SUBDOMAIN    - Your Zendesk subdomain (e.g., 'yourcompany')
+    ZENDESK_EMAIL        - Zendesk admin email
+    ZENDESK_API_TOKEN    - Zendesk API token
+
+API DOCUMENTATION:
+    Zendesk API: https://developer.zendesk.com/api-reference/
+
+AUTHOR: AI Ticket Processor Team
+LICENSE: Proprietary
+LAST UPDATED: 2025-11-11
+================================================================================
 """
 import os
 import requests

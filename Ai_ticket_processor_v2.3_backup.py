@@ -1,58 +1,6 @@
 """
-================================================================================
-AI Ticket Processor - Main Processing Engine (v2.4)
-================================================================================
-
-DESCRIPTION:
-    Automated customer support ticket analysis and classification system that
-    fetches tickets from Zendesk, analyzes them using OpenAI GPT-4o-mini, and
-    updates tickets with AI-generated insights, classifications, and reply drafts.
-
-FEATURES:
-    - Enhanced classification system with 15 categories and confidence scoring
-    - Industry-specific classification (SaaS, E-commerce, General)
-    - International PII protection (16+ patterns across 6 regions)
-    - Automated reply draft generation
-    - Duplicate prevention system
-    - Robust fallback logic (enhanced → legacy classification)
-    - Parallel processing with ThreadPoolExecutor
-    - Comprehensive error handling and retry logic
-
-VERSION HISTORY:
-    v2.4 - Enhanced classification with confidence scoring and unified AI prompt
-    v2.3 - International PII protection (India, UK, EU, Australia, Canada)
-    v2.2 - Classification accuracy improvements (80% industry detection)
-    v2.0 - Auto-reply draft generation with quality scoring
-
-CLASSIFICATION SYSTEM:
-    - 15 Categories: 7 SaaS + 5 E-commerce + 3 General
-    - Confidence scoring (0-1.0) with fallback logic
-    - Structured JSON response with reasoning and keywords
-    - Backward compatible with legacy root_cause format
-
-PII PROTECTION:
-    - 16+ international PII patterns (US, UK, EU, India, Australia, Canada)
-    - Compliant with GDPR, CCPA, Privacy Act, PIPEDA, DPDPA
-    - Redaction before sending to OpenAI
-
-USAGE:
-    python Ai_ticket_processor.py [--limit N] [--industry TYPE] [--force]
-
-    Options:
-        --limit N        Process maximum N tickets (default: 50)
-        --industry TYPE  Force specific industry (saas/ecommerce/general)
-        --force          Reprocess already-processed tickets
-
-ENVIRONMENT VARIABLES:
-    ZENDESK_SUBDOMAIN    - Your Zendesk subdomain
-    ZENDESK_EMAIL        - Zendesk admin email
-    ZENDESK_API_TOKEN    - Zendesk API token
-    OPENAI_API_KEY       - OpenAI API key
-
-AUTHOR: AI Ticket Processor Team
-LICENSE: Proprietary
-LAST UPDATED: 2025-11-11
-================================================================================
+ai_ticket_processor.py - Multi-Industry Version
+FIXED: 82% "Other" problem with industry-specific prompts
 """
 import requests
 import os
@@ -67,18 +15,12 @@ import argparse
 from dotenv import load_dotenv
 from pii_redactor import PIIRedactor
 from analyze_ticket import generate_reply_draft
-from dashboard_connector import get_connector
 
 # Load environment variables
 load_dotenv()
 
 # Initialize PII Redactor
 redactor = PIIRedactor(preserve_emails=True)
-
-# Initialize Dashboard Connector
-# This connects to the API server for real-time dashboard updates
-# Fails gracefully if API server is not running
-dashboard = get_connector(api_url="http://localhost:8000", enabled=True)
 
 # === CONFIG ===
 SUBDOMAIN = os.getenv('ZENDESK_SUBDOMAIN')
@@ -310,186 +252,6 @@ Categories:
 """
 }
 
-# === ENHANCED CLASSIFICATION PROMPT (v2.4) ===
-# New unified prompt that combines industry detection and classification in one step
-# Returns structured JSON with confidence scoring and reasoning
-ENHANCED_CLASSIFICATION_PROMPT = """
-You are an expert support ticket classifier for SaaS and e-commerce companies. Your goal is to classify tickets into specific, actionable categories rather than using generic classifications.
-
-CLASSIFICATION CATEGORIES (choose the BEST fit, avoid "other" unless truly impossible):
-
-=== SAAS/SOFTWARE CATEGORIES ===
-1. "login_authentication" - Login issues, password resets, 2FA problems, account lockouts
-   Examples: "can't log in", "forgot password", "2FA not working", "account locked"
-
-2. "billing_subscription" - Billing questions, payment failures, subscription changes, invoices
-   Examples: "charge on card", "cancel subscription", "upgrade plan", "invoice needed"
-
-3. "api_technical" - API errors, integration issues, webhooks, developer questions
-   Examples: "API returning 500", "webhook not firing", "integration failing", "rate limit"
-
-4. "feature_request" - New feature requests, enhancement suggestions
-   Examples: "can you add", "would be great if", "feature request", "enhancement"
-
-5. "bug_report" - Software bugs, unexpected behavior, errors
-   Examples: "not working", "error message", "bug", "broken feature", "unexpected behavior"
-
-6. "account_management" - User management, permissions, team settings, account setup
-   Examples: "add team member", "change permissions", "user access", "account settings"
-
-7. "data_export" - Data export, backup, migration questions
-   Examples: "export data", "download", "backup", "migrate", "extract"
-
-=== E-COMMERCE CATEGORIES ===
-8. "order_status" - Order tracking, shipping status, delivery questions
-   Examples: "where is my order", "tracking number", "shipped", "delivery"
-
-9. "payment_checkout" - Payment issues, checkout problems, transaction failures
-   Examples: "payment failed", "checkout error", "can't complete order", "transaction"
-
-10. "returns_refunds" - Return requests, refund status, exchange questions
-    Examples: "want to return", "refund request", "exchange item", "money back"
-
-11. "product_inquiry" - Product questions, specifications, availability
-    Examples: "product details", "in stock", "specifications", "availability"
-
-12. "shipping_delivery" - Shipping options, delivery issues, address changes
-    Examples: "shipping cost", "delivery options", "change address", "expedite"
-
-=== GENERAL CATEGORIES (use sparingly) ===
-13. "general_inquiry" - Only if truly general and doesn't fit above
-14. "complaint_feedback" - Complaints, negative feedback, general dissatisfaction
-15. "compliment_positive" - Positive feedback, compliments, thank you messages
-
-CLASSIFICATION RULES:
-1. ALWAYS try to fit into specific categories first
-2. If a ticket mentions multiple issues, choose the PRIMARY concern
-3. Look for KEYWORDS and INTENT, not just exact phrases
-4. Use context clues like urgency, customer tone, and ticket metadata
-5. Only use "general_inquiry" if absolutely no specific category fits
-6. When in doubt between two categories, choose the more ACTION-ORIENTED one
-
-KEYWORD PATTERNS TO RECOGNIZE:
-- Login issues: "sign in", "log in", "password", "authentication", "access", "locked out"
-- Billing: "charge", "payment", "invoice", "subscription", "plan", "upgrade", "cancel"
-- Technical: "API", "error", "not working", "bug", "broken", "integration", "webhook"
-- Orders: "order", "tracking", "shipped", "delivery", "received", "package"
-- Returns: "return", "refund", "exchange", "money back", "defective", "wrong item"
-
-RESPONSE FORMAT:
-Return a JSON object with:
-{{
-  "category": "exact_category_name",
-  "confidence": 0.85,
-  "reasoning": "Brief explanation of why this category fits",
-  "keywords_found": ["list", "of", "key", "words", "that", "influenced", "decision"],
-  "industry": "saas|ecommerce|general",
-  "urgency": "low|medium|high|critical",
-  "sentiment": "positive|neutral|negative",
-  "summary": "1-sentence summary of the issue"
-}}
-
-CONFIDENCE LEVELS:
-- 0.9-1.0: Perfect match with clear keywords
-- 0.7-0.89: Good match with supporting context
-- 0.5-0.69: Reasonable match, some ambiguity
-- 0.3-0.49: Best guess, limited information
-- Below 0.3: Only then consider "general_inquiry"
-
-Remember: It's better to make an educated guess with 60% confidence than to default to "general_inquiry". Support agents can always re-categorize if needed, but specific categories enable better automation and routing.
-
-Now classify this support ticket:
-
-TICKET CONTENT:
-{ticket_content}
-"""
-
-# === ENHANCED CLASSIFICATION FUNCTION ===
-def classify_ticket_enhanced(ticket_content, openai_headers, session, timeout=30):
-    """
-    Enhanced classification using unified prompt that combines industry detection
-    and categorization in a single OpenAI call with confidence scoring.
-
-    Args:
-        ticket_content: The ticket description text
-        openai_headers: OpenAI API headers
-        session: Requests session with retry logic
-        timeout: Request timeout in seconds
-
-    Returns:
-        dict: Classification result with category, confidence, industry, etc.
-              Returns None if classification fails (triggering fallback to old system)
-    """
-    try:
-        prompt = ENHANCED_CLASSIFICATION_PROMPT.format(ticket_content=ticket_content)
-
-        payload = {
-            "model": "gpt-4o-mini",
-            "messages": [{"role": "user", "content": prompt}],
-            "response_format": {"type": "json_object"},
-            "temperature": 0.1  # Low temperature for consistent classification
-        }
-
-        resp = session.post(
-            "https://api.openai.com/v1/chat/completions",
-            json=payload,
-            headers=openai_headers,
-            timeout=timeout
-        )
-        resp.raise_for_status()
-        result = resp.json()
-        classification = json.loads(result['choices'][0]['message']['content'])
-
-        # Validate required fields
-        required_fields = ['category', 'confidence', 'industry', 'urgency', 'sentiment', 'summary']
-        if not all(field in classification for field in required_fields):
-            logger.warning("Enhanced classification missing required fields, falling back")
-            return None
-
-        # Fallback logic if confidence too low
-        if classification.get("confidence", 0) < 0.3:
-            classification["category"] = "general_inquiry"
-            classification["reasoning"] = classification.get("reasoning", "") + " (Low confidence fallback)"
-
-        # Map enhanced categories back to legacy root_cause format for compatibility
-        # This ensures existing code expecting root_cause still works
-        category_to_root_cause_map = {
-            # SaaS mappings
-            "login_authentication": "authentication_login_problem",
-            "billing_subscription": "billing_subscription_issue",
-            "api_technical": "api_integration_error",
-            "feature_request": "feature_request_enhancement",
-            "bug_report": "api_integration_error",  # Map bugs to technical errors
-            "account_management": "account_management_change",
-            "data_export": "data_sync_integration",
-
-            # E-commerce mappings
-            "order_status": "order_status_tracking",
-            "payment_checkout": "payment_checkout_issue",
-            "returns_refunds": "product_return_refund",
-            "product_inquiry": "product_information_query",
-            "shipping_delivery": "shipping_delivery_problem",
-
-            # General mappings
-            "general_inquiry": "other",
-            "complaint_feedback": "other",
-            "compliment_positive": "other"
-        }
-
-        # Add root_cause for backward compatibility
-        classification["root_cause"] = category_to_root_cause_map.get(
-            classification["category"],
-            "other"
-        )
-
-        logger.info(f"Enhanced classification: {classification['category']} (confidence: {classification['confidence']}, industry: {classification['industry']})")
-
-        return classification
-
-    except Exception as e:
-        logger.warning(f"Enhanced classification failed: {e}, falling back to legacy system")
-        return None
-
 # === PRIORITY MAPPING ===
 def map_urgency_to_priority(urgency):
     """Map AI urgency to Zendesk priority"""
@@ -502,109 +264,64 @@ def map_urgency_to_priority(urgency):
     return mapping.get(urgency, 'normal')
 
 # === OPENAI ANALYSIS ===
-def analyze_with_openai(description, industry=None, use_enhanced=True):
-    """
-    Analyze ticket with enhanced classification (v2.4) or legacy system
-
-    Args:
-        description: Ticket description text
-        industry: Optional industry override (for legacy system)
-        use_enhanced: Use enhanced classification (default: True). Falls back to legacy if fails.
-
-    Returns:
-        dict: Analysis result with success status, analysis data, industry, etc.
-    """
+def analyze_with_openai(description, industry=None):
+    """Analyze ticket with industry-specific prompt"""
     start = time.time()
-
-    # STEP 1: Redact PII (always do this first)
+    
+    # Auto-detect industry if not provided
+    if industry is None:
+        industry = detect_industry(description)
+    
+    logger.info(f"Detected industry: {industry}")
+    
+    # STEP 1: Redact PII
     redaction_result = redactor.redact(description)
     clean_description = redaction_result['redacted_text']
-
+    
     if redaction_result['has_pii']:
         logger.warning(f"[PII] Detected and redacted: {redaction_result['redactions']}")
-
-    # STEP 2: Try enhanced classification first (v2.4)
-    analysis = None
-    detected_industry = None
-    used_enhanced = False
-
-    if use_enhanced:
-        logger.info("Attempting enhanced classification (v2.4)...")
-        analysis = classify_ticket_enhanced(clean_description, openai_headers, session, timeout=30)
-
-        if analysis is not None:
-            # Enhanced classification succeeded
-            used_enhanced = True
-            detected_industry = analysis.get('industry', 'general')
-            logger.info(f"✅ Enhanced classification successful - Industry: {detected_industry}, Category: {analysis.get('category')}, Confidence: {analysis.get('confidence')}")
-        else:
-            logger.warning("Enhanced classification returned None, falling back to legacy system")
-
-    # STEP 3: Fallback to legacy system if enhanced failed or not enabled
-    if analysis is None:
-        logger.info("Using legacy classification system...")
-
-        # Auto-detect industry if not provided (legacy method)
-        if industry is None:
-            detected_industry = detect_industry(description)
-        else:
-            detected_industry = industry
-
-        logger.info(f"Detected industry (legacy): {detected_industry}")
-
-        # Select industry-specific prompt (legacy)
-        prompt_template = PROMPTS.get(detected_industry, PROMPTS['general'])
-
-        # Send to OpenAI (legacy)
-        payload = {
-            "model": "gpt-4o-mini",
-            "messages": [{"role": "user", "content": prompt_template.format(description=clean_description)}],
-            "response_format": {"type": "json_object"}
-        }
-
-        try:
-            resp = session.post(
-                "https://api.openai.com/v1/chat/completions",
-                json=payload,
-                headers=openai_headers,
-                timeout=30
-            )
-            resp.raise_for_status()
-            result = resp.json()
-            analysis = json.loads(result['choices'][0]['message']['content'])
-            logger.info("✅ Legacy classification successful")
-
-        except Exception as e:
-            logger.error(f"OpenAI classification failed: {e}")
-            return {
-                "success": False,
-                "error": str(e),
-                "processing_time": round(time.time() - start, 2)
-            }
-
-    # STEP 4: Generate reply draft (works with both enhanced and legacy)
+    
+    # STEP 2: Select industry-specific prompt
+    prompt_template = PROMPTS.get(industry, PROMPTS['general'])
+    
+    # STEP 3: Send to OpenAI
+    payload = {
+        "model": "gpt-4o-mini",
+        "messages": [{"role": "user", "content": prompt_template.format(description=clean_description)}],
+        "response_format": {"type": "json_object"}
+    }
+    
     try:
+        resp = session.post(
+            "https://api.openai.com/v1/chat/completions",
+            json=payload,
+            headers=openai_headers,
+            timeout=30
+        )
+        resp.raise_for_status()
+        result = resp.json()
+        analysis = json.loads(result['choices'][0]['message']['content'])
+
+        # Generate reply draft
         logger.info("Generating reply draft...")
         draft_result = generate_reply_draft("", clean_description, analysis)
         analysis.update(draft_result)
-    except Exception as e:
-        logger.warning(f"Reply draft generation failed: {e}")
-        # Continue without draft - not critical
-        analysis['reply_draft'] = ""
-        analysis['draft_status'] = "failed"
-        analysis['draft_word_count'] = 0
 
-    # STEP 5: Return results
-    return {
-        "success": True,
-        "analysis": analysis,
-        "industry": detected_industry,
-        "processing_time": round(time.time() - start, 2),
-        "pii_protected": redaction_result['has_pii'],
-        "redactions": redaction_result['redactions'],
-        "classification_method": "enhanced_v2.4" if used_enhanced else "legacy",
-        "confidence": analysis.get('confidence', 'N/A') if used_enhanced else 'N/A'
-    }
+        return {
+            "success": True,
+            "analysis": analysis,
+            "industry": industry,
+            "processing_time": round(time.time() - start, 2),
+            "pii_protected": redaction_result['has_pii'],
+            "redactions": redaction_result['redactions']
+        }
+    except Exception as e:
+        logger.error(f"OpenAI failed: {e}")
+        return {
+            "success": False,
+            "error": str(e),
+            "processing_time": round(time.time() - start, 2)
+        }
 
 # === ZENDESK UPDATE ===
 def update_ticket(ticket_id, analysis, existing_ticket=None, force=False):
@@ -808,7 +525,7 @@ def process_ticket(ticket, industry=None, force=False):
             "industry": ai_result.get("industry", "unknown")
         }
 
-    result = {
+    return {
         "ticket_id": ticket_id,
         "success": True,
         "skipped": False,
@@ -824,32 +541,6 @@ def process_ticket(ticket, industry=None, force=False):
         "draft_word_count": ai_result["analysis"].get("draft_word_count", 0),
         "draft_preview": ai_result["analysis"].get("reply_draft", "")[:50] + "..." if ai_result["analysis"].get("reply_draft") and len(ai_result["analysis"].get("reply_draft", "")) > 50 else ai_result["analysis"].get("reply_draft", "")
     }
-
-    # ============== DASHBOARD INTEGRATION ==============
-    # Send successful processing results to dashboard in real-time
-    try:
-        dashboard_data = {
-            "id": ticket_id,
-            "description": description[:100] if description else "",
-            "industry": result.get("industry", "unknown"),
-            "category": result["analysis"].get("root_cause", "Unknown"),
-            "accuracy": 95.0,  # Default accuracy
-            "confidence": ai_result.get("confidence", "N/A"),
-            "pii_protected": result.get("pii_protected", False),
-            "redactions": result.get("redactions", {}),
-            "reply_draft": bool(result["analysis"].get("reply_draft")),
-            "classification_method": ai_result.get("classification_method", "enhanced_v2.4"),
-            "region": "US",  # Can be detected from ticket data if needed
-            "processing_time": result.get("processing_time", 0),
-        }
-        dashboard.send_ticket_result(dashboard_data)
-        logger.debug(f"✅ Sent ticket {ticket_id} to dashboard")
-    except Exception as e:
-        logger.warning(f"⚠️ Dashboard update failed for ticket {ticket_id}: {e}")
-        # Continue processing even if dashboard update fails
-    # ===================================================
-
-    return result
 
 # === MAIN ===
 def main(limit=50, industry=None, force=False, only_unprocessed=True):
@@ -1133,29 +824,6 @@ def main(limit=50, industry=None, force=False, only_unprocessed=True):
     
     print(f"\nResults saved to: {json_file}")
     logger.info(f"Batch complete: {success}/{len(tickets)} | Avg: {avg_time}s | Other%: {other_pct}%")
-
-    # ============== DASHBOARD INTEGRATION ==============
-    # Update dashboard with final batch metrics
-    try:
-        logger.info("📊 Updating dashboard metrics...")
-        dashboard.update_metrics(force=True)
-
-        print("\n" + "="*60)
-        print("🌐 REAL-TIME DASHBOARD")
-        print("="*60)
-        print("View your processing results in real-time:")
-        print("👉 Dashboard:  http://localhost:3000")
-        print("👉 API Server: http://localhost:8000/api/docs")
-        print("\nStatus:")
-        if dashboard.enabled and dashboard.check_connection():
-            print("✅ Dashboard is LIVE and receiving updates")
-        else:
-            print("⚪ Dashboard offline (results saved locally)")
-        print("="*60)
-    except Exception as e:
-        logger.warning(f"⚠️ Dashboard metrics update failed: {e}")
-        print("\n⚠️ Note: Dashboard update failed, but all results are saved locally")
-    # ===================================================
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
