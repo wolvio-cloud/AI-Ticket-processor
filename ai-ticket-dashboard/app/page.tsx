@@ -17,6 +17,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import {
   BarChart3, TrendingUp, Clock, DollarSign, Shield, Zap,
   Globe, Activity, CheckCircle2, AlertCircle, Users,
@@ -76,11 +77,11 @@ export default function DashboardPage() {
 
           {/* Navigation */}
           <nav className="flex-1 px-3 py-6 space-y-1">
-            <NavItem icon={BarChart3} label="Dashboard" active sidebarOpen={sidebarOpen} />
-            <NavItem icon={FileText} label="Tickets" sidebarOpen={sidebarOpen} />
-            <NavItem icon={TrendingUp} label="Analytics" sidebarOpen={sidebarOpen} />
-            <NavItem icon={Shield} label="Compliance" sidebarOpen={sidebarOpen} />
-            <NavItem icon={Settings} label="Settings" sidebarOpen={sidebarOpen} />
+            <NavItem href="/" icon={BarChart3} label="Dashboard" active sidebarOpen={sidebarOpen} />
+            <NavItem href="/tickets" icon={FileText} label="Tickets" sidebarOpen={sidebarOpen} />
+            <NavItem href="/analytics" icon={TrendingUp} label="Analytics" sidebarOpen={sidebarOpen} />
+            <NavItem href="/compliance" icon={Shield} label="Compliance" sidebarOpen={sidebarOpen} />
+            <NavItem href="/settings" icon={Settings} label="Settings" sidebarOpen={sidebarOpen} />
           </nav>
 
           {/* User Profile */}
@@ -428,15 +429,16 @@ export default function DashboardPage() {
 // ============================================================================
 
 interface NavItemProps {
+  href: string
   icon: any
   label: string
   active?: boolean
   sidebarOpen: boolean
 }
 
-function NavItem({ icon: Icon, label, active, sidebarOpen }: NavItemProps) {
+function NavItem({ href, icon: Icon, label, active, sidebarOpen }: NavItemProps) {
   return (
-    <button className={cn(
+    <Link href={href} className={cn(
       "w-full flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200",
       active
         ? "bg-blue-50 text-blue-600 font-medium"
@@ -444,7 +446,7 @@ function NavItem({ icon: Icon, label, active, sidebarOpen }: NavItemProps) {
     )}>
       <Icon className="w-5 h-5 flex-shrink-0" />
       {sidebarOpen && <span className="truncate">{label}</span>}
-    </button>
+    </Link>
   )
 }
 
@@ -682,6 +684,7 @@ interface ActivityItemProps {
 
 function ActivityItem({ activity }: ActivityItemProps) {
   const typeConfig = {
+    ticket_processed: { icon: CheckCircle2, color: 'text-green-600', bg: 'bg-green-50' },
     batch_complete: { icon: CheckCircle2, color: 'text-green-600', bg: 'bg-green-50' },
     compliance_alert: { icon: Shield, color: 'text-blue-600', bg: 'bg-blue-50' },
     milestone: { icon: Sparkles, color: 'text-purple-600', bg: 'bg-purple-50' },
@@ -689,7 +692,12 @@ function ActivityItem({ activity }: ActivityItemProps) {
     system_update: { icon: Zap, color: 'text-gray-600', bg: 'bg-gray-50' }
   }
 
-  const config = typeConfig[activity.type as keyof typeof typeConfig]
+  // Get config with fallback for unknown types
+  const config = typeConfig[activity.type as keyof typeof typeConfig] || {
+    icon: Activity,
+    color: 'text-gray-600',
+    bg: 'bg-gray-50'
+  }
   const Icon = config.icon
 
   return (
