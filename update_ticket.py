@@ -1,5 +1,67 @@
 """
-update_ticket.py - Update Zendesk tickets with AI analysis (with deduplication)
+================================================================================
+Ticket Updater - Zendesk Ticket Update Service with Duplicate Prevention
+================================================================================
+
+DESCRIPTION:
+    Updates Zendesk tickets with AI-generated analysis, tags, priority, and
+    comments. Features bulletproof duplicate detection using 5-pattern matching
+    to prevent multiple AI comments on the same ticket.
+
+FEATURES:
+    - Bulletproof duplicate detection (5-pattern matching system)
+    - Intelligent comment consolidation for existing duplicates
+    - Priority mapping (low/medium/high/critical → Zendesk priorities)
+    - Automated tagging (ai_processed, ai_[category], ai_[urgency], etc.)
+    - Tag cleanup (removes old ai_* tags before adding new ones)
+    - Timestamp tracking (ai_processed_YYYYMMDD tags)
+    - Force update capability (updates existing comments)
+
+DUPLICATE DETECTION PATTERNS:
+    1. "🤖 AI Analysis (Automated)"
+    2. "AI Analysis:"
+    3. Structured format (Summary + Root Cause + Urgency)
+    4. "**Summary:**"
+    5. Timestamp pattern detection
+
+KEY FUNCTIONS:
+    - get_existing_ai_comment(): Check if ticket already has AI analysis
+      Returns: dict with exists, timestamp, duplicate_count
+
+    - consolidate_duplicate_comments(): Merge multiple AI comments into one
+      Returns: dict with consolidated, comment_count, consolidation_note
+
+    - update_zendesk_ticket(): Update ticket with AI analysis
+      Handles: tags, priority, comments, duplicate prevention
+
+INTEGRATION:
+    Used by Ai_ticket_processor.py for updating tickets after analysis.
+    Prevents duplicate AI comments through multiple detection patterns.
+
+USAGE:
+    from update_ticket import get_existing_ai_comment, update_zendesk_ticket
+
+    # Check for existing comment
+    existing = get_existing_ai_comment(ticket_id)
+    if existing['exists']:
+        print(f"Already processed at {existing['timestamp']}")
+
+    # Update ticket
+    result = update_zendesk_ticket(
+        ticket_id=12345,
+        analysis={"root_cause": "billing", "urgency": "high"},
+        force=False
+    )
+
+ENVIRONMENT VARIABLES:
+    ZENDESK_SUBDOMAIN    - Your Zendesk subdomain
+    ZENDESK_EMAIL        - Zendesk admin email
+    ZENDESK_API_TOKEN    - Zendesk API token
+
+AUTHOR: AI Ticket Processor Team
+LICENSE: Proprietary
+LAST UPDATED: 2025-11-11
+================================================================================
 """
 import os
 import json

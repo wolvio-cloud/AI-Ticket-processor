@@ -1,6 +1,58 @@
 """
-ai_ticket_processor.py - Multi-Industry Version
-FIXED: 82% "Other" problem with industry-specific prompts
+================================================================================
+AI Ticket Processor - Main Processing Engine (v2.4)
+================================================================================
+
+DESCRIPTION:
+    Automated customer support ticket analysis and classification system that
+    fetches tickets from Zendesk, analyzes them using OpenAI GPT-4o-mini, and
+    updates tickets with AI-generated insights, classifications, and reply drafts.
+
+FEATURES:
+    - Enhanced classification system with 15 categories and confidence scoring
+    - Industry-specific classification (SaaS, E-commerce, General)
+    - International PII protection (16+ patterns across 6 regions)
+    - Automated reply draft generation
+    - Duplicate prevention system
+    - Robust fallback logic (enhanced → legacy classification)
+    - Parallel processing with ThreadPoolExecutor
+    - Comprehensive error handling and retry logic
+
+VERSION HISTORY:
+    v2.4 - Enhanced classification with confidence scoring and unified AI prompt
+    v2.3 - International PII protection (India, UK, EU, Australia, Canada)
+    v2.2 - Classification accuracy improvements (80% industry detection)
+    v2.0 - Auto-reply draft generation with quality scoring
+
+CLASSIFICATION SYSTEM:
+    - 15 Categories: 7 SaaS + 5 E-commerce + 3 General
+    - Confidence scoring (0-1.0) with fallback logic
+    - Structured JSON response with reasoning and keywords
+    - Backward compatible with legacy root_cause format
+
+PII PROTECTION:
+    - 16+ international PII patterns (US, UK, EU, India, Australia, Canada)
+    - Compliant with GDPR, CCPA, Privacy Act, PIPEDA, DPDPA
+    - Redaction before sending to OpenAI
+
+USAGE:
+    python Ai_ticket_processor.py [--limit N] [--industry TYPE] [--force]
+
+    Options:
+        --limit N        Process maximum N tickets (default: 50)
+        --industry TYPE  Force specific industry (saas/ecommerce/general)
+        --force          Reprocess already-processed tickets
+
+ENVIRONMENT VARIABLES:
+    ZENDESK_SUBDOMAIN    - Your Zendesk subdomain
+    ZENDESK_EMAIL        - Zendesk admin email
+    ZENDESK_API_TOKEN    - Zendesk API token
+    OPENAI_API_KEY       - OpenAI API key
+
+AUTHOR: AI Ticket Processor Team
+LICENSE: Proprietary
+LAST UPDATED: 2025-11-11
+================================================================================
 """
 import requests
 import os

@@ -1,5 +1,54 @@
 """
-Comprehensive functionality test to verify nothing is broken after v2.4 upgrade
+================================================================================
+Test: Comprehensive Functionality Verification (Integration Test)
+================================================================================
+
+PURPOSE:
+    Verifies that all existing functionality continues to work after code
+    updates, refactoring, or new feature additions. Catches regressions.
+
+COVERAGE:
+    ✅ Syntax validation (py_compile)
+    ✅ Legacy keyword-based industry detection (80% accuracy expected)
+    ✅ PII redaction (16+ international patterns)
+    ✅ Enhanced classification system (v2.4)
+    ✅ Function imports and accessibility
+
+TEST EXECUTION:
+    Runs multiple sub-tests via subprocess to catch failures early:
+    1. Python syntax check
+    2. Classification accuracy test
+    3. PII redaction test
+    4. Enhanced classification test
+    5. Function import test
+
+PASS CRITERIA:
+    - 5/5 tests must pass
+    - No Python syntax errors
+    - No import errors
+    - All existing functionality verified
+
+FAILURE HANDLING:
+    - Individual test failures reported with context
+    - Timeout handling for API-dependent tests (timeout is OK)
+    - Returns exit code 0 if all pass, 1 if any fail
+
+USAGE:
+    python test_all_functionality.py
+
+INTEGRATION:
+    Run before committing code changes to verify no regressions.
+    Part of pre-merge validation pipeline.
+
+DEPENDENCIES:
+    - Ai_ticket_processor.py (main processor)
+    - pii_redactor.py (PII protection)
+    - test_classification_accuracy.py (keyword detection test)
+    - test_enhanced_classification.py (v2.4 classification test)
+
+AUTHOR: AI Ticket Processor Team
+LAST UPDATED: 2025-11-11
+================================================================================
 """
 import sys
 
