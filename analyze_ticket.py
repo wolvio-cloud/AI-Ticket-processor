@@ -1,5 +1,51 @@
 """
-analyze_ticket.py - Analyze tickets using OpenAI with PII redaction
+================================================================================
+Ticket Analyzer - OpenAI-Powered Ticket Analysis with PII Protection
+================================================================================
+
+DESCRIPTION:
+    Generates intelligent, context-aware reply drafts for support tickets using
+    OpenAI GPT-4o-mini. Automatically redacts PII before sending to AI and
+    produces professional 2-3 sentence responses based on ticket analysis.
+
+FEATURES:
+    - Automated reply draft generation (2-3 sentences)
+    - PII redaction before AI processing (international patterns)
+    - Quality scoring system (word count, sentence structure)
+    - Context-aware responses based on analysis data
+    - Professional tone and formatting
+    - Error handling with graceful degradation
+
+KEY FUNCTIONS:
+    - generate_reply_draft(): Main function to create AI-powered reply drafts
+      Returns: dict with reply_draft, draft_status, draft_word_count
+
+INTEGRATION:
+    Used by Ai_ticket_processor.py as part of the analysis pipeline.
+    PII protection provided by pii_redactor.py module.
+
+PII PROTECTION:
+    Automatically redacts 16+ international PII types before sending to OpenAI:
+    - Credit cards, SSN, IBAN, Tax IDs, Phone numbers, etc.
+    - Compliant with GDPR, CCPA, Privacy Act, PIPEDA
+
+USAGE:
+    from analyze_ticket import generate_reply_draft
+
+    draft_result = generate_reply_draft(
+        subject="Order issue",
+        description="My order hasn't arrived",
+        analysis={"root_cause": "order_status_tracking", "urgency": "high"}
+    )
+    print(draft_result['reply_draft'])
+
+ENVIRONMENT VARIABLES:
+    OPENAI_API_KEY - OpenAI API key for GPT-4o-mini
+
+AUTHOR: AI Ticket Processor Team
+LICENSE: Proprietary
+LAST UPDATED: 2025-11-11
+================================================================================
 """
 import os
 import json

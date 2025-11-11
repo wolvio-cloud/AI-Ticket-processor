@@ -1,6 +1,35 @@
 """
-Test improved classification accuracy
-Goal: Reduce "others" rate from 20% to <8%
+================================================================================
+Test: Classification Accuracy with Generic Language
+================================================================================
+
+PURPOSE:
+    Validates improved classification accuracy for tickets with generic/vague
+    language. Tests the keyword-based industry detection system.
+
+GOAL:
+    - Reduce "others" classification rate from 20% to <8%
+    - Achieve >60% industry detection accuracy for generic language
+    - Correctly map vague terms to specific categories
+
+TEST COVERAGE:
+    - Generic e-commerce tickets: "problem with my order", "account issue"
+    - Generic SaaS tickets: "technical problem", "application slow"
+    - Edge cases: ambiguous language, minimal context
+
+EXPECTED RESULTS:
+    ✅ 8/10 or better correct industry detection (80% accuracy)
+    ✅ Handles generic language: "my order", "account issue", "billing problem"
+
+USAGE:
+    python test_classification_accuracy.py
+
+DEPENDENCIES:
+    - Ai_ticket_processor.py (detect_industry function)
+
+AUTHOR: AI Ticket Processor Team
+LAST UPDATED: 2025-11-11
+================================================================================
 """
 
 # Test cases with generic language that should map to specific categories

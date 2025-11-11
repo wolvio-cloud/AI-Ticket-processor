@@ -1,6 +1,56 @@
 """
-Test Enhanced Classification System (v2.4)
-Tests the new unified classification prompt with confidence scoring
+================================================================================
+Test: Enhanced Classification System (v2.4)
+================================================================================
+
+PURPOSE:
+    Validates the new unified classification system with confidence scoring,
+    structured JSON responses, and backward compatibility.
+
+FEATURES TESTED:
+    - Response structure validation (9 required fields)
+    - Category coverage (15 categories: 7 SaaS + 5 E-commerce + 3 General)
+    - Confidence scoring fallback logic (<0.3 → general_inquiry)
+    - Backward compatibility (category → root_cause mapping)
+    - Category uniqueness (no duplicates)
+
+TEST SUITES:
+    1. Enhanced Classification Structure Test
+       - Validates JSON response format
+       - Checks all required fields present
+       - Validates confidence score range (0-1.0)
+       - Tests category-to-root_cause mapping
+
+    2. Category Coverage Test
+       - Ensures all 15 categories defined
+       - Validates no duplicate categories
+       - Checks SaaS, E-commerce, and General categories
+
+    3. Fallback Logic Test
+       - Tests confidence threshold (0.3)
+       - Validates auto-fallback to general_inquiry for low confidence
+       - Tests various confidence levels
+
+    4. Backward Compatibility Test
+       - Validates root_cause field added for legacy code
+       - Checks all legacy root_cause values supported
+       - Verifies fallback to legacy system if enhanced fails
+
+EXPECTED RESULTS:
+    ✅ 4/4 test suites passing
+    ✅ All required fields present in response
+    ✅ Confidence scoring working correctly
+    ✅ Backward compatibility verified
+
+USAGE:
+    python test_enhanced_classification.py
+
+DEPENDENCIES:
+    None - Pure unit tests with mock data
+
+AUTHOR: AI Ticket Processor Team
+LAST UPDATED: 2025-11-11
+================================================================================
 """
 import json
 
